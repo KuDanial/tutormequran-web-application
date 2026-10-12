@@ -393,7 +393,7 @@ button {
 /* Hero Section */
 .hero {
   position: relative;
-  padding: 6rem 0 8rem 0;
+  padding: 50px 0 8rem 0;
   background: radial-gradient(circle at top right, rgba(13, 148, 136, 0.08) 0%, rgba(255, 255, 255, 0) 60%),
               radial-gradient(circle at bottom left, rgba(217, 119, 6, 0.05) 0%, rgba(255, 255, 255, 0) 50%);
   overflow: hidden;
