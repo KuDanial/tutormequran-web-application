@@ -1,21 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Browse Tutors - TutorMeQuran</title>
-  
-  <!-- SEO & Description -->
-  <meta name="description" content="Browse certified Quran tutors in Malaysia. Filter by hourly price, tutor gender, class type, and location. Book verified instructors instantly.">
-  
-  <!-- FontAwesome & App Stylesheet -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- Header Navigation -->
-  <nav class="navbar" id="navbar">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Find your next Quran tutor - TutorMeQuran</title><meta name="description" content="Verified qualifications. Clear hourly rates. Lessons that fit your routine."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="assets/css/style.css"></head><body class="portal-page public-workspace"><a href="#main-content" class="portal-skip">Skip to content</a>
+<nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo-link" id="nav-logo">
         <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="logo-img">
@@ -27,226 +12,120 @@
 
       <!-- Desktop Links -->
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="tutors.html" class="nav-link active">Browse</a></li>
-        <li><a href="why-us.html" class="nav-link">Why Us</a></li>
-        <li><a href="help.html" class="nav-link">Help</a></li>
+        <li><a href="index.html" class="nav-link">Home</a>
+</li>
+        <li><a href="tutors.html" class="nav-link">Browse</a>
+</li>
+        <li><a href="why-us.html" class="nav-link">Why Us</a>
+</li>
+        <li><a href="help.html" class="nav-link">Help</a>
+</li>
       </ul>
 
       <!-- Action Buttons -->
-      <div class="nav-actions">
+      <details class="portal-mobile"><summary>Menu</summary>
+<ul>
+<li><a href="index.html">Home</a>
+</li>
+<li><a href="tutors.html">Browse</a>
+</li>
+<li><a href="why-us.html">Why Us</a>
+</li>
+<li><a href="help.html">Help</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+<li><a href="login.html">Log In</a>
+</li>
+<li><a href="register.html">Register</a>
+</li>
+</ul></details>
+<div class="nav-actions">
         <a href="login.html" class="btn btn-text btn-sm" id="nav-login-btn">Log In</a>
         <a href="register.html" class="btn btn-primary btn-sm" id="nav-register-btn">Register</a>
-        <!-- Hamburger Toggle -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+
       </div>
     </div>
   </nav>
-
-  <!-- Mobile Nav Drawer -->
-  <div class="mobile-nav" id="mobile-nav">
-    <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-      <li><a href="tutors.html" class="mobile-nav-link active">Browse</a></li>
-      <li><a href="why-us.html" class="mobile-nav-link">Why Us</a></li>
-      <li><a href="help.html" class="mobile-nav-link">Help</a></li>
-      <li style="margin-top: 2rem;"><a href="login.html" class="btn btn-outline btn-block">Log In</a></li>
-      <li style="margin-top: 1rem;"><a href="register.html" class="btn btn-primary btn-block">Register</a></li>
-    </ul>
-  </div>
-
-  <!-- Banner / Header -->
-  <section class="section section-bg-light" style="padding: 4rem 0 2rem 0; border-bottom: 1px solid var(--border);">
-    <div class="container" style="text-align: center;">
-      <h1 style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Browse Certified Quran Tutors</h1>
-      <p style="color: var(--text-muted); max-width: 36rem; margin: 0 auto;">Filter tutors by price, location, teaching method, and verified credentials to find the perfect teacher for your learning needs.</p>
-    </div>
-  </section>
-
-  <!-- Search & Filter Card (FR4 Filter Tutors) -->
-  <div class="container" style="margin-top: 2rem; margin-bottom: 2rem;">
-    <div class="search-box" style="margin-top: 0; box-shadow: var(--shadow-md);">
-      <form id="search-form">
-        <div class="search-grid">
-          
-          <!-- Search input -->
-          <div class="search-field">
-            <label for="search-keyword"><i class="fas fa-search"></i> Search Tutor</label>
-            <div class="search-input-wrapper">
-              <i class="fas fa-user-circle"></i>
-              <input type="text" id="search-keyword" placeholder="Search by name, expertise...">
-            </div>
-          </div>
-
-          <!-- Price filter -->
-          <div class="search-field">
-            <label for="filter-rate"><i class="fas fa-money-bill-wave"></i> Hourly Rate</label>
-            <div class="search-input-wrapper">
-              <i class="fas fa-ring"></i>
-              <select id="filter-rate">
-                <option value="">Any Price</option>
-                <option value="under-30">Below RM 30 / hr</option>
-                <option value="30-50">RM 30 - RM 50 / hr</option>
-                <option value="over-50">Above RM 50 / hr</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Class type filter -->
-          <div class="search-field">
-            <label for="filter-class-type"><i class="fas fa-laptop-house"></i> Class Type</label>
-            <div class="search-input-wrapper">
-              <i class="fas fa-map-marker-alt"></i>
-              <select id="filter-class-type">
-                <option value="">All Types</option>
-                <option value="online">Online (Google Meet/WhatsApp)</option>
-                <option value="physical">Physical Class (Face-to-face)</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Gender filter -->
-          <div class="search-field">
-            <label for="filter-gender"><i class="fas fa-users"></i> Tutor Gender</label>
-            <div class="search-input-wrapper">
-              <i class="fas fa-venus-mars"></i>
-              <select id="filter-gender">
-                <option value="">Any Gender</option>
-                <option value="male">Ustaz (Male)</option>
-                <option value="female">Ustazah (Female)</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Search button -->
-          <button type="submit" class="btn btn-primary search-submit-btn" id="search-btn">
-            <i class="fas fa-filter"></i> Apply Filters
-          </button>
-
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- Tutor List Grid Section -->
-  <section class="section" style="padding-top: 1rem;" id="tutor-listings-section">
-    <div class="container">
-      
-      <!-- Grid Container -->
-      <div class="grid grid-3 tutor-grid">
-        
-        <!-- Tutor 1: Female, RM40/hr, Online -->
-        <div class="grid-item">
-          <div class="tutor-card" data-gender="female" data-rate="40" data-class-type="online">
-            <div class="tutor-card-img-wrapper">
-              <span class="tutor-badge-certified"><i class="fas fa-shield-halved"></i> Verified Ijazah</span>
-              <img src="assets/img/TutorMeQuran_LOGO_White.png" alt="Ustazah Fatimah Al-Zahra" class="tutor-card-img" style="background: linear-gradient(135deg, #0d9488 0%, #1e293b 100%); padding: 2rem;">
-              <div class="tutor-card-pricing"><span>RM 40</span> / hr</div>
-            </div>
-            <div class="tutor-card-body">
-              <h3 class="tutor-card-name">Ustazah Fatimah Al-Zahra</h3>
-              <div class="tutor-card-title">Tajweed & Recitation Specialist</div>
-              <div class="tutor-card-meta">
-                <span class="tutor-meta-item"><i class="fas fa-star"></i> 4.9 (42 reviews)</span>
-                <span class="tutor-meta-item"><i class="fas fa-video"></i> Online Only</span>
-              </div>
-              <p class="tutor-card-bio">
-                Graduate from Al-Azhar University. Specializing in teaching Tajweed rules for female students and kids. Passionate about correct pronunciation (makharij).
-              </p>
-              <div class="tutor-card-footer">
-                <a href="tutor-detail.html?id=1" class="btn btn-primary btn-sm btn-block">View Profile & Book</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tutor 2: Male, RM25/hr, Physical -->
-        <div class="grid-item">
-          <div class="tutor-card" data-gender="male" data-rate="25" data-class-type="physical">
-            <div class="tutor-card-img-wrapper">
-              <span class="tutor-badge-certified"><i class="fas fa-shield-halved"></i> Verified Ijazah</span>
-              <img src="assets/img/TutorMeQuran_LOGO_White.png" alt="Ustaz Ahmad Shukri" class="tutor-card-img" style="background: linear-gradient(135deg, #b45309 0%, #1e293b 100%); padding: 2rem;">
-              <div class="tutor-card-pricing"><span>RM 25</span> / hr</div>
-            </div>
-            <div class="tutor-card-body">
-              <h3 class="tutor-card-name">Ustaz Ahmad Shukri</h3>
-              <div class="tutor-card-title">Hifz Memorization Coach</div>
-              <div class="tutor-card-meta">
-                <span class="tutor-meta-item"><i class="fas fa-star"></i> 4.8 (18 reviews)</span>
-                <span class="tutor-meta-item"><i class="fas fa-house-chimney"></i> Physical (KL/Selangor)</span>
-              </div>
-              <p class="tutor-card-bio">
-                Experienced Huffaz tutor. Focuses on structured memorization techniques (tasmee') and revision cycles for primary and secondary school children.
-              </p>
-              <div class="tutor-card-footer">
-                <a href="tutor-detail.html?id=2" class="btn btn-primary btn-sm btn-block">View Profile & Book</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tutor 3: Male, RM60/hr, Both -->
-        <div class="grid-item">
-          <div class="tutor-card" data-gender="male" data-rate="60" data-class-type="both">
-            <div class="tutor-card-img-wrapper">
-              <span class="tutor-badge-certified"><i class="fas fa-shield-halved"></i> Verified Ijazah</span>
-              <img src="assets/img/TutorMeQuran_LOGO_White.png" alt="Ustaz Lukman Hakim" class="tutor-card-img" style="background: linear-gradient(135deg, #0f766e 0%, #0f172a 100%); padding: 2rem;">
-              <div class="tutor-card-pricing"><span>RM 60</span> / hr</div>
-            </div>
-            <div class="tutor-card-body">
-              <h3 class="tutor-card-name">Ustaz Dr. Lukman Hakim</h3>
-              <div class="tutor-card-title">Qiraat & Advanced Tajweed</div>
-              <div class="tutor-card-meta">
-                <span class="tutor-meta-item"><i class="fas fa-star"></i> 5.0 (31 reviews)</span>
-                <span class="tutor-meta-item"><i class="fas fa-globe"></i> Online & Physical</span>
-              </div>
-              <p class="tutor-card-bio">
-                Ph.D. in Islamic Studies (USIM). Licensed in 10 Qira'at. Teaches advanced Tajweed scripts, Quranic grammar, and vocal modulation (tarannum).
-              </p>
-              <div class="tutor-card-footer">
-                <a href="tutor-detail.html?id=3" class="btn btn-primary btn-sm btn-block">View Profile & Book</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tutor 4: Female, RM28/hr, Online -->
-        <div class="grid-item">
-          <div class="tutor-card" data-gender="female" data-rate="28" data-class-type="online">
-            <div class="tutor-card-img-wrapper">
-              <span class="tutor-badge-certified"><i class="fas fa-shield-halved"></i> Verified Ijazah</span>
-              <img src="assets/img/TutorMeQuran_LOGO_White.png" alt="Ustazah Sarah Yusuf" class="tutor-card-img" style="background: linear-gradient(135deg, #0d9488 0%, #0f172a 100%); padding: 2rem;">
-              <div class="tutor-card-pricing"><span>RM 28</span> / hr</div>
-            </div>
-            <div class="tutor-card-body">
-              <h3 class="tutor-card-name">Ustazah Sarah Yusuf</h3>
-              <div class="tutor-card-title">Kids Quran Recitation & Tajweed</div>
-              <div class="tutor-card-meta">
-                <span class="tutor-meta-item"><i class="fas fa-star"></i> 4.7 (24 reviews)</span>
-                <span class="tutor-meta-item"><i class="fas fa-video"></i> Online Only</span>
-              </div>
-              <p class="tutor-card-bio">
-                Specialized in child education. Employs visual stories, phonetic guides, and light recitation games to make Quran learning fun and memorable for young children.
-              </p>
-              <div class="tutor-card-footer">
-                <a href="tutor-detail.html?id=4" class="btn btn-primary btn-sm btn-block">View Profile & Book</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
+<main id="main-content" class="container portal-main">
+<header class="portal-heading">
+<div><span class="section-subtitle">TutorMeQuran</span>
+<h1>Find your next Quran tutor</h1>
+<p>Verified qualifications. Clear hourly rates. Lessons that fit your routine.</p>
+</div><a href="register.html#tutor-application" class="btn btn-outline btn-sm">Apply to teach</a>
+</header>
+<section class="portal-card ">
+<h2>Find your fit</h2>
+<form class="portal-form">
+<button type="submit" hidden disabled aria-hidden="true">
+</button>
+<div class="portal-fields">
+<div class="form-group">
+<label for="f-searchTutor" class="form-label">Search Tutor</label>
+<input id="f-searchTutor" name="searchTutor" class="form-control" type="search" value="">
+</div>
+<div class="form-group">
+<label for="f-filterMode" class="form-label">Teaching Mode</label>
+<select id="f-filterMode" name="filterMode" class="form-control">
+<option selected>Any mode</option>
+<option>Online</option>
+<option>Physical</option>
+</select>
+</div>
+<div class="form-group">
+<label for="f-filterState" class="form-label">State</label>
+<select id="f-filterState" name="filterState" class="form-control">
+<option selected>Any state</option>
+<option>Selangor</option>
+<option>Kuala Lumpur</option>
+<option>Johor</option>
+<option>Kelantan</option>
+</select>
+</div>
+<div class="form-group">
+<label for="f-filterRate" class="form-label">Hourly Budget</label>
+<select id="f-filterRate" name="filterRate" class="form-control">
+<option selected>Any rate</option>
+<option>Below RM 30</option>
+<option>RM 30–50</option>
+<option>Above RM 50</option>
+</select>
+</div>
+</div>
+<div class="portal-actions">
+<button type="button" class="btn btn-primary">Search Tutors</button>
+</div>
+<p class="portal-muted">Search controls are an interface preview.</p>
+</form>
+</section>
+<div class="results-heading">
+<h2>Available to book</h2><span>1 public tutor · sample directory</span>
+</div>
+<article class="portal-card tutor-listing">
+<div class="tutor-portrait" aria-label="Tutor initials MF"><span>MF</span><small>QURAN & TAJWEED</small>
+</div>
+<div class="listing-content"><span class="portal-badge good">Verified</span>
+<h2>Ustaz Muhammad Farhan</h2>
+<p class="listing-specialty">Quran recitation · Tajweed · Hifz revision</p>
+<p>Patient, structured lessons for adult learners. Build confidence one ayah at a time.</p>
+<div class="listing-meta"><span>Selangor</span><span>Online & Physical</span><span>★ 4.8 / 5 · sample rating</span>
+</div>
+</div>
+<div class="listing-book"><strong>RM 40<span>/ hour</span></strong>
+<p>Next available<br><b>21 Oct · 8:00 PM</b>
+</p><a href="tutor-detail.html" class="btn btn-primary btn-sm">View profile & book</a>
+</div>
+</article>
+<aside class="flow-notice info"><strong>Every public listing starts with verification</strong>
+<p>Tutors apply with an Ijazah certificate. After admin approval, they complete their profile and choose whether to publish. Draft and Private profiles are not listed.</p>
+</aside><details class="demo-switch"><summary>Prototype · sample data</summary>
+<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
+<div class="portal-actions"><a href="student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
+</div></details>
+</main>
+<footer class="footer">
     <div class="container footer-top">
-      
+
       <!-- Column 1: Brand -->
       <div class="footer-brand">
         <a href="index.html" class="footer-brand-logo">
@@ -259,36 +138,41 @@
         <p class="footer-desc">
           A centralized, secure digital platform designed to help Muslims in Malaysia search, coordinate, and book verified Quran tutors with verified credentials.
         </p>
-        <div class="footer-socials">
-          <a href="#" class="social-link flex-center" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link flex-center" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="social-link flex-center" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
+
       </div>
 
       <!-- Column 2: Navigation links -->
       <div>
         <h4 class="footer-col-title">Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tutors.html">Browse</a></li>
-          <li><a href="why-us.html">Why Us</a></li>
-          <li><a href="help.html">Help</a></li>
-          <li><a href="login.html">Member Log In</a></li>
+          <li><a href="index.html">Home</a>
+</li>
+          <li><a href="tutors.html">Browse</a>
+</li>
+          <li><a href="why-us.html">Why Us</a>
+</li>
+          <li><a href="help.html">Help</a>
+</li>
+          <li><a href="login.html">Member Log In</a>
+</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div>
-        <h4 class="footer-col-title">Our Guidelines</h4>
-        <ul class="footer-links">
-          <li><a href="#">Tutor Quality Codes</a></li>
-          <li><a href="#">Verification Audits</a></li>
-          <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">PDPA Privacy Policy</a></li>
-        </ul>
-      </div>
+      <div><h4 class="footer-col-title">Explore the Demo</h4>
+<ul class="footer-links">
+<li><a href="student/student-dashboard.html">Student Dashboard</a>
+</li>
+<li><a href="tutor/tutor-dashboard.html">Tutor Dashboard</a>
+</li>
+<li><a href="admin/admin-dashboard.html">Admin Dashboard</a>
+</li>
+<li><a href="report/report-dashboard.html">Report</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+</ul>
+</div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -313,11 +197,6 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 TutorMeQuran. Built for CSP600 Project, Malaysia. All Rights Reserved. Compliant with Malaysian PDPA 2010.</p>
+      <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer>
-
-  <!-- App Script -->
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  </footer></body></html>

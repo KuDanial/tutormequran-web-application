@@ -4,44 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log In - TutorMeQuran</title>
-  
+
   <!-- SEO & Description -->
   <meta name="description" content="Secure login to your TutorMeQuran account. Access your personalized dashboard for booking classes, verifying certificates, or supervising the platform.">
-  
+
   <!-- FontAwesome & App Stylesheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="portal-page">
 
   <!-- Full Page Center Auth Wrapper -->
   <main class="auth-page">
     <div class="auth-card">
-      
+
       <!-- Logo and Header -->
       <div class="auth-logo-wrapper">
         <a href="index.html">
           <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="auth-logo">
         </a>
         <h1 class="auth-title">Welcome Back</h1>
-        <p class="auth-subtitle">Login to access your centralized account</p>
+        <p class="auth-subtitle">Student, tutor and administrator access</p>
       </div>
 
       <!-- Segmented Role Selector (FR2 & User Roles Toggle) -->
-      <div class="segmented-control" id="login-role-selector">
-        <button type="button" class="segment-btn active" data-role="student" id="role-btn-student">
-          <i class="fas fa-graduation-cap"></i> Student
-        </button>
-        <button type="button" class="segment-btn" data-role="tutor" id="role-btn-tutor">
-          <i class="fas fa-chalkboard-teacher"></i> Tutor
-        </button>
-        <button type="button" class="segment-btn" data-role="admin" id="role-btn-admin">
-          <i class="fas fa-user-shield"></i> Admin
-        </button>
-      </div>
+      <div class="form-group"><label class="form-label" for="login-role-choice">Account role</label><select id="login-role-choice" name="accountRoleType" class="form-control"><option>Student</option><option>Tutor</option><option>Admin</option></select></div>
 
       <!-- Form -->
-      <form id="login-form">
+      <form id="login-form"><button type="submit" disabled hidden aria-hidden="true"></button>
         <!-- Hidden input storing selected role -->
         <input type="hidden" id="login-role" value="student">
 
@@ -50,7 +40,7 @@
           <label for="username" class="form-label">Username or Email Address</label>
           <div class="form-input-wrapper">
             <i class="fas fa-user input-icon"></i>
-            <input type="text" id="username" class="form-control" placeholder="Enter Student Username or Email" required>
+            <input type="text" id="username" name="accountUsername" class="form-control" placeholder="Enter Student Username or Email" required>
           </div>
         </div>
 
@@ -59,8 +49,8 @@
           <label for="password" class="form-label">Password</label>
           <div class="form-input-wrapper">
             <i class="fas fa-lock input-icon"></i>
-            <input type="password" id="password" class="form-control" placeholder="••••••••" required>
-            <i class="fas fa-eye-slash toggle-password" id="password-toggle"></i>
+            <input type="password" id="password" name="accountPassword" class="form-control" placeholder="••••••••" required>
+
           </div>
         </div>
 
@@ -70,11 +60,11 @@
             <input type="checkbox" id="remember-me" class="form-checkbox">
             <label for="remember-me" class="checkbox-label">Remember me</label>
           </div>
-          <a href="#" class="checkbox-label" style="color: var(--primary); font-weight: 600;">Forgot Password?</a>
+          <a href="help.html" class="checkbox-label" style="color: var(--primary); font-weight: 600;">Forgot Password?</a>
         </div>
 
         <!-- Login Button -->
-        <button type="submit" class="btn btn-primary btn-block" id="login-submit-btn">
+        <button type="button" class="btn btn-primary btn-block" id="login-submit-btn">
           Log In <i class="fas fa-sign-in-alt"></i>
         </button>
       </form>
@@ -83,6 +73,17 @@
       <p class="checkbox-label" style="text-align: center; margin-top: 2rem;">
         Don't have an account yet? <a href="register.html">Sign Up (Register)</a>
       </p>
+
+      <!-- Static demo entry points; no authentication is performed. -->
+      <section aria-label="Explore the interface demo" style="margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+        <p class="checkbox-label" style="text-align: center; margin-bottom: .75rem;">Explore the interface demo · no sign-in is performed</p>
+        <div class="portal-actions" style="justify-content: center;">
+          <a href="student/student-dashboard.html" class="btn btn-outline btn-sm">Student</a>
+          <a href="tutor/tutor-dashboard.html" class="btn btn-outline btn-sm">Tutor application</a>
+          <a href="tutor/tutor-dashboard-verified.html" class="btn btn-outline btn-sm">Verified tutor</a>
+          <a href="admin/admin-dashboard.html" class="btn btn-outline btn-sm">Admin</a>
+        </div>
+      </section>
 
       <!-- Back Link -->
       <a href="index.html" class="btn btn-text btn-block btn-sm" style="margin-top: 1rem;">
@@ -93,6 +94,6 @@
   </main>
 
   <!-- App Script -->
-  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Verify acknowledged payment - TutorMeQuran</title><meta name="description" content="Sample state · tutor has confirmed receipt of RM 40.00."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="../assets/css/style.css"></head><body class="portal-page admin-workspace"><a href="#main-content" class="portal-skip">Skip to content</a>
+<div class="admin-layout">
+<aside class="admin-sidebar"><a class="admin-brand" href="../index.html"><img src="../assets/img/TutorMeQuran_LOGO_White.png" alt=""><span>TutorMeQuran<small>ADMINISTRATION</small></span></a>
+<p class="sidebar-caption">MANAGE PLATFORM</p>
+<nav aria-label="Admin navigation"><a href="admin-dashboard.html"><i class="fas fa-chart-pie" aria-hidden="true"></i>Overview</a><a href="manage-certificates.html"><i class="fas fa-user-check" aria-hidden="true"></i>Tutor applications</a><a href="manage-payments.html"><i class="fas fa-receipt" aria-hidden="true"></i>Payment reviews</a><a href="manage-bookings.html"><i class="fas fa-calendar" aria-hidden="true"></i>Bookings</a><a href="manage-tutors.html"><i class="fas fa-chalkboard-user" aria-hidden="true"></i>Tutors</a><a href="manage-students.html"><i class="fas fa-user-graduate" aria-hidden="true"></i>Students</a><a href="manage-faq.html"><i class="fas fa-comments" aria-hidden="true"></i>FAQ library</a><a href="../report/report-dashboard.html"><i class="fas fa-chart-column" aria-hidden="true"></i>Reports</a><a href="admin-profile.html"><i class="fas fa-user-gear" aria-hidden="true"></i>My account</a>
+</nav>
+<div class="sidebar-bottom"><span class="admin-dot"></span>Admin access only<p>Nur Amirah · AD-001</p>
+</div>
+</aside>
+<div class="admin-body">
+<header class="admin-topbar"><span>Workspace / Administration</span><a href="../index.html">View website ↗</a><a class="admin-user" href="admin-profile.html"><span>NA</span>Nur Amirah</a>
+</header>
+<main id="main-content" class="container portal-main">
+<header class="portal-heading">
+<div><span class="section-subtitle">Operations workspace</span>
+<h1>Verify acknowledged payment</h1>
+<p>Sample state · tutor has confirmed receipt of RM 40.00.</p>
+</div>
+</header>
+<ol class="journey">
+<li class="done"><span>01</span>
+<div><strong>Booking reserved</strong><small>TMQ-1024</small>
+</div>
+</li>
+<li class="done"><span>02</span>
+<div><strong>Receipt uploaded</strong><small>Student submitted proof</small>
+</div>
+</li>
+<li class="done"><span>03</span>
+<div><strong>Tutor confirms</strong><small>Check funds received</small>
+</div>
+</li>
+<li class="current" aria-current="step"><span>04</span>
+<div><strong>Admin verifies</strong><small>Final payment decision</small>
+</div>
+</li>
+</ol>
+<div class="portal-columns">
+<section class="portal-card ">
+<h2>DuitNow receipt</h2>
+<figure class="receipt-paper">
+<figcaption>DUITNOW TRANSFER <span>Sample receipt · not a real transaction</span>
+</figcaption><strong class="receipt-amount">RM 40.00</strong>
+<p>Transfer successful</p>
+<dl class="portal-details">
+<div>
+<dt>Recipient</dt>
+<dd>Muhammad Farhan</dd>
+</div>
+<div>
+<dt>From</dt>
+<dd>Ahmad Hakimi</dd>
+</div>
+<div>
+<dt>Reference</dt>
+<dd>TMQ-1024</dd>
+</div>
+<div>
+<dt>Transaction Date</dt>
+<dd>11 Oct 2026, 2:35 PM</dd>
+</div>
+<div>
+<dt>Receipt File</dt>
+<dd>duitnow-TMQ-1024.jpg</dd>
+</div>
+</dl>
+</figure>
+</section>
+<section class="portal-card ">
+<h2>Verification evidence</h2>
+<dl class="portal-details">
+<div>
+<dt>Payment ID</dt>
+<dd>PAY-1024</dd>
+</div>
+<div>
+<dt>Booking ID</dt>
+<dd>TMQ-1024</dd>
+</div>
+<div>
+<dt>Payment Amount</dt>
+<dd>RM 40.00</dd>
+</div>
+<div>
+<dt>Payment Date</dt>
+<dd>11 October 2026</dd>
+</div>
+<div>
+<dt>Receipt</dt>
+<dd>duitnow-TMQ-1024.jpg</dd>
+</div>
+<div>
+<dt>Tutor Confirmation</dt>
+<dd><span class="portal-badge good">Received</span>
+</dd>
+</div>
+<div>
+<dt>Acknowledged At</dt>
+<dd>12 Oct 2026, 9:10 AM</dd>
+</div>
+<div>
+<dt>Admin Status</dt>
+<dd><span class="portal-badge pending">Pending</span>
+</dd>
+</div>
+</dl>
+</section>
+</div>
+<section class="portal-card ">
+<h2>Final review</h2>
+<form class="portal-form">
+<button type="submit" hidden disabled aria-hidden="true">
+</button>
+<div class="portal-fields">
+<div class="form-group">
+<label for="f-paymentAdminRemark" class="form-label">Admin Remark</label>
+<textarea id="f-paymentAdminRemark" name="paymentAdminRemark" class="form-control" rows="4">Receipt reference and amount match the booking. Tutor confirms receipt.</textarea>
+</div>
+</div>
+<div class="portal-actions">
+<button type="button" class="btn btn-primary">Approve Payment</button><a href="manage-payments.html" class="btn btn-outline btn-sm">Back</a>
+</div>
+</form>
+</section>
+<div class="portal-actions">
+<button type="button" class="btn btn-danger">Reject Payment</button>
+</div>
+<aside class="flow-notice info"><strong>Final verification</strong>
+<p>Approved receipts become Verified. Rejected receipts remain attached to the same payment record and can be replaced by the student.</p>
+</aside><details class="demo-switch"><summary>Prototype · sample data</summary>
+<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
+<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
+</div></details>
+</main>
+<footer class="admin-footer">© 2026 TutorMeQuran · Administration · CSP600</footer>
+</div>
+</div></body></html>

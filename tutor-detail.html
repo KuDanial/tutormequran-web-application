@@ -1,21 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tutor Profile & Scheduling - TutorMeQuran</title>
-  
-  <!-- SEO Description -->
-  <meta name="description" content="View Quran tutor details, check real-time schedule availability, select lesson slots, and book paid sessions securely to avoid double bookings.">
-  
-  <!-- FontAwesome & App Stylesheet -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- Header Navigation -->
-  <nav class="navbar" id="navbar">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>A teacher for your Quran journey - TutorMeQuran</title><meta name="description" content="Public tutor profile · Ustaz Muhammad Farhan."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="assets/css/style.css"></head><body class="portal-page public-workspace"><a href="#main-content" class="portal-skip">Skip to content</a>
+<nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo-link" id="nav-logo">
         <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="logo-img">
@@ -27,214 +12,134 @@
 
       <!-- Desktop Links -->
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="tutors.html" class="nav-link active">Browse</a></li>
-        <li><a href="why-us.html" class="nav-link">Why Us</a></li>
-        <li><a href="help.html" class="nav-link">Help</a></li>
+        <li><a href="index.html" class="nav-link">Home</a>
+</li>
+        <li><a href="tutors.html" class="nav-link">Browse</a>
+</li>
+        <li><a href="why-us.html" class="nav-link">Why Us</a>
+</li>
+        <li><a href="help.html" class="nav-link">Help</a>
+</li>
       </ul>
 
       <!-- Action Buttons -->
-      <div class="nav-actions">
+      <details class="portal-mobile"><summary>Menu</summary>
+<ul>
+<li><a href="index.html">Home</a>
+</li>
+<li><a href="tutors.html">Browse</a>
+</li>
+<li><a href="why-us.html">Why Us</a>
+</li>
+<li><a href="help.html">Help</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+<li><a href="login.html">Log In</a>
+</li>
+<li><a href="register.html">Register</a>
+</li>
+</ul></details>
+<div class="nav-actions">
         <a href="login.html" class="btn btn-text btn-sm" id="nav-login-btn">Log In</a>
         <a href="register.html" class="btn btn-primary btn-sm" id="nav-register-btn">Register</a>
-        <!-- Hamburger Toggle -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+
       </div>
     </div>
   </nav>
-
-  <!-- Mobile Nav Drawer -->
-  <div class="mobile-nav" id="mobile-nav">
-    <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-      <li><a href="tutors.html" class="mobile-nav-link active">Browse</a></li>
-      <li><a href="why-us.html" class="mobile-nav-link">Why Us</a></li>
-      <li><a href="help.html" class="mobile-nav-link">Help</a></li>
-      <li style="margin-top: 2rem;"><a href="login.html" class="btn btn-outline btn-block">Log In</a></li>
-      <li style="margin-top: 1rem;"><a href="register.html" class="btn btn-primary btn-block">Register</a></li>
-    </ul>
-  </div>
-
-  <!-- Main Content Profile Layout -->
-  <main class="container" style="margin-top: 2rem; margin-bottom: 5rem;">
-    
-    <!-- Back button -->
-    <a href="tutors.html" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 700; margin-bottom: 2rem;" class="nav-back-link">
-      <i class="fas fa-arrow-left"></i> Back to Tutors Directory
-    </a>
-
-    <!-- Two Column Grid -->
-    <div class="grid grid-2" style="grid-template-columns: 1fr; gap: 3rem; align-items: start;">
-      
-      <!-- Override grid template for large screens: Left column 0.9fr, Right column 1.1fr -->
-      <script>
-        // Inline script to adjust grid template responsive values on load
-        const adjustLayout = () => {
-          const grid = document.querySelector('.grid.grid-2');
-          if (grid && window.innerWidth >= 1024) {
-            grid.style.gridTemplateColumns = '0.9fr 1.1fr';
-          } else if (grid) {
-            grid.style.gridTemplateColumns = '1fr';
-          }
-        };
-        window.addEventListener('resize', adjustLayout);
-        window.addEventListener('DOMContentLoaded', adjustLayout);
-      </script>
-
-      <!-- Left Column: Tutor Profile Card & Bio -->
-      <div style="display: flex; flex-direction: column; gap: 2rem;">
-        
-        <!-- Tutor Card details -->
-        <div class="feature-card" style="padding: 2.5rem; box-shadow: var(--shadow-md);">
-          <!-- Top Row details -->
-          <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
-            <!-- Avatar Placeholder with Initial -->
-            <div style="width: 5rem; height: 5rem; border-radius: var(--radius-full); background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; font-family: var(--font-heading); font-size: 2rem; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm);">
-              📖
-            </div>
-            <div>
-              <span class="tutor-badge-certified" style="position: static; display: inline-flex; margin-bottom: 0.5rem;"><i class="fas fa-shield-halved"></i> Verified Ijazah</span>
-              <h1 id="det-name" style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem;">Tutor Name</h1>
-              <p id="det-title" style="color: var(--primary); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em;">Tajweed & Recitation Coach</p>
-            </div>
-          </div>
-
-          <!-- Attributes lists -->
-          <div style="display: flex; flex-direction: column; gap: 1rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
-            
-            <!-- Price -->
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">Hourly Rate:</span>
-              <span id="det-rate" style="font-size: 1.25rem; font-weight: 800; color: var(--text-main);">RM 0</span>
-            </div>
-
-            <!-- Rating -->
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">Review Rating:</span>
-              <span style="display: inline-flex; align-items: center; gap: 0.25rem; font-weight: 600; font-size: 0.95rem;">
-                <i class="fas fa-star" style="color: var(--secondary);"></i> <span id="det-rating">5.0 (0 reviews)</span>
-              </span>
-            </div>
-
-            <!-- Experience -->
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">Experience:</span>
-              <span id="det-experience" style="font-weight: 600; font-size: 0.95rem; color: var(--text-main);">5+ Years</span>
-            </div>
-
-            <!-- Education -->
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span style="font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">Qualifications:</span>
-              <span id="det-education" style="font-size: 0.9rem; line-height: 1.4; color: var(--text-main); font-weight: 500;">Degree in Islamic Studies</span>
-            </div>
-
-            <!-- Location -->
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span style="font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">Location/Jurisdiction:</span>
-              <span id="det-location" style="font-size: 0.9rem; color: var(--text-main); font-weight: 500;">Online Only</span>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- About bio -->
-        <div class="feature-card" style="padding: 2.5rem; box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 1rem; border-bottom: 1.5px solid var(--border); padding-bottom: 0.5rem;">Biography & Background</h3>
-          <p id="det-bio" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Tutor biography details...</p>
-        </div>
-
-      </div>
-
-      <!-- Right Column: Interactive Slots & Booking Form -->
-      <div style="display: flex; flex-direction: column; gap: 2rem;">
-        
-        <!-- Weekly Availability Slots -->
-        <div class="feature-card" style="padding: 2.5rem; box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">Weekly Scheduling Slots</h3>
-          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Select an available session slot from the calendar. Grayed-out slots are locked to prevent overlapping/double booking errors (NFR3).</p>
-          
-          <!-- Slots container -->
-          <div class="slots-container">
-            <div class="slots-grid" id="slots-grid">
-              <!-- Rendered dynamically by main.js -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Booking Form Container (active class toggles display) -->
-        <div class="booking-summary-box" id="booking-summary-box">
-          <div class="feature-card" style="padding: 2.5rem; box-shadow: var(--shadow-lg); border-color: rgba(13, 148, 136, 0.25);">
-            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 1.5rem; border-bottom: 1.5px solid var(--border); padding-bottom: 0.5rem;"><i class="fas fa-file-invoice-dollar"></i> Selected Session Details</h3>
-            
-            <form id="tutor-booking-form">
-              <!-- Hidden slot identifier -->
-              <input type="hidden" id="booking-slot-id" value="">
-
-              <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
-                
-                <!-- Selected slot date/time -->
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="font-weight: 700; color: var(--text-muted); font-size: 0.9rem;">Selected Slot:</span>
-                  <span style="font-weight: 700; color: var(--text-main); font-size: 0.95rem; display: flex; flex-direction: column; align-items: flex-end;">
-                    <span id="sum-date">Monday</span>
-                    <span id="sum-time" style="font-size: 0.8rem; color: var(--text-light); font-weight: 600;">09:00 AM - 10:30 AM</span>
-                  </span>
-                </div>
-
-                <!-- Class Mode selection -->
-                <div class="form-group" style="margin-bottom: 0;">
-                  <label for="booking-class-type" class="form-label" style="font-size: 0.8rem; font-weight: 700;">Class Mode <span class="required">*</span></label>
-                  <div class="form-input-wrapper">
-                    <i class="fas fa-laptop-house input-icon"></i>
-                    <select id="booking-class-type" class="form-control" style="padding-left: 2.5rem; appearance: none; background-image: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234b5563' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e&quot;); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem;" required>
-                      <!-- Options added dynamically depending on tutor support -->
-                    </select>
-                  </div>
-                </div>
-
-                <!-- Price summary details -->
-                <div style="border-top: 1px dashed var(--border); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem;">
-                  
-                  <div style="display: flex; justify-content: space-between; color: var(--text-muted);">
-                    <span>Session Fee:</span>
-                    <span id="sum-cost">RM 0</span>
-                  </div>
-                  
-                  <div style="display: flex; justify-content: space-between; color: var(--text-muted);">
-                    <span>TutorMeQuran Platform Fee:</span>
-                    <span>RM 0 (Free Promotion)</span>
-                  </div>
-                  
-                  <div style="display: flex; justify-content: space-between; font-weight: 800; font-size: 1.05rem; color: var(--text-main); margin-top: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.5rem;">
-                    <span>Total Payment:</span>
-                    <span id="sum-total" style="color: var(--primary);">RM 0</span>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- Confirm book button -->
-              <button type="submit" class="btn btn-primary btn-block">Confirm & Book Slot <i class="fas fa-credit-card"></i></button>
-
-            </form>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
+<main id="main-content" class="container portal-main">
+<header class="portal-heading">
+<div><span class="section-subtitle">TutorMeQuran</span>
+<h1>A teacher for your Quran journey</h1>
+<p>Public tutor profile · Ustaz Muhammad Farhan.</p>
+</div><a href="tutors.html" class="btn btn-outline btn-sm">Back to tutors</a>
+</header>
+<div class="profile-layout">
+<div>
+<section class="portal-card ">
+<h2>Learn with Ustaz Muhammad Farhan</h2>
+<div class="portal-person"><span class="portal-avatar">MF</span>
+<div><span class="portal-badge good">Verified</span>
+<p>Quran recitation & Tajweed · Selangor</p>
+</div>
+</div>
+<p class="profile-bio">Assalamualaikum. I help adult learners strengthen their recitation with patient, structured guidance. We work on pronunciation, Tajweed and consistent revision, at a pace that suits your confidence.</p>
+<dl class="portal-details">
+<div>
+<dt>Qualification</dt>
+<dd>Ijazah in Quranic Recitation & Tajweed</dd>
+</div>
+<div>
+<dt>Teaching Mode</dt>
+<dd>Online / Physical</dd>
+</div>
+<div>
+<dt>Teaching Location</dt>
+<dd>Shah Alam, Selangor</dd>
+</div>
+<div>
+<dt>Lesson Focus</dt>
+<dd>Quran recitation, Tajweed, Hifz revision</dd>
+</div>
+<div>
+<dt>Language</dt>
+<dd>Bahasa Melayu & English</dd>
+</div>
+<div>
+<dt>Certificate</dt>
+<dd>Reviewed by TutorMeQuran admin</dd>
+</div>
+</dl>
+</section>
+<section class="portal-card ">
+<h2>Available lessons</h2>
+<p>Malaysia time (MYT). Sample availability; booked slots are unavailable.</p>
+<div class="slot-options"><a class="slot-btn" href="student/student-booking-addNew.html"><span class="slot-day">Wednesday, 21 October</span><span class="slot-time">8:00 PM–9:00 PM</span><span class="slot-status-badge vacant">Available</span></a>
+<button type="button" disabled class="slot-btn booked"><span class="slot-day">Wednesday, 21 October</span><span class="slot-time">9:00 PM–10:00 PM</span><span class="slot-status-badge">Booked</span>
+</button>
+</div>
+</section>
+<section class="portal-card ">
+<h2>What students say</h2><blockquote class="review-quote">
+<p>“Clear explanations and patient guidance. I feel more confident applying Tajweed rules.”</p>
+<footer>Ahmad H. · Completed lesson · 5 / 5 · sample feedback</footer></blockquote>
+</section>
+</div>
+<aside>
+<section class="portal-card ">
+<h2>A clear price before you book</h2>
+<p class="profile-price">RM 40<span> / hour</span>
+</p>
+<dl class="portal-details">
+<div>
+<dt>Lesson Duration</dt>
+<dd>60 minutes</dd>
+</div>
+<div>
+<dt>Lesson Fee</dt>
+<dd>RM 40.00</dd>
+</div>
+<div>
+<dt>Payment Method</dt>
+<dd>DuitNow receipt submission</dd>
+</div>
+</dl>
+<div class="portal-actions"><a href="student/student-booking-addNew.html" class="btn btn-primary btn-sm">Choose this tutor</a>
+</div>
+<p class="portal-muted">For physical lessons, agree on a location with your tutor. Distance-based pricing is not supported.</p>
+</section>
+<aside class="flow-notice info"><strong>How payment works</strong>
+<p>Reserve a slot, transfer to your tutor and upload the receipt. Your tutor acknowledges funds received and an admin verifies the payment.</p>
+</aside>
+</aside>
+</div><details class="demo-switch"><summary>Prototype · sample data</summary>
+<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
+<div class="portal-actions"><a href="student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
+</div></details>
+</main>
+<footer class="footer">
     <div class="container footer-top">
-      
+
       <!-- Column 1: Brand -->
       <div class="footer-brand">
         <a href="index.html" class="footer-brand-logo">
@@ -247,36 +152,41 @@
         <p class="footer-desc">
           A centralized, secure digital platform designed to help Muslims in Malaysia search, coordinate, and book verified Quran tutors with verified credentials.
         </p>
-        <div class="footer-socials">
-          <a href="#" class="social-link flex-center" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link flex-center" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="social-link flex-center" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
+
       </div>
 
       <!-- Column 2: Navigation links -->
       <div>
         <h4 class="footer-col-title">Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tutors.html">Browse</a></li>
-          <li><a href="why-us.html">Why Us</a></li>
-          <li><a href="help.html">Help</a></li>
-          <li><a href="login.html">Member Log In</a></li>
+          <li><a href="index.html">Home</a>
+</li>
+          <li><a href="tutors.html">Browse</a>
+</li>
+          <li><a href="why-us.html">Why Us</a>
+</li>
+          <li><a href="help.html">Help</a>
+</li>
+          <li><a href="login.html">Member Log In</a>
+</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div>
-        <h4 class="footer-col-title">Our Guidelines</h4>
-        <ul class="footer-links">
-          <li><a href="#">Tutor Quality Codes</a></li>
-          <li><a href="#">Verification Audits</a></li>
-          <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">PDPA Privacy Policy</a></li>
-        </ul>
-      </div>
+      <div><h4 class="footer-col-title">Explore the Demo</h4>
+<ul class="footer-links">
+<li><a href="student/student-dashboard.html">Student Dashboard</a>
+</li>
+<li><a href="tutor/tutor-dashboard.html">Tutor Dashboard</a>
+</li>
+<li><a href="admin/admin-dashboard.html">Admin Dashboard</a>
+</li>
+<li><a href="report/report-dashboard.html">Report</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+</ul>
+</div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -301,29 +211,6 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 TutorMeQuran. Built for CSP600 Project, Malaysia. All Rights Reserved. Compliant with Malaysian PDPA 2010.</p>
+      <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer>
-
-  <!-- App Script -->
-  <script src="assets/js/main.js"></script>
-  
-  <script>
-    // Update dynamic total rate matching slot price
-    document.addEventListener('DOMContentLoaded', () => {
-      const observer = new MutationObserver(() => {
-        const sumCost = document.getElementById('sum-cost');
-        const sumTotal = document.getElementById('sum-total');
-        if (sumCost && sumTotal) {
-          sumTotal.textContent = sumCost.textContent;
-        }
-      });
-      
-      const sumCostNode = document.getElementById('sum-cost');
-      if (sumCostNode) {
-        observer.observe(sumCostNode, { childList: true, characterData: true, subtree: true });
-      }
-    });
-  </script>
-</body>
-</html>
+  </footer></body></html>

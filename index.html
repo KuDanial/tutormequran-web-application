@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TutorMeQuran - Centralized Quran Tutor Booking Platform Malaysia</title>
-  
+
   <!-- Meta Descriptions (SEO Best Practices) -->
-  <meta name="description" content="Book certified Quran tutors in Malaysia. Verify Ijazah certificates, check real-time availability, and schedule online or physical classes securely.">
+  <meta name="description" content="Find Quran tutors in Malaysia with reviewed qualifications, clear rates and online or physical lesson options.">
   <meta name="keywords" content="Quran tutor Malaysia, learn Quran, verified Ustaz, Ustazah, hifz memorization, tajweed classes, TutorMeQuran">
-  
+
   <!-- FontAwesome & App Stylesheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="portal-page">
+  <a class="portal-skip" href="#main-content">Skip to content</a>
 
   <!-- Header Navigation -->
   <nav class="navbar" id="navbar">
@@ -28,44 +29,48 @@
 
       <!-- Desktop Links -->
       <ul class="nav-links">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="tutors.html" class="nav-link">Browse</a></li>
-        <li><a href="why-us.html" class="nav-link">Why Us</a></li>
-        <li><a href="help.html" class="nav-link">Help</a></li>
+        <li><a href="index.html" class="nav-link">Home</a>
+</li>
+        <li><a href="tutors.html" class="nav-link">Browse</a>
+</li>
+        <li><a href="why-us.html" class="nav-link">Why Us</a>
+</li>
+        <li><a href="help.html" class="nav-link">Help</a>
+</li>
       </ul>
 
       <!-- Action Buttons -->
-      <div class="nav-actions">
+      <details class="portal-mobile"><summary>Menu</summary>
+<ul>
+<li><a href="index.html">Home</a>
+</li>
+<li><a href="tutors.html">Browse</a>
+</li>
+<li><a href="why-us.html">Why Us</a>
+</li>
+<li><a href="help.html">Help</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+<li><a href="login.html">Log In</a>
+</li>
+<li><a href="register.html">Register</a>
+</li>
+</ul></details>
+<div class="nav-actions">
         <a href="login.html" class="btn btn-text btn-sm" id="nav-login-btn">Log In</a>
         <a href="register.html" class="btn btn-primary btn-sm" id="nav-register-btn">Register</a>
-        <!-- Hamburger Toggle -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+
       </div>
     </div>
   </nav>
-
-  <!-- Mobile Nav Drawer -->
-  <div class="mobile-nav" id="mobile-nav">
-    <ul class="mobile-nav-links">
-      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
-      <li><a href="tutors.html" class="mobile-nav-link">Browse</a></li>
-      <li><a href="why-us.html" class="mobile-nav-link">Why Us</a></li>
-      <li><a href="help.html" class="mobile-nav-link">Help</a></li>
-      <li style="margin-top: 2rem;"><a href="login.html" class="btn btn-outline btn-block">Log In</a></li>
-      <li style="margin-top: 1rem;"><a href="register.html" class="btn btn-primary btn-block">Register</a></li>
-    </ul>
-  </div>
-
+  <main id="main-content">
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge">
-          <i class="fas fa-certificate"></i> JAKIM & Jais Certified Standards
+          <i class="fas fa-certificate"></i> Ijazah reviewed before tutors can publish
         </div>
         <h1 class="hero-title" id="main-hero-title">
           Find Your Certified <span class="highlight">Quran Tutor</span> in Malaysia
@@ -77,31 +82,31 @@
           <a href="tutors.html" class="btn btn-primary btn-lg" id="hero-find-tutor-btn">
             Find Tutors <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="register.html?role=tutor" class="btn btn-secondary btn-lg" id="hero-become-tutor-btn">
-            Become a Tutor
+          <a href="register.html#tutor-application" class="btn btn-secondary btn-lg" id="hero-become-tutor-btn">
+            Apply to Teach
           </a>
         </div>
       </div>
-      
+
       <!-- Right Hero Column -->
       <div class="hero-image-container" style="min-height: 380px; background: radial-gradient(circle, rgba(13, 148, 136, 0.12) 0%, rgba(255, 255, 255, 0) 70%); border-radius: var(--radius-xl); border: 2px dashed rgba(13, 148, 136, 0.15); display: flex; align-items: center; justify-content: center; position: relative;">
         <!-- Large Islamic Geometric Background Icon -->
         <i class="fas fa-mosque" style="font-size: 8rem; color: rgba(13, 148, 136, 0.05); position: absolute; pointer-events: none; transform: rotate(-10deg);"></i>
-        
+
         <!-- Floating trust badges -->
         <div class="floating-badge fb-1" style="position: absolute; left: 10%; top: 20%; animation-delay: 0s;">
           <div class="floating-icon"><i class="fas fa-check-circle"></i></div>
           <div class="floating-info">
             <h4>Ijazah Verified</h4>
-            <p>100% Certified Teachers</p>
+            <p>Admin-reviewed qualifications</p>
           </div>
         </div>
-        
+
         <div class="floating-badge fb-2" style="position: absolute; right: 10%; bottom: 25%; animation-delay: 3s;">
           <div class="floating-icon"><i class="fas fa-star"></i></div>
           <div class="floating-info">
             <h4>4.9/5 Rating</h4>
-            <p>From 1,200+ Students</p>
+            <p>Sample student feedback</p>
           </div>
         </div>
       </div>
@@ -111,9 +116,9 @@
   <!-- Search & Filter Bar -->
   <div class="container search-container" id="search-section">
     <div class="search-box">
-      <form id="search-form">
+      <form id="search-form"><button type="submit" hidden disabled aria-hidden="true"></button>
         <div class="search-grid">
-          
+
           <!-- Search input -->
           <div class="search-field">
             <label for="search-keyword"><i class="fas fa-search"></i> Search Tutor</label>
@@ -164,9 +169,7 @@
           </div>
 
           <!-- Search button -->
-          <button type="submit" class="btn btn-primary search-submit-btn" id="search-btn">
-            <i class="fas fa-search"></i> Find Tutor
-          </button>
+          <a href="tutors.html" class="btn btn-primary btn-sm">Find Tutor</a>
 
         </div>
       </form>
@@ -177,16 +180,16 @@
   <section class="container" style="margin-top: 4rem;">
     <div class="stats-bar">
       <div class="stat-item">
-        <div class="stat-number">250+</div>
-        <div class="stat-label">Certified Tutors</div>
+        <div class="stat-number">12</div>
+        <div class="stat-label">Tutors · sample data</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">1,200+</div>
-        <div class="stat-label">Active Students</div>
+        <div class="stat-number">120</div>
+        <div class="stat-label">Students · sample data</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">15,000+</div>
-        <div class="stat-label">Hours Completed</div>
+        <div class="stat-number">60</div>
+        <div class="stat-label">Bookings · sample data</div>
       </div>
     </div>
   </section>
@@ -217,9 +220,9 @@
         <div class="step-card">
           <div class="step-number">02</div>
           <div class="step-icon flex-center"><i class="fas fa-calendar-check"></i></div>
-          <h3 class="step-title">2. View & Book Real-Time</h3>
+          <h3 class="step-title">2. Choose Your Lesson Slot</h3>
           <p class="step-desc">
-            Check the tutor's live availability calendar and book a lesson slot instantly. Avoid overlapping schedules and double bookings.
+            Review your tutor’s available slots, class mode and total lesson fee before reserving your lesson.
           </p>
         </div>
 
@@ -245,17 +248,18 @@
           Sign up today as a student to book a trial class, or register as a certified tutor to start teaching and earning across Malaysia.
         </p>
         <div class="cta-actions">
-          <a href="register.html?role=student" class="btn btn-light" id="cta-student-register">Register as Student</a>
-          <a href="register.html?role=tutor" class="btn btn-outline-white" id="cta-tutor-register">Join as Tutor</a>
+          <a href="register.html#student-registration" class="btn btn-light" id="cta-student-register">Register as Student</a>
+          <a href="register.html#tutor-application" class="btn btn-outline-white" id="cta-tutor-register">Join as Tutor</a>
         </div>
       </div>
     </div>
   </section>
 
+  </main>
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-top">
-      
+
       <!-- Column 1: Brand -->
       <div class="footer-brand">
         <a href="index.html" class="footer-brand-logo">
@@ -322,11 +326,11 @@
 
     <!-- Footer Bottom -->
     <div class="container footer-bottom">
-      <p>&copy; 2026 TutorMeQuran. Built for CSP600 Project, Malaysia. All Rights Reserved. Compliant with Malaysian PDPA 2010.</p>
+      <p>&copy; 2026 TutorMeQuran. Built for CSP600 Project, Malaysia. All Rights Reserved. Interface prototype.</p>
     </div>
   </footer>
 
   <!-- App Script -->
-  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

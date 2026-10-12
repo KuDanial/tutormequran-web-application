@@ -1,206 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register Account - TutorMeQuran</title>
-  
-  <!-- SEO & Description -->
-  <meta name="description" content="Create a student or tutor account on TutorMeQuran. Upload Ijazah certificates, fill in details, and join Malaysia's leading Quran booking network.">
-  
-  <!-- FontAwesome & App Stylesheet -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <!-- Full Page Center Onboarding Wrapper -->
-  <main class="auth-page" style="padding: 4rem 1.5rem;">
-    <div class="auth-card" style="max-width: 600px;">
-      
-      <!-- Logo and Header -->
-      <div class="auth-logo-wrapper">
-        <a href="index.html">
-          <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="auth-logo">
-        </a>
-        <h1 class="auth-title">Create Account</h1>
-        <p class="auth-subtitle">Join as a student or register as a certified tutor</p>
-      </div>
-
-      <!-- Segmented Role Selector (FR1 & User Roles) -->
-      <div class="segmented-control" id="register-role-selector">
-        <button type="button" class="segment-btn active" data-role="student" id="register-btn-student">
-          <i class="fas fa-graduation-cap"></i> Student
-        </button>
-        <button type="button" class="segment-btn" data-role="tutor" id="register-btn-tutor">
-          <i class="fas fa-chalkboard-teacher"></i> Tutor
-        </button>
-      </div>
-
-      <!-- Onboarding Form -->
-      <form id="registration-form">
-        <!-- Hidden input storing selected registration role -->
-        <input type="hidden" id="register-role" value="student">
-
-        <!-- FName & LName Grid -->
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fname" class="form-label">First Name <span class="required">*</span></label>
-            <div class="form-input-wrapper">
-              <i class="fas fa-user input-icon"></i>
-              <input type="text" id="fname" class="form-control" placeholder="Ahmad" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="lname" class="form-label">Last Name <span class="required">*</span></label>
-            <div class="form-input-wrapper">
-              <i class="fas fa-user input-icon"></i>
-              <input type="text" id="lname" class="form-control" placeholder="Shukri" required>
-            </div>
-          </div>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Begin your Quran learning journey - TutorMeQuran</title><meta name="description" content="Create a student account or apply to teach. For adults aged 18 and above in Malaysia."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="assets/css/style.css"></head><body class="portal-page public-workspace"><a href="#main-content" class="portal-skip">Skip to content</a>
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="nav-logo">
+        <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="logo-img">
+        <div class="logo-text">
+          TutorMeQuran
+          <span>Verified Quran Tutors</span>
         </div>
-
-        <!-- IC Number & Phone Grid -->
-        <div class="form-row">
-          <div class="form-group">
-            <label for="icnum" class="form-label">IC Number <span class="required">*</span></label>
-            <div class="form-input-wrapper">
-              <i class="fas fa-id-card input-icon"></i>
-              <input type="text" id="icnum" class="form-control" placeholder="981220-10-5341" required>
-            </div>
-            <span style="font-size: 0.75rem; color: var(--text-light); margin-top: 0.25rem; display: block;">Format: XXXXXX-XX-XXXX</span>
-          </div>
-          <div class="form-group">
-            <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
-            <div class="form-input-wrapper">
-              <i class="fas fa-phone input-icon"></i>
-              <input type="tel" id="phone" class="form-control" placeholder="+6012-3456789" required>
-            </div>
-          </div>
-        </div>
-
-        <!-- Email Address -->
-        <div class="form-group">
-          <label for="email" class="form-label">Email Address <span class="required">*</span></label>
-          <div class="form-input-wrapper">
-            <i class="fas fa-envelope input-icon"></i>
-            <input type="email" id="email" class="form-control" placeholder="ahmad@gmail.com" required>
-          </div>
-        </div>
-
-        <!-- Home Address -->
-        <div class="form-group">
-          <label for="address" class="form-label">Home Address <span class="required">*</span></label>
-          <div class="form-input-wrapper">
-            <i class="fas fa-map-marker-alt input-icon"></i>
-            <input type="text" id="address" class="form-control" placeholder="No. 12, Jalan Sultan Ismail, Kuala Lumpur" required>
-          </div>
-        </div>
-
-        <!-- Password -->
-        <div class="form-group">
-          <label for="password" class="form-label">Password <span class="required">*</span></label>
-          <div class="form-input-wrapper">
-            <i class="fas fa-lock input-icon"></i>
-            <input type="password" id="password" class="form-control" placeholder="••••••••" required>
-            <i class="fas fa-eye-slash toggle-password"></i>
-          </div>
-        </div>
-
-        <!-- DYNAMIC TUTOR SECTION (Revealed only if Tutor is selected) -->
-        <div class="dynamic-tutor-section" id="tutor-credentials-section">
-          <div class="tutor-section-title">
-            <i class="fas fa-scroll"></i> Tutor Verification & Pricing (FR8)
-          </div>
-
-          <div class="form-row">
-            <!-- Hourly Rate -->
-            <div class="form-group">
-              <label for="hourly-rate" class="form-label">Hourly Rate (RM/hr) <span class="required">*</span></label>
-              <div class="form-input-wrapper">
-                <i class="fas fa-money-bill-wave input-icon"></i>
-                <input type="number" id="hourly-rate" class="form-control" min="1" placeholder="40">
-              </div>
-            </div>
-            <!-- Qualifications -->
-            <div class="form-group">
-              <label for="qualifications" class="form-label">Teaching Experience</label>
-              <div class="form-input-wrapper">
-                <i class="fas fa-graduation-cap input-icon"></i>
-                <select id="qualifications" class="form-control" style="padding-left: 2.5rem; appearance: none; background-image: url(&quot;data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234b5563' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e&quot;); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem;">
-                  <option value="1-3">1 - 3 Years</option>
-                  <option value="3-5">3 - 5 Years</option>
-                  <option value="5+">5+ Years</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- Biography -->
-          <div class="form-group">
-            <label for="bio" class="form-label">Tutor Biography & Expertise</label>
-            <textarea id="bio" class="form-control" rows="3" placeholder="Tell students about your credentials, background, and teaching methodology..."></textarea>
-          </div>
-
-          <!-- Crucial File Upload Labeled Specifically "Upload Ijazah Certificate for Verification" -->
-          <div class="form-group">
-            <label class="form-label">Upload Ijazah Certificate for Verification <span class="required">*</span></label>
-            
-            <div class="file-upload-container">
-              <!-- Drag and Drop Zone -->
-              <div class="file-upload-dropzone" id="ijazah-dropzone">
-                <i class="fas fa-cloud-upload-alt file-upload-icon"></i>
-                <div class="file-upload-text">Drag and drop file here, or <span>browse</span></div>
-                <div class="file-upload-subtext">Supported formats: PDF, JPG, PNG (Max 5MB)</div>
-                <!-- Hidden file input -->
-                <input type="file" id="ijazah-upload" class="hidden-file-input" accept=".pdf, .jpg, .jpeg, .png">
-              </div>
-
-              <!-- Live File Preview -->
-              <div class="upload-preview" id="ijazah-preview-container">
-                <div class="preview-info">
-                  <i class="fas fa-file-pdf preview-icon" id="preview-icon"></i>
-                  <div>
-                    <div class="preview-name" id="preview-file-name">certificate.pdf</div>
-                    <div class="preview-size" id="preview-file-size">1.2 MB</div>
-                  </div>
-                </div>
-                <i class="fas fa-trash-alt preview-remove-btn" id="preview-remove" title="Remove file"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PDPA & Privacy Consent -->
-        <div class="form-group" style="margin-top: 1.5rem; margin-bottom: 2rem;">
-          <div class="form-checkbox-wrapper">
-            <input type="checkbox" id="consent" class="form-checkbox" required>
-            <label for="consent" class="checkbox-label">
-              I agree to the <a href="#">Terms of Service</a> and consent to the processing of my personal details (including IC Number and contact information) in accordance with the Malaysian <strong>PDPA Act 2010</strong>. <span class="required">*</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-block" id="register-submit-btn">
-          Create Account <i class="fas fa-user-plus"></i>
-        </button>
-      </form>
-
-      <!-- Member Link -->
-      <p class="checkbox-label" style="text-align: center; margin-top: 2rem;">
-        Already have an account? <a href="login.html">Log In Here</a>
-      </p>
-
-      <!-- Back Link -->
-      <a href="index.html" class="btn btn-text btn-block btn-sm" style="margin-top: 1rem;">
-        <i class="fas fa-arrow-left"></i> Back to Landing Page
       </a>
 
-    </div>
-  </main>
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a>
+</li>
+        <li><a href="tutors.html" class="nav-link">Browse</a>
+</li>
+        <li><a href="why-us.html" class="nav-link">Why Us</a>
+</li>
+        <li><a href="help.html" class="nav-link">Help</a>
+</li>
+      </ul>
 
-  <!-- App Script -->
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+      <!-- Action Buttons -->
+      <details class="portal-mobile"><summary>Menu</summary>
+<ul>
+<li><a href="index.html">Home</a>
+</li>
+<li><a href="tutors.html">Browse</a>
+</li>
+<li><a href="why-us.html">Why Us</a>
+</li>
+<li><a href="help.html">Help</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+<li><a href="login.html">Log In</a>
+</li>
+<li><a href="register.html">Register</a>
+</li>
+</ul></details>
+<div class="nav-actions">
+        <a href="login.html" class="btn btn-text btn-sm" id="nav-login-btn">Log In</a>
+        <a href="register.html" class="btn btn-primary btn-sm" id="nav-register-btn">Register</a>
+
+      </div>
+    </div>
+  </nav>
+<main id="main-content" class="container portal-main">
+<header class="portal-heading">
+<div><span class="section-subtitle">TutorMeQuran</span>
+<h1>Begin your Quran learning journey</h1>
+<p>Create a student account or apply to teach. For adults aged 18 and above in Malaysia.</p>
+</div><a href="login.html" class="btn btn-outline btn-sm">Already registered? Log in</a>
+</header>
+<div class="registration-layout">
+<nav class="registration-tabs" aria-label="Registration type"><a href="#student-registration">I want to learn</a><a href="#tutor-application">I want to teach</a>
+</nav>
+<section id="tutor-application" class="portal-card registration-panel">
+<h2>Apply to become a tutor</h2>
+<ol class="journey">
+<li class="current" aria-current="step"><span>01</span>
+<div><strong>Apply</strong><small>Personal details & Ijazah</small>
+</div>
+</li>
+<li class=""><span>02</span>
+<div><strong>Admin review</strong><small>Qualification verification</small>
+</div>
+</li>
+<li class=""><span>03</span>
+<div><strong>Set up profile</strong><small>Pricing & teaching details</small>
+</div>
+</li>
+<li class=""><span>04</span>
+<div><strong>Publish</strong><small>Choose your visibility</small>
+</div>
+</li>
+</ol>
+<aside class="flow-notice info"><strong>Your teaching journey starts with verification</strong>
+<p>Submit your personal details and one Ijazah certificate. Pricing, biography, availability and publishing become available after admin approval.</p>
+</aside>
+<form class="portal-form">
+<button type="submit" disabled hidden aria-hidden="true">
+</button>
+<input type="hidden" name="accountRoleType" value="Tutor">
+<div class="portal-fields">
+<div class="form-group">
+<label for="f-tutorFName" class="form-label">First Name</label>
+<input id="f-tutorFName" name="tutorFName" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-tutorLName" class="form-label">Last Name</label>
+<input id="f-tutorLName" name="tutorLName" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-tutorICNum" class="form-label">IC Number</label>
+<input id="f-tutorICNum" name="tutorICNum" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-tutorPhone" class="form-label">Phone Number</label>
+<input id="f-tutorPhone" name="tutorPhone" class="form-control" required type="tel" value="">
+</div>
+<div class="form-group">
+<label for="f-tutorEmail" class="form-label">Email</label>
+<input id="f-tutorEmail" name="tutorEmail" class="form-control" required type="email" value="">
+</div>
+<div class="form-group">
+<label for="f-tutorAddress" class="form-label">Address in Malaysia</label>
+<textarea id="f-tutorAddress" name="tutorAddress" class="form-control" required rows="4">
+</textarea>
+</div>
+<div class="form-group">
+<label for="f-tutorAccountUsername" class="form-label">Username</label>
+<input id="f-tutorAccountUsername" name="accountUsername" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-tutorAccountPassword" class="form-label">Password</label>
+<input id="f-tutorAccountPassword" name="accountPassword" class="form-control" required type="password" value="">
+</div>
+<div class="form-group">
+<label for="f-certificateName" class="form-label">Certificate Name</label>
+<input id="f-certificateName" name="certificateName" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-certificateYear" class="form-label">Certificate Year</label>
+<input id="f-certificateYear" name="certificateYear" class="form-control" required type="number" value="2024" min="1900" max="2026" step="1">
+</div>
+<div class="form-group">
+<label for="f-certificateDescription" class="form-label">Certificate Description</label>
+<textarea id="f-certificateDescription" name="certificateDescription" class="form-control" required rows="4">
+</textarea>
+</div>
+<div class="form-group">
+<label for="f-certificateFile" class="form-label">Upload Ijazah Certificate</label>
+<input id="f-certificateFile" name="certificateFile" class="form-control" required type="file" accept=".pdf,.png,.jpg,.jpeg"><small>One PDF, JPG or PNG document.</small>
+</div>
+</div>
+<label class="eligibility">
+<input type="checkbox" name="tutorEligibility"> I confirm that I am 18 or older and reside in Malaysia.</label>
+<div class="portal-actions">
+<button type="button" class="btn btn-primary">Submit Tutor Application</button>
+</div>
+</form>
+<p class="prototype-link">Interface preview only. <a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Preview application status</a>
+</p>
+</section>
+<section id="student-registration" class="portal-card registration-panel">
+<h2>Create a student account</h2>
+<form class="portal-form">
+<button type="submit" disabled hidden aria-hidden="true">
+</button>
+<input type="hidden" name="accountRoleType" value="Student">
+<div class="portal-fields">
+<div class="form-group">
+<label for="f-studFName" class="form-label">First Name</label>
+<input id="f-studFName" name="studFName" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-studLName" class="form-label">Last Name</label>
+<input id="f-studLName" name="studLName" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-studICNum" class="form-label">IC Number</label>
+<input id="f-studICNum" name="studICNum" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-studPhone" class="form-label">Phone Number</label>
+<input id="f-studPhone" name="studPhone" class="form-control" required type="tel" value="">
+</div>
+<div class="form-group">
+<label for="f-studEmail" class="form-label">Email</label>
+<input id="f-studEmail" name="studEmail" class="form-control" required type="email" value="">
+</div>
+<div class="form-group">
+<label for="f-studAddress" class="form-label">Address in Malaysia</label>
+<textarea id="f-studAddress" name="studAddress" class="form-control" required rows="4">
+</textarea>
+</div>
+<div class="form-group">
+<label for="f-studAccountUsername" class="form-label">Username</label>
+<input id="f-studAccountUsername" name="accountUsername" class="form-control" required type="text" value="">
+</div>
+<div class="form-group">
+<label for="f-studAccountPassword" class="form-label">Password</label>
+<input id="f-studAccountPassword" name="accountPassword" class="form-control" required type="password" value="">
+</div>
+</div>
+<label class="eligibility">
+<input type="checkbox" name="studEligibility"> I confirm that I am 18 or older and reside in Malaysia.</label>
+<div class="portal-actions">
+<button type="button" class="btn btn-primary">Create Student Account</button>
+</div>
+</form>
+</section>
+</div><details class="demo-switch"><summary>Prototype · sample data</summary>
+<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
+<div class="portal-actions"><a href="student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
+</div></details>
+</main>
+<footer class="footer">
+    <div class="container footer-top">
+
+      <!-- Column 1: Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="footer-brand-logo">
+          <img src="assets/img/TutorMeQuran_LOGO_White.png" alt="TutorMeQuran Logo" class="footer-brand-img">
+          <div class="footer-brand-text">
+            TutorMeQuran
+            <span>Verified Quran Tutors</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          A centralized, secure digital platform designed to help Muslims in Malaysia search, coordinate, and book verified Quran tutors with verified credentials.
+        </p>
+
+      </div>
+
+      <!-- Column 2: Navigation links -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a>
+</li>
+          <li><a href="tutors.html">Browse</a>
+</li>
+          <li><a href="why-us.html">Why Us</a>
+</li>
+          <li><a href="help.html">Help</a>
+</li>
+          <li><a href="login.html">Member Log In</a>
+</li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Rules & Legal -->
+      <div><h4 class="footer-col-title">Explore the Demo</h4>
+<ul class="footer-links">
+<li><a href="student/student-dashboard.html">Student Dashboard</a>
+</li>
+<li><a href="tutor/tutor-dashboard.html">Tutor Dashboard</a>
+</li>
+<li><a href="admin/admin-dashboard.html">Admin Dashboard</a>
+</li>
+<li><a href="report/report-dashboard.html">Report</a>
+</li>
+<li><a href="chatbot.html">FAQ Chat</a>
+</li>
+</ul>
+</div>
+
+      <!-- Column 4: Contact details -->
+      <div>
+        <h4 class="footer-col-title">Get In Touch</h4>
+        <div class="footer-contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Level 12, Islamic Education Tech Centre, Mutiara Damansara, 47820 PJ, Selangor, Malaysia</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>+60 3-7735 9182</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>support@tutormequran.com.my</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
+    </div>
+  </footer></body></html>
