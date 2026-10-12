@@ -87,53 +87,75 @@
 <div class="portal-fields">
 <div class="form-group">
 <label for="f-tutorFName" class="form-label">First Name</label>
-<input id="f-tutorFName" name="tutorFName" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-user input-icon" aria-hidden="true"></i>
+<input id="f-tutorFName" name="tutorFName" class="form-control" placeholder="e.g. Ahmad" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorLName" class="form-label">Last Name</label>
-<input id="f-tutorLName" name="tutorLName" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-user input-icon" aria-hidden="true"></i>
+<input id="f-tutorLName" name="tutorLName" class="form-control" placeholder="e.g. Hakimi" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorICNum" class="form-label">IC Number</label>
-<input id="f-tutorICNum" name="tutorICNum" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-id-card input-icon" aria-hidden="true"></i>
+<input id="f-tutorICNum" name="tutorICNum" class="form-control" placeholder="e.g. 000101-03-1234" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorPhone" class="form-label">Phone Number</label>
-<input id="f-tutorPhone" name="tutorPhone" class="form-control" required type="tel" value="">
+<div class="form-input-wrapper"><i class="fas fa-phone input-icon" aria-hidden="true"></i>
+<input id="f-tutorPhone" name="tutorPhone" class="form-control" placeholder="e.g. 016-262 4834" required type="tel" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorEmail" class="form-label">Email</label>
-<input id="f-tutorEmail" name="tutorEmail" class="form-control" required type="email" value="">
+<div class="form-input-wrapper"><i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+<input id="f-tutorEmail" name="tutorEmail" class="form-control" placeholder="e.g. name@example.com" required type="email" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorAddress" class="form-label">Address in Malaysia</label>
-<textarea id="f-tutorAddress" name="tutorAddress" class="form-control" required rows="4">
-</textarea>
+<div class="form-input-wrapper"><i class="fas fa-location-dot input-icon" aria-hidden="true"></i>
+<textarea id="f-tutorAddress" name="tutorAddress" class="form-control" placeholder="House number, street, postcode, city and state" required rows="4"></textarea>
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorAccountUsername" class="form-label">Username</label>
-<input id="f-tutorAccountUsername" name="accountUsername" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-user-circle input-icon" aria-hidden="true"></i>
+<input id="f-tutorAccountUsername" name="accountUsername" class="form-control" placeholder="Choose a username" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-tutorAccountPassword" class="form-label">Password</label>
-<input id="f-tutorAccountPassword" name="accountPassword" class="form-control" required type="password" value="">
+<div class="form-input-wrapper"><i class="fas fa-lock input-icon" aria-hidden="true"></i>
+<input id="f-tutorAccountPassword" name="accountPassword" class="form-control" placeholder="Create a password" required type="password" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-certificateName" class="form-label">Certificate Name</label>
-<input id="f-certificateName" name="certificateName" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-certificate input-icon" aria-hidden="true"></i>
+<input id="f-certificateName" name="certificateName" class="form-control" placeholder="e.g. Ijazah in Quranic Recitation" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-certificateYear" class="form-label">Certificate Year</label>
-<input id="f-certificateYear" name="certificateYear" class="form-control" required type="number" value="2024" min="1900" max="2026" step="1">
+<div class="form-input-wrapper"><i class="fas fa-calendar input-icon" aria-hidden="true"></i>
+<input id="f-certificateYear" name="certificateYear" class="form-control" placeholder="e.g. 2024" required type="number" value="" min="1900" max="2026" step="1">
+</div>
 </div>
 <div class="form-group">
 <label for="f-certificateDescription" class="form-label">Certificate Description</label>
-<textarea id="f-certificateDescription" name="certificateDescription" class="form-control" required rows="4">
-</textarea>
+<div class="form-input-wrapper"><i class="fas fa-file-lines input-icon" aria-hidden="true"></i>
+<textarea id="f-certificateDescription" name="certificateDescription" class="form-control" placeholder="Describe your qualification and issuing institution" required rows="4"></textarea>
+</div>
 </div>
 <div class="form-group">
 <label for="f-certificateFile" class="form-label">Upload Ijazah Certificate</label>
-<input id="f-certificateFile" name="certificateFile" class="form-control" required type="file" accept=".pdf,.png,.jpg,.jpeg"><small>One PDF, JPG or PNG document.</small>
+<div class="form-input-wrapper"><i class="fas fa-file-arrow-up input-icon" aria-hidden="true"></i>
+<input id="f-certificateFile" name="certificateFile" class="form-control" required type="file" accept=".pdf,.png,.jpg,.jpeg">
+</div><small>One PDF, JPG or PNG document.</small>
 </div>
 </div>
 <label class="eligibility">
@@ -154,36 +176,51 @@
 <div class="portal-fields">
 <div class="form-group">
 <label for="f-studFName" class="form-label">First Name</label>
-<input id="f-studFName" name="studFName" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-user input-icon" aria-hidden="true"></i>
+<input id="f-studFName" name="studFName" class="form-control" placeholder="e.g. Ahmad" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-studLName" class="form-label">Last Name</label>
-<input id="f-studLName" name="studLName" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-user input-icon" aria-hidden="true"></i>
+<input id="f-studLName" name="studLName" class="form-control" placeholder="e.g. Hakimi" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-studICNum" class="form-label">IC Number</label>
-<input id="f-studICNum" name="studICNum" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-id-card input-icon" aria-hidden="true"></i>
+<input id="f-studICNum" name="studICNum" class="form-control" placeholder="e.g. 000101-03-1234" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-studPhone" class="form-label">Phone Number</label>
-<input id="f-studPhone" name="studPhone" class="form-control" required type="tel" value="">
+<div class="form-input-wrapper"><i class="fas fa-phone input-icon" aria-hidden="true"></i>
+<input id="f-studPhone" name="studPhone" class="form-control" placeholder="e.g. 016-262 4834" required type="tel" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-studEmail" class="form-label">Email</label>
-<input id="f-studEmail" name="studEmail" class="form-control" required type="email" value="">
+<div class="form-input-wrapper"><i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+<input id="f-studEmail" name="studEmail" class="form-control" placeholder="e.g. name@example.com" required type="email" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-studAddress" class="form-label">Address in Malaysia</label>
-<textarea id="f-studAddress" name="studAddress" class="form-control" required rows="4">
-</textarea>
+<div class="form-input-wrapper"><i class="fas fa-location-dot input-icon" aria-hidden="true"></i>
+<textarea id="f-studAddress" name="studAddress" class="form-control" placeholder="House number, street, postcode, city and state" required rows="4"></textarea>
+</div>
 </div>
 <div class="form-group">
 <label for="f-studAccountUsername" class="form-label">Username</label>
-<input id="f-studAccountUsername" name="accountUsername" class="form-control" required type="text" value="">
+<div class="form-input-wrapper"><i class="fas fa-user-circle input-icon" aria-hidden="true"></i>
+<input id="f-studAccountUsername" name="accountUsername" class="form-control" placeholder="Choose a username" required type="text" value="">
+</div>
 </div>
 <div class="form-group">
 <label for="f-studAccountPassword" class="form-label">Password</label>
-<input id="f-studAccountPassword" name="accountPassword" class="form-control" required type="password" value="">
+<div class="form-input-wrapper"><i class="fas fa-lock input-icon" aria-hidden="true"></i>
+<input id="f-studAccountPassword" name="accountPassword" class="form-control" placeholder="Create a password" required type="password" value="">
+</div>
 </div>
 </div>
 <label class="eligibility">
@@ -210,6 +247,10 @@
             <span>Verified Quran Tutors</span>
           </div>
         </a>
+        <div class="footer-project-logos" aria-label="University and final year project">
+          <img src="assets/img/LOGO_UiTM_OUTLINE_3(WHITE).png" alt="Universiti Teknologi MARA" class="footer-uitm-logo" loading="lazy">
+          <img src="assets/img/FinalYearProject_BLACK_logo.png" alt="Final Year Project" class="footer-fyp-logo" loading="lazy">
+        </div>
         <p class="footer-desc">
           A centralized, secure digital platform designed to help Muslims in Malaysia search, coordinate, and book verified Quran tutors with verified credentials.
         </p>
@@ -255,11 +296,11 @@
         <div class="footer-contact-info">
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
-            <p>Level 12, Islamic Education Tech Centre, Mutiara Damansara, 47820 PJ, Selangor, Malaysia</p>
+            <p>UiTM Cawangan Kelantan, Kampus Machang, 18500 Machang, Kelantan, Malaysia</p>
           </div>
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
-            <p>+60 3-7735 9182</p>
+            <p>+60 16-262 4834</p>
           </div>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>

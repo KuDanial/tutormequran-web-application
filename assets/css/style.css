@@ -1801,6 +1801,13 @@ textarea.form-control {
 .portal-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; }
 .portal-fields .form-group:has(textarea), .portal-fields .form-group:has(input[type="file"]) { grid-column: 1 / -1; }
 .portal-page .form-control { padding-left: 1rem; min-width: 0; }
+.portal-page .form-input-wrapper .form-control { padding-left: 3rem; }
+.portal-page .form-input-wrapper .input-icon { width: 1.1rem; text-align: center; pointer-events: none; }
+.portal-page .form-input-wrapper:has(textarea) { align-items: flex-start; }
+.portal-page .form-input-wrapper:has(textarea) .input-icon { top: 1rem; }
+.footer-project-logos { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin: -.25rem 0 1.25rem; }
+.footer-project-logos .footer-uitm-logo { width: 130px; height: 75px; object-fit: contain; }
+.footer-project-logos .footer-fyp-logo { width: 145px; height: 85px; object-fit: cover; object-position: center; filter: brightness(0) invert(1); }
 .portal-page textarea { resize: vertical; min-height: 110px; }
 .portal-page input[type="file"] { padding: 1rem; border-style: dashed; }
 .portal-page input::file-selector-button { border: 0; padding: .5rem .75rem; border-radius: var(--radius-sm); background: var(--primary-light); color: var(--primary-dark); margin-right: .75rem; font: inherit; cursor: pointer; }
