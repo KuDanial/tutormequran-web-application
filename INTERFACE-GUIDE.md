@@ -60,7 +60,7 @@ The original attribute spellings below are taken from the screenshots. Labels in
 ### Relationships retained
 
 - One Account has one role profile; there is no public Admin registration option.
-- A tutor has one certificate record. Replacements update that submission.
+- Registration starts with one certificate submission. A pending application may replace its evidence. Higher qualifications require a new submission, while earlier approved evidence is retained; the updated ERD should therefore allow one tutor to have multiple certificate submissions.
 - A booking connects one student and one tutor.
 - A booking has zero or one payment. A replacement receipt remains on the same payment.
 - A booking has zero or one feedback record. The sample completed booking TMQ-1008 already has feedback; the new-review form offers TMQ-0992 instead.
@@ -83,7 +83,22 @@ These concepts are **not all present in the supplied ERD**. They are interface p
 | Tutor payment destination | Verified recipient name, payment method/identifier | Direct DuitNow instructions need a trustworthy recipient record. Only placeholders exist now. |
 | FAQ | `faqID`, question/keyword, answer, status | FR15 and the FAQ maintenance pages require a record that is absent from the shown ERD. |
 
-Do not overload `tutorStatus` with Public/Private/Draft, or `payStatus` with tutor acknowledgement. The report's payment composition remains **Verified / Pending / Rejected**, based on the admin decision. Revenue totals include verified payments only.
+Do not overload `tutorStatus` with Public/Private/Draft, or `payStatus` with tutor acknowledgement. The report's payment composition now includes **Verified / Pending / Underpaid / Rejected / Reupload Required**, based on the admin decision. Revenue totals include verified payments only. The sample composition totals 60: 45 verified, 6 pending, and 3 each underpaid, rejected and reupload required.
+
+## Latest interface refinements
+
+- Student/tutor rolebars are replaced by native HTML profile dropdowns, including the previous workspace links, Dashboard, My Profile, Change Password and Logout. Admin retains its sidebar and receives the same dropdown pattern. Logout navigates to the login preview; it performs no session operation.
+- Personal forms collect a required profile-picture file, gender, date of birth, phone, state and address. Student and tutor registration include the new picture/gender/DOB fields. Tutor teaching forms include teaching area, mode, languages, rate, biography and sample lesson tags with an inert Add Lesson button. Optional tutor socials are limited to Facebook, Instagram, LinkedIn, X/Twitter and TikTok.
+- Approved qualifications are read-only. `tutor/tutor-certificate-upload.html` represents a higher-qualification submission. `tutor/tutor-certificate-replace.html` retains the pending-application correction screen. New qualifications do not overwrite the existing approval while review is pending.
+- Password forms are previews for users changing their own passwords. Admin user-edit screens offer password-reset assistance; an administrator is not asked to know another user's current password.
+- Availability warnings are placeholders. Do not hard-code today's date in HTML: later code should use Malaysia's current calendar date for the input minimum and enforce it independently on the server, alongside end-after-start and overlap checks.
+- PDF, Excel and print buttons are interface-only. No export file or print action is generated yet.
+- Payment reconciliation shows expected, paid and outstanding amounts. RM4 paid toward RM40 leaves RM36 outstanding. An evidence correction does not itself transfer funds. Missing payment stays unverified; invalid evidence can be rejected. A backend may need multiple immutable receipt/transfer entries attached to one booking-payment aggregate to track a top-up without losing the original evidence.
+- Cancellation before the booking date records Cancelled by Student or Cancelled by Tutor. On that date in Malaysia time it records Late Cancellation plus the cancelling party. Payment disputes go to admin review; no automatic fee or refund is implemented.
+- A physical-to-online request remains pending until accepted by the tutor. Rejection preserves the original arrangement, with rescheduling/cancellation discussed through chat. `student/student-chat.html` and `tutor/tutor-chat.html` contain a shared sample physical booking TMQ-1025. It is explicitly separate from existing online booking TMQ-1024.
+- `admin/admin-settings.html` previews editable-field controls. Approved qualifications, certificates and verification status cannot be unlocked by these checkboxes. Settings do not actually change permissions or other forms in this static version.
+
+For the next ERD revision, add profile photo/gender/DOB, teaching area/languages/lesson tags, optional social URLs, certificate-submission history, cancellation party/timestamp, mode-change request state, booking conversation/message records and editable-field configuration. Actual password changes and permission enforcement remain backend work.
 
 ## Scope and sample consistency
 
@@ -97,6 +112,6 @@ Do not overload `tutorStatus` with Public/Private/Draft, or `payStatus` with tut
 
 ## Validation
 
-Static checks passed for all 73 HTML pages: nesting, duplicate IDs, input labels, headings, relative links, local assets and anchors, and absence of scripts/form-processing actions. Chrome layout checks passed for all 73 pages at 1280px and 375px, with 11 key screens also checked at 320px. The checks confirmed that the tutor registration tab shows certificate upload without pricing, and that the pending applicant's teaching fields are disabled. Representative screenshots were visually reviewed. Existing Google Fonts and Font Awesome remain external style dependencies.
+Static checks passed for all 77 HTML pages: nesting, duplicate IDs, input labels, headings, relative links, local assets and anchors, and absence of scripts/form-processing actions. Latest Chrome frame checks passed for the 71 registration, tutor-detail and workspace pages at 1280px and 375px, including page overflow and open profile-menu boundaries. Existing Google Fonts and Font Awesome remain external style dependencies.
 
 The original landing-page social and policy links still use placeholder `#` destinations; real social profiles and policy text were not supplied. All application flow links resolve to local pages.

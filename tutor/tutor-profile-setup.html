@@ -23,36 +23,11 @@
       </ul>
 
       <!-- Action Buttons -->
-      <details class="portal-mobile"><summary>Menu</summary>
-<ul>
-<li><a href="../index.html">Home</a>
-</li>
-<li><a href="../tutors.html">Browse</a>
-</li>
-<li><a href="../why-us.html">Why Us</a>
-</li>
-<li><a href="../help.html">Help</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-<li><a href="../index.html">Exit demo</a>
-</li>
-<li><a href="tutor-account-edit.html">My account</a>
-</li>
-</ul></details>
-<div class="nav-actions">
-        <a href="../index.html" class="btn btn-text btn-sm" id="nav-login-btn">Exit demo</a>
-        <a href="tutor-account-edit.html" class="btn btn-primary btn-sm" id="nav-register-btn">My account</a>
 
-      </div>
+<details class="profile-menu"><summary aria-label="Open tutor profile menu"><span class="profile-menu-avatar" aria-hidden="true"><i class="fas fa-user"></i></span><span class="profile-menu-name">Nur Hana</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel" aria-label="Profile navigation"><strong>Nur Hana</strong><a href="tutor-dashboard.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3Z"/></svg><span>Dashboard</span></a><a href="tutor-account-edit.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>My Profile</span></a><a href="tutor-certificate-view.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg><span>Certificate review</span></a><a href="tutor-account-edit.html#change-password"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span>Change Password</span></a><a href="../login.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H4v16h5m5-12 4 4-4 4m-6-4h13"/></svg><span>Logout</span></a><small>Interface demo · no session is active.</small></nav></details>
     </div>
   </nav>
-<div class="portal-rolebar">
-<div class="container"><span class="portal-role">Tutor application</span>
-<nav aria-label="Workspace"><a href="tutor-dashboard.html">Application</a><a href="tutor-certificate-view.html">Certificate review</a><a href="tutor-account-edit.html">Personal details</a>
-</nav>
-</div>
-</div>
+
 <main id="main-content" class="container portal-main">
 <header class="portal-heading">
 <div><span class="section-subtitle">Tutor studio</span>
@@ -86,44 +61,44 @@
 <div class="portal-fields">
 <div class="form-group">
 <label for="f-displayName" class="form-label">Display Name</label>
-<input id="f-displayName" name="displayName" class="form-control" type="text" value="Ustazah Nur Hana">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><input id="f-displayName" name="displayName" class="form-control" type="text" value="Ustazah Nur Hana"></div>
 </div>
 <div class="form-group">
 <label for="f-qualification" class="form-label">Qualification</label>
-<input id="f-qualification" name="qualification" class="form-control" type="text" value="Ijazah in Quranic Recitation">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg><input id="f-qualification" name="qualification" class="form-control" type="text" value="Ijazah in Quranic Recitation" readonly></div>
 </div>
 <div class="form-group">
 <label for="f-hourlyRate" class="form-label">Hourly Rate (RM)</label>
-<input id="f-hourlyRate" name="hourlyRate" class="form-control" type="number" value="" min="1" step="0.01">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M5 12h1m12 0h1"/></svg><input id="f-hourlyRate" name="hourlyRate" class="form-control" type="number" value="" min="1" step="0.01"></div>
 </div>
 <div class="form-group">
 <label for="f-teachingMode" class="form-label">Teaching Mode</label>
-<select id="f-teachingMode" name="teachingMode" class="form-control">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><select id="f-teachingMode" name="teachingMode" class="form-control">
 <option selected>Online</option>
 <option>Physical</option>
 <option>Both</option>
-</select>
+</select></div>
 </div>
 <div class="form-group">
 <label for="f-teachingState" class="form-label">Teaching State</label>
-<input id="f-teachingState" name="teachingState" class="form-control" type="text" value="Selangor">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><input id="f-teachingState" name="teachingState" class="form-control" type="text" value="Selangor"></div>
 </div>
 <div class="form-group">
 <label for="f-shortBio" class="form-label">Short Biography</label>
-<textarea id="f-shortBio" name="shortBio" class="form-control" rows="4">
-</textarea>
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 3 6 6-12 12H3v-6Zm-2 2 6 6"/></svg><textarea id="f-shortBio" name="shortBio" class="form-control" rows="4">
+</textarea></div>
 </div>
 <div class="form-group">
 <label for="f-availabilityDate" class="form-label">Available Date</label>
-<input id="f-availabilityDate" name="availabilityDate" class="form-control" type="date" value="">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><input id="f-availabilityDate" name="availabilityDate" class="form-control" type="date" value=""></div>
 </div>
 <div class="form-group">
 <label for="f-startTime" class="form-label">Start Time</label>
-<input id="f-startTime" name="startTime" class="form-control" type="time" value="">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><input id="f-startTime" name="startTime" class="form-control" type="time" value=""></div>
 </div>
 <div class="form-group">
 <label for="f-endTime" class="form-label">End Time</label>
-<input id="f-endTime" name="endTime" class="form-control" type="time" value="">
+<div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><input id="f-endTime" name="endTime" class="form-control" type="time" value=""></div>
 </div>
 </div>
 <div class="portal-actions">
@@ -143,7 +118,7 @@
 <p class="portal-muted">Complete and save the profile and an available slot before publishing. The next link previews a completed example.</p>
 </section>
 <div class="portal-actions"><a href="tutor-profile-ready.html" class="btn btn-outline btn-sm">Preview completed profile & visibility</a>
-</div><details class="demo-switch"><summary>Prototype · sample data</summary>
+</div><section class="portal-card"><h2>Additional profile information</h2><form class="portal-form"><button type="submit" hidden disabled aria-hidden="true"></button><div class="portal-fields"><div class="form-group"><label class="form-label" for="x-profilePicture">Profile Picture (required)</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="2"/><path d="m3 18 6-6 4 4 3-3 5 5"/></svg><input id="x-profilePicture" name="profilePicture" class="form-control" type="file" required accept="image/png,image/jpeg"></div></div><div class="form-group"><label class="form-label" for="x-gender">Gender</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><select id="x-gender" name="gender" class="form-control"><option>Male</option><option selected>Female</option><option>Prefer not to say</option></select></div></div><div class="form-group"><label class="form-label" for="x-dateOfBirth">Date of Birth</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><input id="x-dateOfBirth" name="dateOfBirth" class="form-control" type="date" value="2000-01-01"></div></div><div class="form-group"><label class="form-label" for="x-teachingLocation">Teaching Location / Area</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><input id="x-teachingLocation" name="teachingLocation" class="form-control" type="text" value="Petaling Jaya"></div></div><div class="form-group"><label class="form-label" for="x-languages">Language Available</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><input id="x-languages" name="languages" class="form-control" type="text" value="Bahasa Melayu, English"></div></div><div class="form-group full-field"><span id="lesson-focus-label" class="form-label">Lesson Focus</span><div class="lesson-tags" role="group" aria-labelledby="lesson-focus-label"><span class="lesson-tag">Tajweed</span><span class="lesson-tag">Quran Reading</span><span class="lesson-tag">Iqra</span><span class="lesson-tag">Hafazan</span><span class="lesson-tag">Talaqqi</span><button type="button" class="btn btn-outline">Add Lesson</button></div><p class="field-help">Sample lesson tags. Adding or removing lessons is not active in this preview.</p></div></div><button type="button" class="btn btn-primary">Save Changes</button></form></section><section class="portal-card"><h2>Social networks · optional</h2><form class="portal-form"><button type="submit" hidden disabled aria-hidden="true"></button><div class="portal-fields"><div class="form-group"><label class="form-label" for="x-facebook">Facebook</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><input id="x-facebook" name="facebook" class="form-control" type="url" value=""></div></div><div class="form-group"><label class="form-label" for="x-instagram">Instagram</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><input id="x-instagram" name="instagram" class="form-control" type="url" value=""></div></div><div class="form-group"><label class="form-label" for="x-linkedin">LinkedIn</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><input id="x-linkedin" name="linkedin" class="form-control" type="url" value=""></div></div><div class="form-group"><label class="form-label" for="x-twitter">X / Twitter</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><input id="x-twitter" name="twitter" class="form-control" type="url" value=""></div></div><div class="form-group"><label class="form-label" for="x-tiktok">TikTok</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4" ry="10"/><path d="M2 12h20"/></svg><input id="x-tiktok" name="tiktok" class="form-control" type="url" value=""></div></div></div><button type="button" class="btn btn-primary">Save Social Networks</button></form></section><p class="field-help">Approved qualification changes require a new certificate review.</p><details class="demo-switch"><summary>Prototype · sample data</summary>
 <p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
 <div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
 </div></details>
