@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorMeQuran - Centralized Quran Tutor Booking Platform Malaysia</title>
+  
+  <!-- Meta Descriptions (SEO Best Practices) -->
+  <meta name="description" content="Book certified Quran tutors in Malaysia. Verify Ijazah certificates, check real-time availability, and schedule online or physical classes securely.">
+  <meta name="keywords" content="Quran tutor Malaysia, learn Quran, verified Ustaz, Ustazah, hifz memorization, tajweed classes, TutorMeQuran">
+  
+  <!-- FontAwesome & App Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="nav-logo">
+        <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="logo-img">
+        <div class="logo-text">
+          TutorMeQuran
+          <span>Verified Quran Tutors</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="tutors.html" class="nav-link">Browse</a></li>
+        <li><a href="why-us.html" class="nav-link">Why Us</a></li>
+        <li><a href="help.html" class="nav-link">Help</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-text btn-sm" id="nav-login-btn">Log In</a>
+        <a href="register.html" class="btn btn-primary btn-sm" id="nav-register-btn">Register</a>
+        <!-- Hamburger Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="tutors.html" class="mobile-nav-link">Browse</a></li>
+      <li><a href="why-us.html" class="mobile-nav-link">Why Us</a></li>
+      <li><a href="help.html" class="mobile-nav-link">Help</a></li>
+      <li style="margin-top: 2rem;"><a href="login.html" class="btn btn-outline btn-block">Log In</a></li>
+      <li style="margin-top: 1rem;"><a href="register.html" class="btn btn-primary btn-block">Register</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-certificate"></i> JAKIM & Jais Certified Standards
+        </div>
+        <h1 class="hero-title" id="main-hero-title">
+          Find Your Certified <span class="highlight">Quran Tutor</span> in Malaysia
+        </h1>
+        <p class="hero-subtitle">
+          TutorMeQuran is Malaysia's centralized booking platform connecting students with verified Quran teachers. Learn Tajweed, Quranic recitation, and Hifz memorization at your own pace through secure physical or online classes.
+        </p>
+        <div class="hero-actions">
+          <a href="tutors.html" class="btn btn-primary btn-lg" id="hero-find-tutor-btn">
+            Find Tutors <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="register.html?role=tutor" class="btn btn-secondary btn-lg" id="hero-become-tutor-btn">
+            Become a Tutor
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right Hero Column -->
+      <div class="hero-image-container" style="min-height: 380px; background: radial-gradient(circle, rgba(13, 148, 136, 0.12) 0%, rgba(255, 255, 255, 0) 70%); border-radius: var(--radius-xl); border: 2px dashed rgba(13, 148, 136, 0.15); display: flex; align-items: center; justify-content: center; position: relative;">
+        <!-- Large Islamic Geometric Background Icon -->
+        <i class="fas fa-mosque" style="font-size: 8rem; color: rgba(13, 148, 136, 0.05); position: absolute; pointer-events: none; transform: rotate(-10deg);"></i>
+        
+        <!-- Floating trust badges -->
+        <div class="floating-badge fb-1" style="position: absolute; left: 10%; top: 20%; animation-delay: 0s;">
+          <div class="floating-icon"><i class="fas fa-check-circle"></i></div>
+          <div class="floating-info">
+            <h4>Ijazah Verified</h4>
+            <p>100% Certified Teachers</p>
+          </div>
+        </div>
+        
+        <div class="floating-badge fb-2" style="position: absolute; right: 10%; bottom: 25%; animation-delay: 3s;">
+          <div class="floating-icon"><i class="fas fa-star"></i></div>
+          <div class="floating-info">
+            <h4>4.9/5 Rating</h4>
+            <p>From 1,200+ Students</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Filter Bar -->
+  <div class="container search-container" id="search-section">
+    <div class="search-box">
+      <form id="search-form">
+        <div class="search-grid">
+          
+          <!-- Search input -->
+          <div class="search-field">
+            <label for="search-keyword"><i class="fas fa-search"></i> Search Tutor</label>
+            <div class="search-input-wrapper">
+              <i class="fas fa-user-circle"></i>
+              <input type="text" id="search-keyword" placeholder="Search by name, expertise...">
+            </div>
+          </div>
+
+          <!-- Price filter -->
+          <div class="search-field">
+            <label for="filter-rate"><i class="fas fa-money-bill-wave"></i> Hourly Rate</label>
+            <div class="search-input-wrapper">
+              <i class="fas fa-ring"></i>
+              <select id="filter-rate">
+                <option value="">Any Price</option>
+                <option value="under-30">Below RM 30 / hr</option>
+                <option value="30-50">RM 30 - RM 50 / hr</option>
+                <option value="over-50">Above RM 50 / hr</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Class type filter -->
+          <div class="search-field">
+            <label for="filter-class-type"><i class="fas fa-laptop-house"></i> Class Type</label>
+            <div class="search-input-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+              <select id="filter-class-type">
+                <option value="">All Types</option>
+                <option value="online">Online (Google Meet/WhatsApp)</option>
+                <option value="physical">Physical Class (Face-to-face)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Gender filter -->
+          <div class="search-field">
+            <label for="filter-gender"><i class="fas fa-users"></i> Tutor Gender</label>
+            <div class="search-input-wrapper">
+              <i class="fas fa-venus-mars"></i>
+              <select id="filter-gender">
+                <option value="">Any Gender</option>
+                <option value="male">Ustaz (Male)</option>
+                <option value="female">Ustazah (Female)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Search button -->
+          <button type="submit" class="btn btn-primary search-submit-btn" id="search-btn">
+            <i class="fas fa-search"></i> Find Tutor
+          </button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Stats & Highlight Overview (Modified: Removed 99.4% Verification Rate) -->
+  <section class="container" style="margin-top: 4rem;">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-number">250+</div>
+        <div class="stat-label">Certified Tutors</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1,200+</div>
+        <div class="stat-label">Active Students</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15,000+</div>
+        <div class="stat-label">Hours Completed</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section section-bg-light" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Simplified Process</span>
+        <h2 class="section-title">How TutorMeQuran Works</h2>
+        <p class="section-description">
+          We bridge the gap by making the selection, scheduling, and learning of the Holy Quran simple, secure, and completely transparent.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon flex-center"><i class="fas fa-search"></i></div>
+          <h3 class="step-title">1. Search & Filter Tutors</h3>
+          <p class="step-desc">
+            Browse verified tutors based on pricing, timing, location, gender, and specialized course types like Tajweed or Memorization.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon flex-center"><i class="fas fa-calendar-check"></i></div>
+          <h3 class="step-title">2. View & Book Real-Time</h3>
+          <p class="step-desc">
+            Check the tutor's live availability calendar and book a lesson slot instantly. Avoid overlapping schedules and double bookings.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon flex-center"><i class="fas fa-book-open"></i></div>
+          <h3 class="step-title">3. Learn and Review</h3>
+          <p class="step-desc">
+            Attend classes via external channels (Google Meet or Physical Home Tuition), pay securely, and leave feedback for your tutor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action Banner Section -->
+  <section class="container" style="margin-bottom: 6rem; margin-top: 2rem;">
+    <div class="cta-banner">
+      <div class="cta-container">
+        <h2 class="cta-title">Start Your Quranic Journey</h2>
+        <p class="cta-desc">
+          Sign up today as a student to book a trial class, or register as a certified tutor to start teaching and earning across Malaysia.
+        </p>
+        <div class="cta-actions">
+          <a href="register.html?role=student" class="btn btn-light" id="cta-student-register">Register as Student</a>
+          <a href="register.html?role=tutor" class="btn btn-outline-white" id="cta-tutor-register">Join as Tutor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-top">
+      
+      <!-- Column 1: Brand -->
+      <div class="footer-brand">
+        <a href="index.html" class="footer-brand-logo">
+          <img src="assets/img/TutorMeQuran_LOGO_White.png" alt="TutorMeQuran Logo" class="footer-brand-img">
+          <div class="footer-brand-text">
+            TutorMeQuran
+            <span>Verified Quran Tutors</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          A centralized, secure digital platform designed to help Muslims in Malaysia search, coordinate, and book verified Quran tutors with verified credentials.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-link flex-center" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link flex-center" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link flex-center" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Navigation links -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tutors.html">Browse</a></li>
+          <li><a href="why-us.html">Why Us</a></li>
+          <li><a href="help.html">Help</a></li>
+          <li><a href="login.html">Member Log In</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Rules & Legal -->
+      <div>
+        <h4 class="footer-col-title">Our Guidelines</h4>
+        <ul class="footer-links">
+          <li><a href="#">Tutor Quality Codes</a></li>
+          <li><a href="#">Verification Audits</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">PDPA Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact details -->
+      <div>
+        <h4 class="footer-col-title">Get In Touch</h4>
+        <div class="footer-contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Level 12, Islamic Education Tech Centre, Mutiara Damansara, 47820 PJ, Selangor, Malaysia</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>+60 3-7735 9182</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>support@tutormequran.com.my</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TutorMeQuran. Built for CSP600 Project, Malaysia. All Rights Reserved. Compliant with Malaysian PDPA 2010.</p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
