@@ -54,27 +54,34 @@
 <p>Verified qualifications. Clear hourly rates. Lessons that fit your routine.</p>
 </div><a href="register.html#tutor-application" class="btn btn-outline btn-sm">Apply to teach</a>
 </header>
-<section class="portal-card ">
-<h2>Find your fit</h2>
-<form class="portal-form">
+<section class="search-box" aria-label="Find your fit">
+<form>
 <button type="submit" hidden disabled aria-hidden="true">
 </button>
-<div class="portal-fields">
-<div class="form-group">
-<label for="f-searchTutor" class="form-label">Search Tutor</label>
-<input id="f-searchTutor" name="searchTutor" class="form-control" type="search" value="">
+<div class="search-grid">
+<div class="search-field">
+<label for="f-searchTutor"><i class="fas fa-search" aria-hidden="true"></i> Search Tutor</label>
+<div class="search-input-wrapper">
+<i class="fas fa-user-circle" aria-hidden="true"></i>
+<input id="f-searchTutor" name="searchTutor" type="search" placeholder="Search by name, expertise..." value="">
 </div>
-<div class="form-group">
-<label for="f-filterMode" class="form-label">Teaching Mode</label>
-<select id="f-filterMode" name="filterMode" class="form-control">
+</div>
+<div class="search-field">
+<label for="f-filterMode"><i class="fas fa-laptop-house" aria-hidden="true"></i> Teaching Mode</label>
+<div class="search-input-wrapper">
+<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+<select id="f-filterMode" name="filterMode">
 <option selected>Any mode</option>
 <option>Online</option>
 <option>Physical</option>
 </select>
 </div>
-<div class="form-group">
-<label for="f-filterState" class="form-label">State</label>
-<select id="f-filterState" name="filterState" class="form-control">
+</div>
+<div class="search-field">
+<label for="f-filterState"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> State</label>
+<div class="search-input-wrapper">
+<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+<select id="f-filterState" name="filterState">
 <option selected>Any state</option>
 <option>Selangor</option>
 <option>Kuala Lumpur</option>
@@ -82,9 +89,12 @@
 <option>Kelantan</option>
 </select>
 </div>
-<div class="form-group">
-<label for="f-filterRate" class="form-label">Hourly Budget</label>
-<select id="f-filterRate" name="filterRate" class="form-control">
+</div>
+<div class="search-field">
+<label for="f-filterRate"><i class="fas fa-money-bill-wave" aria-hidden="true"></i> Hourly Budget</label>
+<div class="search-input-wrapper">
+<i class="fas fa-ring" aria-hidden="true"></i>
+<select id="f-filterRate" name="filterRate">
 <option selected>Any rate</option>
 <option>Below RM 30</option>
 <option>RM 30–50</option>
@@ -92,10 +102,8 @@
 </select>
 </div>
 </div>
-<div class="portal-actions">
-<button type="button" class="btn btn-primary">Search Tutors</button>
+<button type="button" class="btn btn-primary btn-sm">Search Tutors</button>
 </div>
-<p class="portal-muted">Search controls are an interface preview.</p>
 </form>
 </section>
 <div class="results-heading">
