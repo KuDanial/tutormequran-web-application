@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Submit a request - TutorMeQuran</title><meta name="description" content="Submit a request for your TutorMeQuran account."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="../assets/css/style.css"></head><body class="portal-page student-workspace"><a href="#main-content" class="portal-skip">Skip to content</a>
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="logo-link" id="nav-logo">
+        <img src="../assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="logo-img">
+        <div class="logo-text">
+          TutorMeQuran
+          <span>Verified Quran Tutors</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a>
+</li>
+        <li><a href="../tutors.html" class="nav-link">Browse</a>
+</li>
+        <li><a href="../why-us.html" class="nav-link">Why Us</a>
+</li>
+        <li><a href="../help.html" class="nav-link">Help</a>
+</li>
+      </ul>
+
+      <!-- Action Buttons -->
+
+<details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
+<strong>Ahmad Hakimi</strong>
+<section class="student-menu-group" aria-labelledby="menu-dashboard">
+<h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
+<a href="student-profile-view.html">My Profile</a>
+<a href="student-notifications.html">Notifications</a>
+<details class="student-menu-sub"><summary>Invoice</summary><div>
+<a href="student-invoices.html#pending">Pending</a>
+<a href="student-invoices.html#receipts">Receipts</a>
+</div></details>
+</section>
+<section class="student-menu-group" aria-labelledby="menu-management">
+<h2 id="menu-management">Management</h2>
+<details class="student-menu-sub"><summary>My Bookings</summary><div>
+<a href="student-bookings.html#pending">Pending bookings</a>
+<a href="student-bookings.html#past">Past bookings</a>
+</div></details>
+<a href="student-feedbacks.html">My Feedbacks</a>
+</section>
+<section class="student-menu-group" aria-labelledby="menu-support">
+<h2 id="menu-support">Support</h2>
+<details class="student-menu-sub"><summary>Help Centre</summary><div>
+<a href="student-support-request.html">Submit a request</a>
+<a href="student-contact.html">Contact Us</a>
+</div></details>
+<a href="student-faq.html">FAQ</a>
+</section>
+<a class="student-menu-logout" href="../login.html">Log Out</a>
+</nav></details>
+    </div>
+  </nav>
+
+<main id="main-content" class="container portal-main student-hub">
+<header class="portal-heading"><div><span class="section-subtitle">Your learning journey</span><h1>Submit a request</h1><p>Tell us what happened so your request can be reviewed.</p></div></header>
+<section class="portal-card"><form class="portal-form" data-support-request method="post">
+<div class="form-group"><label class="form-label" for="request-category">What do you need help with?</label><select class="form-control" id="request-category" name="category" required>
+<option value="">Choose a topic</option><option value="billing">Billing or refund</option><option value="attendance">Attendance issue</option><option value="other">Something else</option></select></div>
+<p class="field-help" data-request-guidance>Choose the topic that best describes your request.</p>
+<div class="form-group"><label class="form-label" for="request-booking">Booking ID <span class="field-help">(optional)</span></label><input class="form-control" id="request-booking" name="booking" type="text" maxlength="40" placeholder="For example, TMQ-1024"></div>
+<div class="form-group"><label class="form-label" for="request-description">Describe your request</label><textarea class="form-control" id="request-description" name="description" required rows="5" maxlength="3000" placeholder="Tell us what happened and what you need help with."></textarea></div>
+<div class="form-group"><label class="form-label" for="request-photo">Add a photo <span class="field-help">(optional)</span></label><input class="form-control" id="request-photo" name="photo" type="file" accept="image/jpeg,image/png" aria-describedby="request-photo-help"><small id="request-photo-help">One JPG or PNG, up to 5 MB.</small></div>
+<div class="student-attachment" data-attachment hidden><img alt="Selected support photo preview" data-attachment-image><button type="button" class="btn btn-text btn-sm" data-remove-attachment>Remove photo</button></div>
+<div class="portal-actions"><button type="submit" class="btn btn-primary">Preview request</button><a class="btn btn-outline btn-sm" href="student-help.html">Back to Help Centre</a></div>
+<p class="field-help">Prototype: this form previews your request. It does not send a message or upload your photo.</p>
+<noscript><p>Enable JavaScript to preview your request.</p></noscript>
+</form><div class="student-request-result" data-request-result role="status" hidden></div></section>
+<details class="demo-switch"><summary>Prototype · sample data</summary><p>This is an interface preview. Account actions, bookings, notifications and support requests are not connected to a server.</p></details>
+</main>
+<footer class="footer">
+    <div class="container footer-top">
+
+      <!-- Column 1: Brand -->
+      <div class="footer-brand">
+        <a href="../index.html" class="footer-brand-logo">
+          <img src="../assets/img/TutorMeQuran_LOGO_White.png" alt="TutorMeQuran Logo" class="footer-brand-img">
+          <div class="footer-brand-text">
+            TutorMeQuran
+            <span>Verified Quran Tutors</span>
+          </div>
+        </a>
+        <div class="footer-project-logos" aria-label="University and final year project">
+          <img src="../assets/img/LOGO_UiTM_OUTLINE_3(WHITE).png" alt="Universiti Teknologi MARA" class="footer-uitm-logo" loading="lazy">
+          <img src="../assets/img/FinalYearProject_BLACK_logo.png" alt="Final Year Project" class="footer-fyp-logo" loading="lazy">
+        </div>
+        <p class="footer-desc">
+          A centralized, secure digital platform designed to help Muslims in Malaysia search, coordinate, and book verified Quran tutors with verified credentials.
+        </p>
+
+      </div>
+
+      <!-- Column 2: Navigation links -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a>
+</li>
+          <li><a href="../tutors.html">Browse</a>
+</li>
+          <li><a href="../why-us.html">Why Us</a>
+</li>
+          <li><a href="../help.html">Help</a>
+</li>
+          <li><a href="../login.html">Member Log In</a>
+</li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Rules & Legal -->
+      <div><h4 class="footer-col-title">Explore the Demo</h4>
+<ul class="footer-links">
+<li><a href="../student/student-dashboard.html">Student Dashboard</a>
+</li>
+<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
+</li>
+<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
+</li>
+<li><a href="../report/report-dashboard.html">Report</a>
+</li>
+<li><a href="../chatbot.html">FAQ Chat</a>
+</li>
+</ul>
+</div>
+
+      <!-- Column 4: Contact details -->
+      <div>
+        <h4 class="footer-col-title">Get In Touch</h4>
+        <div class="footer-contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>UiTM Cawangan Kelantan, Kampus Machang, 18500 Machang, Kelantan, Malaysia</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>+60 16-262 4834</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>support@tutormequran.com.my</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
+    </div>
+  </footer><script src="../assets/js/student-workspace.js"></script></body></html>

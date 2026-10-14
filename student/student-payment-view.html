@@ -24,43 +24,53 @@
 
       <!-- Action Buttons -->
 
-<details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><i class="fas fa-user"></i></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel" aria-label="Profile navigation"><strong>Ahmad Hakimi</strong><a href="student-dashboard.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3Z"/></svg><span>Dashboard</span></a><a href="student-profile-edit.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>My Profile</span></a><a href="../tutors.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg><span>Find a tutor</span></a><a href="student-bookings.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><span>My bookings</span></a><a href="student-payment-view.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M5 12h1m12 0h1"/></svg><span>Payments</span></a><a href="student-feedbacks.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Z M7 8h10M7 12h7"/></svg><span>My feedback</span></a><a href="student-chat.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Z M7 8h10M7 12h7"/></svg><span>Messages</span></a><a href="student-profile-edit.html#change-password"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span>Change Password</span></a><a href="../login.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H4v16h5m5-12 4 4-4 4m-6-4h13"/></svg><span>Logout</span></a><small>Interface demo · no session is active.</small></nav></details>
+<details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
+<strong>Ahmad Hakimi</strong>
+<section class="student-menu-group" aria-labelledby="menu-dashboard">
+<h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
+<a href="student-profile-view.html">My Profile</a>
+<a href="student-notifications.html">Notifications</a>
+<details class="student-menu-sub"><summary>Invoice</summary><div>
+<a href="student-invoices.html#pending">Pending</a>
+<a href="student-invoices.html#receipts">Receipts</a>
+</div></details>
+</section>
+<section class="student-menu-group" aria-labelledby="menu-management">
+<h2 id="menu-management">Management</h2>
+<details class="student-menu-sub"><summary>My Bookings</summary><div>
+<a href="student-bookings.html#pending">Pending bookings</a>
+<a href="student-bookings.html#past">Past bookings</a>
+</div></details>
+<a href="student-feedbacks.html">My Feedbacks</a>
+</section>
+<section class="student-menu-group" aria-labelledby="menu-support">
+<h2 id="menu-support">Support</h2>
+<details class="student-menu-sub"><summary>Help Centre</summary><div>
+<a href="student-support-request.html">Submit a request</a>
+<a href="student-contact.html">Contact Us</a>
+</div></details>
+<a href="student-faq.html">FAQ</a>
+</section>
+<a class="student-menu-logout" href="../login.html">Log Out</a>
+</nav></details>
     </div>
   </nav>
 
-<main id="main-content" class="container portal-main">
+<main id="main-content" class="container portal-main booking-simple">
 <header class="portal-heading">
 <div><span class="section-subtitle">Your learning journey</span>
 <h1>Track your payment</h1>
 <p>PAY-1024 · TMQ-1024 · RM 40.00.</p>
 </div><a href="student-booking-view.html" class="btn btn-outline btn-sm">Back to booking</a>
 </header>
-<ol class="journey">
-<li class="done"><span>01</span>
-<div><strong>Booking reserved</strong><small>TMQ-1024</small>
-</div>
-</li>
-<li class="done"><span>02</span>
-<div><strong>Receipt uploaded</strong><small>Student submitted proof</small>
-</div>
-</li>
-<li class="current" aria-current="step"><span>03</span>
-<div><strong>Tutor confirms</strong><small>Check funds received</small>
-</div>
-</li>
-<li class=""><span>04</span>
-<div><strong>Admin verifies</strong><small>Final payment decision</small>
-</div>
-</li>
-</ol>
-<div class="portal-columns">
-<section class="portal-card ">
-<h2>Your receipt</h2>
+<nav class="booking-progress" aria-label="Booking progress"><ol class="booking-journey"><li class="done"><a href="student-booking-view.html" aria-label="Booked: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booked</span></a></li><li class="done"><a href="student-booking-coordinate.html" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></a></li><li class="done"><a href="student-booking-session.html" aria-label="Class: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Class</span></a></li><li class="current" aria-current="step"><a href="student-payment-view.html" aria-label="Payment: current stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></a></li><li class=""><a href="student-payment-verified.html" aria-label="Done: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Done</span></a></li></ol><p class="booking-current-label">Tutor confirms payment</p></nav><div class="booking-quick-summary"><span><strong>TMQ-1024</strong> · Demo booking</span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
+<div class="portal-columns booking-task-layout">
+<details class="booking-disclosure"><summary>Your receipt</summary><div class="booking-disclosure-body">
 <figure class="receipt-paper">
 <figcaption>DUITNOW TRANSFER <span>Sample receipt · not a real transaction</span>
 </figcaption><strong class="receipt-amount">RM 40.00</strong>
 <p>Transfer successful</p>
-<dl class="portal-details">
+<details class="booking-record"><summary>View booking details</summary><dl class="portal-details">
 <div>
 <dt>Recipient</dt>
 <dd>Muhammad Farhan</dd>
@@ -75,18 +85,18 @@
 </div>
 <div>
 <dt>Transaction Date</dt>
-<dd>11 Oct 2026, 2:35 PM</dd>
+<dd>20 Oct 2026, 9:15 PM</dd>
 </div>
 <div>
 <dt>Receipt File</dt>
 <dd>duitnow-TMQ-1024.jpg</dd>
 </div>
-</dl>
+</dl></details>
 </figure>
-</section>
+</div></details>
 <section class="portal-card ">
 <h2>Review status</h2>
-<dl class="portal-details">
+<details class="booking-record"><summary>View booking details</summary><dl class="portal-details">
 <div>
 <dt>Payment ID</dt>
 <dd>PAY-1024</dd>
@@ -101,7 +111,7 @@
 </div>
 <div>
 <dt>Payment Date</dt>
-<dd>11 October 2026</dd>
+<dd>20 October 2026</dd>
 </div>
 <div>
 <dt>Receipt</dt>
@@ -121,28 +131,26 @@
 <dt>Admin Remark</dt>
 <dd>Awaiting tutor acknowledgement and admin review.</dd>
 </div>
-</dl>
+</dl></details>
 <aside class="flow-notice info"><strong>No further payment is needed</strong>
 <p>Your receipt is waiting for review. Your tutor confirms funds received, then an admin verifies the payment.</p>
 </aside>
 </section>
 </div>
-<section class="portal-card ">
-<h2>Payment timeline</h2>
+<details class="booking-disclosure"><summary>Payment timeline</summary><div class="booking-disclosure-body">
 <ol class="activity-list">
-<li><strong>11 Oct, 2:35 PM</strong><span>Student uploaded DuitNow receipt.</span>
+<li><strong>20 Oct, 9:15 PM</strong><span>Student uploaded DuitNow receipt.</span>
 </li>
 <li><strong>Next: tutor acknowledgement</strong><span>Muhammad Farhan checks the transfer.</span>
 </li>
 <li><strong>Next: admin verification</strong><span>Receipt and confirmation are reviewed.</span>
 </li>
 </ol>
-</section>
-<section class="portal-card ">
-<h2>Demo states</h2>
+</div></details>
+<details class="booking-disclosure"><summary>Preview the next step</summary><div class="booking-disclosure-body">
 <div class="portal-actions"><a href="student-payment-verified.html" class="btn btn-outline btn-sm">Verified payment</a><a href="student-payment-rejected.html" class="btn btn-outline btn-sm">Rejected receipt</a>
 </div>
-</section><section class="portal-card"><h2>Payment status guide</h2><div class="status-guide"><div><span class="portal-badge pending">Pending</span><p>Your receipt is waiting for review.</p></div><div><span class="portal-badge good">Verified</span><p>Admin has confirmed the payment.</p></div><div><span class="portal-badge pending">Underpaid</span><p>The paid amount is below the expected fee. Check the outstanding balance and admin instructions.</p></div><div><span class="portal-badge pending">Rejected</span><p>The receipt could not be accepted. Read the admin remark.</p></div><div><span class="portal-badge pending">Reupload Required</span><p>Upload a clearer or correct receipt for the existing payment.</p></div></div><dl class="portal-details"><div><dt>Underpaid example</dt><dd>Expected RM40.00 · Paid RM4.00 · Outstanding RM36.00</dd></div></dl><p class="field-help">Do not pay the full fee again if part of it was received. Confirm the outstanding balance through chat and admin review.</p><div class="portal-actions"><a class="btn btn-outline btn-sm" href="student-payment-upload.html">Upload Correct Receipt</a><a class="btn btn-outline btn-sm" href="student-chat.html">Message Tutor</a></div></section><details class="demo-switch"><summary>Prototype · sample data</summary>
+</div></details><details class="booking-disclosure"><summary>Payment status guide</summary><div class="booking-disclosure-body"><div class="status-guide"><div><span class="portal-badge pending">Pending</span><p>Your receipt is waiting for review.</p></div><div><span class="portal-badge good">Verified</span><p>Admin has confirmed the payment.</p></div><div><span class="portal-badge pending">Underpaid</span><p>The paid amount is below the expected fee. Check the outstanding balance and admin instructions.</p></div><div><span class="portal-badge pending">Rejected</span><p>The receipt could not be accepted. Read the admin remark.</p></div><div><span class="portal-badge pending">Reupload Required</span><p>Upload a clearer or correct receipt for the existing payment.</p></div></div><dl class="portal-details"><div><dt>Underpaid example</dt><dd>Expected RM40.00 · Paid RM4.00 · Outstanding RM36.00</dd></div></dl><p class="field-help">Do not pay the full fee again if part of it was received. Confirm the outstanding balance through chat and admin review.</p><div class="portal-actions"><a class="btn btn-outline btn-sm" href="student-payment-upload.html">Upload Correct Receipt</a><a class="btn btn-outline btn-sm" href="student-chat.html">Message Tutor</a></div></div></details><div class="portal-actions"></div><details class="booking-disclosure booking-preview-picker"><summary>Explore other steps</summary><div class="booking-disclosure-body"><p class="field-help">Separate demo screens. Changes are not saved.</p><nav class="booking-preview-links" aria-label="All booking previews"><a href="student-booking-view.html">1. Booking reserved</a><a href="student-booking-coordinate.html">2. Arrange your class</a><a href="student-booking-session.html">3. Class session</a><a href="student-payment-upload.html">4. Upload receipt</a><a href="student-payment-view.html">5. Tutor confirms payment</a><a href="student-payment-review.html">6. Admin reviews payment</a><a href="student-payment-verified.html">7. Verified and closed</a></nav><div class="portal-actions"><a href="../tutor/tutor-payment-confirm.html" class="btn btn-outline btn-sm">Preview tutor confirmation</a><a href="student-payment-review.html" class="btn btn-primary btn-sm">Preview admin review</a></div></div></details><details class="demo-switch"><summary>Prototype · sample data</summary>
 <p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
 <div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
 </div></details>
@@ -227,4 +235,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
