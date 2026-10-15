@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&amp;logo=css&amp;logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/Status-Interface%20Prototype-0D9488?style=flat-square" alt="Status: Interface prototype">
-  <img src="https://img.shields.io/badge/UiTM-CSP600-6D28D9?style=flat-square" alt="UiTM CSP600 project">
+  <img src="https://img.shields.io/badge/UiTM-CSP600/CSP650-6D28D9?style=flat-square" alt="UiTM CSP600 project">
 </p>
 
 ----
