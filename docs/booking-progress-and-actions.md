@@ -1,0 +1,13 @@
+# Shared booking progress and action safety
+
+Student and tutor booking lists place a progress section at the bottom of every booking card, outside collapsed historical details. Booking and payment detail pages use the same ordered list and labels. Dedicated step pages now use `data-progress-source="page"` to illustrate their own process: Arrange, Class, Payment or Verified. The shared script leaves their static stage markup intact. Progress is informational; existing action buttons provide navigation.
+
+The five stages are Booking → Arrange → Class → Payment → Verified. A rejected or cancelled booking stops the journey and displays a written explanation; it never appears completed. Receipt upload and tutor acknowledgement remain at Payment until admin verification. Animation respects reduced-motion preferences.
+
+Each section has `data-progress-booking` (record ID) and `data-progress-status`. Supported statuses: `requested`, `accepted`, `session`, `completed`, `receipt`, `received`, `issue`, `verified`, `rejected`, `cancelled`. Historical records have their own IDs and fixed verified statuses. Only sections marked `data-progress-source="session"` read the current static booking's sessionStorage. `booking:updated` refreshes them after local changes. Opening a later step does not itself complete earlier stages in saved state. List cards and booking overview pages read local status; step-page bars show page context and do not write that status.
+
+For PHP, use a shared template to output this same semantic HTML with the database status. Replace both `data-progress-source="session"` and `data-progress-source="page"` with database-rendered status and replace the prototype workflow with server actions. Render completion and verification from trusted booking records, not the filename or browser storage. The prototype has no admin verification writer; do not interpret visiting the verified page as admin approval.
+
+Dangerous actions have `action-danger`, a visible label and an icon. Final actions and logout declare `data-confirm`; `action-confirmation.js` intercepts clicks and form submissions before other handlers, including keyboard submission. The browser's accessible confirmation dialog can be cancelled without running the action. Links opening cancellation forms are red but do not prompt until the final action. Ordinary navigation labelled Cancel now says Back.
+
+Confirmations do not implement deletion, cancellation, refunds or server logout. Existing static buttons remain static. PHP must use authorized POST actions with CSRF checks, validate the current record state, report success/failure, and end the server session for logout. Client confirmation is only protection against accidental activation, not a security boundary.

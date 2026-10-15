@@ -35,8 +35,34 @@
       if (location.hash !== link.hash) history.pushState(null, '', link.hash);
       sync();
     });
+    // Menu links select a view, rather than using the panel as a scroll anchor.
+    const isTabHash = (hash) => links.some((link) => link.hash === hash);
+    const startAtTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    menu?.addEventListener('click', (event) => {
+      const link = event.target.closest('a');
+      if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
+      const target = new URL(link.href, location.href);
+      if (target.pathname !== location.pathname || target.search !== location.search || !isTabHash(target.hash)) return;
+      event.preventDefault();
+      if (location.hash !== target.hash) history.pushState(null, '', target.hash);
+      sync();
+      menu.open = false;
+      menu.querySelector('summary').focus({ preventScroll: true });
+      startAtTop();
+    });
     window.addEventListener('popstate', sync);
-    window.addEventListener('hashchange', sync);
+    window.addEventListener('hashchange', () => {
+      sync();
+      if (isTabHash(location.hash)) startAtTop();
+    });
+    // Cross-page links and refreshes may trigger native fragment scrolling after parsing.
+    window.addEventListener('pageshow', () => {
+      if (isTabHash(location.hash)) {
+        sync();
+        startAtTop();
+        requestAnimationFrame(startAtTop);
+      }
+    });
     sync();
   }
 
@@ -94,7 +120,7 @@
     if (!form.reportValidity()) return;
     result.replaceChildren();
     const heading = document.createElement('h2');
-    heading.textContent = 'Request preview — not sent';
+    heading.textContent = 'Request prepared — not sent';
     const summary = document.createElement('p');
     summary.textContent = category.options[category.selectedIndex].text + (form.elements.booking.value.trim() ? ' · ' + form.elements.booking.value.trim() : '');
     const text = document.createElement('p');

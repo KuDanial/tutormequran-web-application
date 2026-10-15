@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -65,12 +65,12 @@
 <div class="form-group"><label class="form-label" for="request-booking">Booking ID <span class="field-help">(optional)</span></label><input class="form-control" id="request-booking" name="booking" type="text" maxlength="40" placeholder="For example, TMQ-1024"></div>
 <div class="form-group"><label class="form-label" for="request-description">Describe your request</label><textarea class="form-control" id="request-description" name="description" required rows="5" maxlength="3000" placeholder="Tell us what happened and what you need help with."></textarea></div>
 <div class="form-group"><label class="form-label" for="request-photo">Add a photo <span class="field-help">(optional)</span></label><input class="form-control" id="request-photo" name="photo" type="file" accept="image/jpeg,image/png" aria-describedby="request-photo-help"><small id="request-photo-help">One JPG or PNG, up to 5 MB.</small></div>
-<div class="student-attachment" data-attachment hidden><img alt="Selected support photo preview" data-attachment-image><button type="button" class="btn btn-text btn-sm" data-remove-attachment>Remove photo</button></div>
-<div class="portal-actions"><button type="submit" class="btn btn-primary">Preview request</button><a class="btn btn-outline btn-sm" href="student-help.html">Back to Help Centre</a></div>
+<div class="student-attachment" data-attachment hidden><img alt="Selected support photo preview" data-attachment-image><button type="button" class="btn btn-text btn-sm action-danger" data-remove-attachment><span class="action-warning-icon" aria-hidden="true">⚠</span> Remove photo</button></div>
+<div class="portal-actions"><button type="submit" class="btn btn-primary">Submit request</button><a class="btn btn-outline btn-sm" href="student-help.html">Back to Help Centre</a></div>
 <p class="field-help">Prototype: this form previews your request. It does not send a message or upload your photo.</p>
 <noscript><p>Enable JavaScript to preview your request.</p></noscript>
 </form><div class="student-request-result" data-request-result role="status" hidden></div></section>
-<details class="demo-switch"><summary>Prototype · sample data</summary><p>This is an interface preview. Account actions, bookings, notifications and support requests are not connected to a server.</p></details>
+
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -106,26 +106,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -152,4 +137,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

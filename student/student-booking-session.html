@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -59,12 +59,9 @@
 <main id="main-content" class="container portal-main booking-simple">
 <header class="portal-heading"><div><span class="section-subtitle">Your lesson</span><h1>Your class is ready</h1><p>The arrangements are agreed. Attend your lesson before moving to payment.</p></div></header>
 
-<nav class="booking-progress" aria-label="Booking progress"><ol class="booking-journey"><li class="done"><a href="student-booking-view.html" aria-label="Booked: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booked</span></a></li><li class="done"><a href="student-booking-coordinate.html" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></a></li><li class="current" aria-current="step"><a href="student-booking-session.html" aria-label="Class: current stage"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></a></li><li class=""><a href="student-payment-upload.html" aria-label="Payment: upcoming stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></a></li><li class=""><a href="student-payment-verified.html" aria-label="Done: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Done</span></a></li></ol><p class="booking-current-label">Class session</p></nav><div class="booking-quick-summary"><span><strong>TMQ-1024</strong> · Demo booking</span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
-<aside class="flow-notice info"><strong>Ready for class · payment not due</strong><p>This preview shows an online class agreed by both participants. For a physical class, the confirmed venue replaces the meeting link.</p></aside><div class="portal-columns booking-task-layout"><details class="booking-disclosure"><summary>Session details</summary><div class="booking-disclosure-body"><dl class="portal-details"><div><dt>Booking</dt><dd>TMQ-1024</dd></div><div><dt>Student</dt><dd>Ahmad Hakimi</dd></div><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Lesson</dt><dd>20 October 2026 · 8:00–9:00 PM MYT</dd></div><div><dt>Focus</dt><dd>Quran recitation & Tajweed</dd></div><div><dt>Lesson fee</dt><dd>RM 40.00 · 1 hour</dd></div></dl><dl class="portal-details"><div><dt>Mode</dt><dd>Online · Google Meet</dd></div><div><dt>Meeting access</dt><dd>Tutor shares the confirmed link in the booking conversation.</dd></div><div><dt>Arrangement confirmation</dt><dd>Student confirmed · Tutor confirmed</dd></div></dl><div class="portal-actions"><a href="student-booking-coordinate.html" class="btn btn-outline btn-sm">Open booking conversation</a></div></div></details><section class="portal-card"><h2>After your lesson</h2><p>Confirm that the session happened. If the tutor was absent or the session was interrupted, discuss it before marking it complete.</p><dl class="portal-details"><div><dt>Student completion</dt><dd>Not confirmed yet</dd></div><div><dt>Tutor completion</dt><dd>Not confirmed yet</dd></div><div><dt>Payment</dt><dd>Available after both confirm completion</dd></div></dl><div class="portal-actions"><a href="student-booking-completed.html" class="btn btn-primary btn-sm">Preview both confirmations</a><a href="student-booking-coordinate.html" class="btn btn-outline btn-sm">Report a session issue in chat</a></div></section></div>
-<details class="booking-disclosure booking-preview-picker"><summary>Explore other steps</summary><div class="booking-disclosure-body"><p class="field-help">Separate demo screens. Changes are not saved.</p><nav class="booking-preview-links" aria-label="All booking previews"><a href="student-booking-view.html">1. Booking reserved</a><a href="student-booking-coordinate.html">2. Arrange your class</a><a href="student-booking-session.html">3. Class session</a><a href="student-payment-upload.html">4. Upload receipt</a><a href="student-payment-view.html">5. Tutor confirms payment</a><a href="student-payment-review.html">6. Admin reviews payment</a><a href="student-payment-verified.html">7. Verified and closed</a></nav><div class="portal-actions"><a href="../tutor/tutor-booking-session.html" class="btn btn-outline btn-sm">Preview tutor session</a></div></div></details><details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
+<section class="booking-progress" aria-label="Booking process" data-progress-booking="TMQ-1024" data-progress-status="session" data-progress-source="page"><ol class="booking-journey"><li class="done"><span class="booking-step" aria-label="Booking: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booking</span></span></li><li class="done"><span class="booking-step" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></span></li><li class="current" aria-current="step"><span class="booking-step" aria-label="Class: current stage"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></span></li><li class=""><span class="booking-step" aria-label="Payment: upcoming stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></span></li><li class=""><span class="booking-step" aria-label="Verified: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Class session - confirm completion after your lesson</p></section><div class="booking-quick-summary"><span><strong>TMQ-1024</strong></span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
+<aside class="flow-notice info"><strong>Ready for class · payment not due</strong><p>This preview shows an online class agreed by both participants. For a physical class, the confirmed venue replaces the meeting link.</p></aside><div class="portal-columns booking-task-layout"><details class="booking-disclosure"><summary>Session details</summary><div class="booking-disclosure-body"><dl class="portal-details"><div><dt>Booking</dt><dd>TMQ-1024</dd></div><div><dt>Student</dt><dd>Ahmad Hakimi</dd></div><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Lesson</dt><dd>20 October 2026 · 8:00–9:00 PM MYT</dd></div><div><dt>Focus</dt><dd>Quran recitation & Tajweed</dd></div><div><dt>Lesson fee</dt><dd>RM 40.00 · 1 hour</dd></div></dl><dl class="portal-details"><div><dt>Mode</dt><dd>Online · Google Meet</dd></div><div><dt>Meeting access</dt><dd>Tutor shares the confirmed link in the booking conversation.</dd></div><div><dt>Arrangement confirmation</dt><dd>Student confirmed · Tutor confirmed</dd></div></dl><div class="portal-actions"><a href="student-booking-coordinate.html" class="btn btn-outline btn-sm">Open booking conversation</a></div></div></details><section class="portal-card"><h2>After your lesson</h2><p>Confirm that the session happened. If the tutor was absent or the session was interrupted, discuss it before marking it complete.</p><dl class="portal-details"><div><dt>Student completion</dt><dd>Not confirmed yet</dd></div><div><dt>Tutor completion</dt><dd>Not confirmed yet</dd></div><div><dt>Payment</dt><dd>Available after both confirm completion</dd></div></dl><div class="portal-actions"><form data-student-class-complete><label class="eligibility"><input type="checkbox" required> I confirm that my class took place.</label><button type="submit" class="btn btn-primary btn-sm">Confirm class completed</button><p data-workflow-error role="status"></p></form></div></section></div>
+
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -100,26 +97,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -146,4 +128,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/booking-progress.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

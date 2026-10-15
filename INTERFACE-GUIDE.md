@@ -1,14 +1,14 @@
 # TutorMeQuran interface guide
 
-This revision follows the supplied CSP600 proposal (sections 1.5, 1.7, 3.2.3, 3.3.3 and 3.4.2) and the two ERD screenshots. It remains a **static HTML/CSS prototype**. No PHP, database, authentication, API, form processing or JavaScript validation has been added. The existing JavaScript and SCSS files are retained; the updated HTML pages do not load the JavaScript file.
+This revision follows the supplied CSP600 proposal (sections 1.5, 1.7, 3.2.3, 3.3.3 and 3.4.2) and the two ERD screenshots. It remains a **static HTML/CSS prototype**. There is no PHP backend, database or server authentication yet. Shared JavaScript provides interface interactions and selected local workflow state; see docs/tutor-workflow.md and docs/booking-progress-and-actions.md for the current behaviour and PHP migration notes.
 
-## Review the demo
+## Page map
 
 1. Start at `index.html`, then browse `tutors.html` and `tutor-detail.html`.
 2. Open `register.html#tutor-application`. A tutor applies with personal/account details and one certificate. Pricing and biography are absent from registration.
-3. Open `tutor/tutor-dashboard.html`: Nur Hana is awaiting verification. Teaching controls are disabled. The application navigation contains certificate and personal-account options only.
-4. Preview `tutor/tutor-application-rejected.html` for a correction/resubmission, or `tutor/tutor-application-approved.html` for approval.
-5. From the approved preview, follow `tutor/tutor-profile-setup.html` and `tutor/tutor-profile-ready.html`. Approval starts a Draft profile; setup comes before a visibility choice.
+3. Open `tutor/tutor-dashboard.html`: Nur Hana is awaiting verification. The two-step progress bar shows Apply complete and Admin verification current. Profile setup and publishing are not application steps.
+4. `tutor/tutor-application-rejected.html` and `tutor/tutor-application-approved.html` retain the correction and approval outcomes. PHP should select the appropriate application state from the database; users do not choose a state through preview buttons.
+5. Use `tutor/tutor-profile-edit.html` for teaching details and `#profile-visibility` on that same page for Draft, Private or Public visibility. The older setup, ready-to-publish, visibility, draft-view and private-view pages are restored as extra reference pages. The main dashboard and registration retain their simplified two-step application progress. Profile view/edit are the shared pages for these states in PHP.
 6. Use `tutor/tutor-dashboard-verified.html` for Muhammad Farhan's established tutor account. This is a separate sample tutor with historical bookings. Profile editing, availability, payments and visibility are available.
 7. Open `student/student-booking-view.html` and `student/student-payment-view.html` to follow booking TMQ-1024.
 8. Open `tutor/tutor-payment-view.html`, then the confirmation or issue screen. `tutor/tutor-payment-received.html` previews an acknowledgement awaiting admin review.
@@ -115,3 +115,15 @@ For the next ERD revision, add profile photo/gender/DOB, teaching area/languages
 Static checks passed for all 77 HTML pages: nesting, duplicate IDs, input labels, headings, relative links, local assets and anchors, and absence of scripts/form-processing actions. Latest Chrome frame checks passed for the 71 registration, tutor-detail and workspace pages at 1280px and 375px, including page overflow and open profile-menu boundaries. Existing Google Fonts and Font Awesome remain external style dependencies.
 
 The original landing-page social and policy links still use placeholder `#` destinations; real social profiles and policy text were not supplied. All application flow links resolve to local pages.
+
+## Extra pages: original tutor step flow
+
+The original Apply -> Admin review -> Set up profile -> Publish flow remains available in these extra pages:
+
+- `tutor/tutor-profile-setup.html` ? initial teaching profile setup.
+- `tutor/tutor-profile-ready.html` ? completed profile and publishing choice.
+- `tutor/tutor-profile-visibility.html` ? visibility controls.
+- `tutor/tutor-profile-draft.html` ? draft profile state.
+- `tutor/tutor-profile-private.html` ? private profile state.
+
+For PHP, the current profile view/edit pages remain the main workflow; these extras illustrate the earlier flow.

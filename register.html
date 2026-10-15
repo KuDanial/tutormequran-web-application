@@ -59,26 +59,15 @@
 </nav>
 <section id="tutor-application" class="portal-card registration-panel">
 <h2>Apply to become a tutor</h2>
-<ol class="journey">
-<li class="current" aria-current="step"><span>01</span>
-<div><strong>Apply</strong><small>Personal details & Ijazah</small>
-</div>
-</li>
-<li class=""><span>02</span>
-<div><strong>Admin review</strong><small>Qualification verification</small>
-</div>
-</li>
-<li class=""><span>03</span>
-<div><strong>Set up profile</strong><small>Pricing & teaching details</small>
-</div>
-</li>
-<li class=""><span>04</span>
-<div><strong>Publish</strong><small>Choose your visibility</small>
-</div>
-</li>
+<section class="booking-progress application-progress" aria-label="Tutor application progress">
+<ol class="booking-journey">
+<li class="current" aria-current="step"><span class="booking-step"><span class="booking-step-dot" aria-hidden="true">1</span><span class="booking-step-label">Apply</span></span></li>
+<li><span class="booking-step"><span class="booking-step-dot" aria-hidden="true">2</span><span class="booking-step-label">Admin verification</span></span></li>
 </ol>
+<p class="booking-current-label">Submit your application for review</p>
+</section>
 <aside class="flow-notice info"><strong>Your teaching journey starts with verification</strong>
-<p>Submit your personal details and one Ijazah certificate. Pricing, biography, availability and publishing become available after admin approval.</p>
+<p>Submit your personal details and one Ijazah certificate. Admin will review your qualifications and notify you of the decision.</p>
 </aside>
 <form class="portal-form">
 <button type="submit" disabled hidden aria-hidden="true">
@@ -165,7 +154,7 @@
 <button type="button" class="btn btn-primary">Submit Tutor Application</button>
 </div>
 </form>
-<p class="prototype-link">Interface preview only. <a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Preview application status</a>
+<p class="prototype-link"><a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">View application status</a>
 </p>
 </section>
 <section id="student-registration" class="portal-card registration-panel">
@@ -232,10 +221,7 @@
 </div>
 </form>
 </section>
-</div><details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
+</div>
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -271,26 +257,11 @@
 </li>
           <li><a href="help.html">Help</a>
 </li>
-          <li><a href="login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="report/report-dashboard.html">Report</a>
-</li>
-<li><a href="chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="help.html">Help Centre</a></li><li><a href="chatbot.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>

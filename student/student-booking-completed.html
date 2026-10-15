@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,21 +51,13 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
 
-<main id="main-content" class="container portal-main booking-simple">
-<header class="portal-heading"><div><span class="section-subtitle">Your lesson</span><h1>Class completed</h1><p>Both participants have confirmed the session. You can now pay your tutor.</p></div></header>
-
-<nav class="booking-progress" aria-label="Booking progress"><ol class="booking-journey"><li class="done"><a href="student-booking-view.html" aria-label="Booked: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booked</span></a></li><li class="done"><a href="student-booking-coordinate.html" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></a></li><li class="current" aria-current="step"><a href="student-booking-session.html" aria-label="Class: current stage"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></a></li><li class=""><a href="student-payment-upload.html" aria-label="Payment: upcoming stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></a></li><li class=""><a href="student-payment-verified.html" aria-label="Done: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Done</span></a></li></ol><p class="booking-current-label">Class session</p></nav><div class="booking-quick-summary"><span><strong>TMQ-1024</strong> · Demo booking</span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
-<aside class="flow-notice info"><strong>Completion confirmed by both participants</strong><p>The class is complete. The booking remains open until the payment receipt is verified by admin.</p></aside><section class="portal-card"><h2>Completion record</h2><dl class="portal-details"><div><dt>Session ended</dt><dd>20 October 2026 · 9:00 PM MYT</dd></div><div><dt>Tutor confirmed completion</dt><dd>20 October 2026 · 9:02 PM MYT</dd></div><div><dt>Student confirmed completion</dt><dd>20 October 2026 · 9:05 PM MYT</dd></div><div><dt>Payment due</dt><dd>RM 40.00</dd></div></dl><div class="portal-actions"><a href="student-payment-upload.html" class="btn btn-primary btn-sm">Continue to payment</a><a href="student-booking-coordinate.html" class="btn btn-outline btn-sm">Open conversation</a></div></section>
-<details class="booking-disclosure booking-preview-picker"><summary>Explore other steps</summary><div class="booking-disclosure-body"><p class="field-help">Separate demo screens. Changes are not saved.</p><nav class="booking-preview-links" aria-label="All booking previews"><a href="student-booking-view.html">1. Booking reserved</a><a href="student-booking-coordinate.html">2. Arrange your class</a><a href="student-booking-session.html">3. Class session</a><a href="student-payment-upload.html">4. Upload receipt</a><a href="student-payment-view.html">5. Tutor confirms payment</a><a href="student-payment-review.html">6. Admin reviews payment</a><a href="student-payment-verified.html">7. Verified and closed</a></nav><div class="portal-actions"></div></div></details><details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
-</main>
+<main id="main-content" class="container portal-main student-hub"><header class="portal-heading"><div><h1>Class completion</h1><p>TMQ-1024 · Quran recitation &amp; Tajweed</p></div></header>
+<section class="booking-progress" aria-label="Booking process" data-progress-booking="TMQ-1024" data-progress-status="completed" data-progress-source="page"><ol class="booking-journey"><li class="done"><span class="booking-step" aria-label="Booking: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booking</span></span></li><li class="done"><span class="booking-step" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></span></li><li class="done"><span class="booking-step" aria-label="Class: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Class</span></span></li><li class="current" aria-current="step"><span class="booking-step" aria-label="Payment: current stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></span></li><li class=""><span class="booking-step" aria-label="Verified: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Class completion - both participants must confirm before payment</p></section><section class="portal-card"><h2>Completion confirmations</h2><p data-student-completion></p><p data-tutor-completion></p><p>Payment becomes available after both participants confirm the lesson.</p><div class="portal-actions"><a href="student-payment-upload.html" class="btn btn-primary">Continue to payment</a><a href="student-booking-coordinate.html" class="btn btn-outline">Open conversation</a></div></section></main>
 <footer class="footer">
     <div class="container footer-top">
 
@@ -100,26 +92,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -146,4 +123,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/booking-progress.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

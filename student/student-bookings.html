@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -59,11 +59,11 @@
 <main id="main-content" class="container portal-main student-hub">
 <header class="portal-heading"><div><span class="section-subtitle">Your learning journey</span><h1>My Bookings</h1><p>Find your next lesson or revisit a past booking.</p></div><a href="../tutors.html" class="btn btn-primary btn-sm">Find a tutor</a></header>
 <nav class="student-tabs" aria-label="Booking views" data-student-tabs><a href="#pending" aria-current="page">Pending bookings</a><a href="#past">Past bookings</a></nav>
-<section id="pending" data-student-panel aria-labelledby="pending-title"><h2 id="pending-title" class="student-panel-title">Pending bookings</h2><article class="portal-card"><span class="portal-badge pending">Reserved</span><h2>Quran recitation &amp; Tajweed</h2><p>Ustaz Muhammad Farhan · Online</p><p><strong>20 Oct 2026 · 8–9 PM MYT</strong><br>TMQ-1024 · RM 40.00</p><div class="portal-actions"><a href="student-booking-view.html" class="btn btn-primary btn-sm">View booking</a></div><p class="field-help">Open your booking to arrange the class, edit the reservation or cancel it.</p></article></section>
-<section id="past" data-student-panel aria-labelledby="past-title"><h2 id="past-title" class="student-panel-title">Past bookings</h2>
-<details class="student-record"><summary><span>Quran recitation &amp; Tajweed<small>6 Oct 2026 · TMQ-1008</small></span><span class="portal-badge good">Completed</span></summary><div><dl class="portal-details"><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Time</dt><dd>8–9 PM MYT</dd></div><div><dt>Mode</dt><dd>Online</dd></div><div><dt>Payment</dt><dd>RM 40.00 · Verified</dd></div></dl><div class="portal-actions"><a href="student-invoices.html#receipts" class="btn btn-outline btn-sm">View receipts</a><a href="student-feedbacks.html" class="btn btn-outline btn-sm">View my feedback</a></div></div></details>
-<details class="student-record"><summary><span>Quran recitation &amp; Tajweed<small>29 Sep 2026 · TMQ-0992</small></span><span class="portal-badge good">Completed</span></summary><div><dl class="portal-details"><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Time</dt><dd>8–9 PM MYT</dd></div><div><dt>Mode</dt><dd>Online</dd></div><div><dt>Payment</dt><dd>RM 40.00 · Verified</dd></div></dl><div class="portal-actions"><a href="student-invoices.html#receipts" class="btn btn-outline btn-sm">View receipts</a></div></div></details>
-</section><details class="demo-switch"><summary>Prototype · sample data</summary><p>This is an interface preview. Account actions, bookings, notifications and support requests are not connected to a server.</p></details></main>
+<section id="pending" data-student-panel aria-labelledby="pending-title"><h2 id="pending-title" class="student-panel-title">Pending bookings</h2><article class="portal-card"><span class="portal-badge pending" data-booking-status>Awaiting tutor decision</span><h2>Quran recitation &amp; Tajweed</h2><p>Ustaz Muhammad Farhan · Online</p><p><strong>20 Oct 2026 · 8–9 PM MYT</strong><br>TMQ-1024 · RM 40.00</p><div class="portal-actions"><a href="student-booking-view.html" class="btn btn-primary btn-sm">View booking</a></div><p class="field-help">Open your booking to arrange the class, edit the reservation or cancel it.</p><section class="booking-progress booking-progress-compact" aria-label="Booking progress for TMQ-1024" data-progress-booking="TMQ-1024" data-progress-status="requested" data-progress-source="session"><ol class="booking-journey"><li class="current" aria-current="step"><span class="booking-step" aria-label="Booking: current stage"><span class="booking-step-dot" aria-hidden="true">1</span><span class="booking-step-label">Booking</span></span></li><li class=""><span class="booking-step" aria-label="Arrange: upcoming stage"><span class="booking-step-dot" aria-hidden="true">2</span><span class="booking-step-label">Arrange</span></span></li><li class=""><span class="booking-step" aria-label="Class: upcoming stage"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></span></li><li class=""><span class="booking-step" aria-label="Payment: upcoming stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></span></li><li class=""><span class="booking-step" aria-label="Verified: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Waiting for tutor acceptance</p></section></article></section>
+<section id="past" data-student-panel aria-labelledby="past-title"><h2 id="past-title" class="student-panel-title">Past bookings</h2><article class="portal-card" data-rejected-list hidden><h2>TMQ-1024 · Ustaz Muhammad Farhan</h2><p>Rejected · <span data-booking-reason></span></p><a href="student-booking-view.html" class="btn btn-outline btn-sm">View decision</a><section class="booking-progress booking-progress-compact" aria-label="Booking progress for TMQ-1024" data-progress-booking="TMQ-1024" data-progress-status="rejected" data-progress-source="session"><ol class="booking-journey"><li class="stopped"><span class="booking-step" aria-label="Booking: stopped"><span class="booking-step-dot" aria-hidden="true">!</span><span class="booking-step-label">Booking</span></span></li><li class=""><span class="booking-step" aria-label="Arrange: stopped"><span class="booking-step-dot" aria-hidden="true">2</span><span class="booking-step-label">Arrange</span></span></li><li class=""><span class="booking-step" aria-label="Class: stopped"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></span></li><li class=""><span class="booking-step" aria-label="Payment: stopped"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></span></li><li class=""><span class="booking-step" aria-label="Verified: stopped"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Booking rejected · no payment due</p></section></article>
+<article class="portal-card"><details class="student-record"><summary><span>Quran recitation &amp; Tajweed<small>6 Oct 2026 · TMQ-1008</small></span><span class="portal-badge good">Completed</span></summary><div><dl class="portal-details"><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Time</dt><dd>8–9 PM MYT</dd></div><div><dt>Mode</dt><dd>Online</dd></div><div><dt>Payment</dt><dd>RM 40.00 · Verified</dd></div></dl><div class="portal-actions"><a href="student-invoices.html#receipts" class="btn btn-outline btn-sm">View receipts</a><a href="student-feedbacks.html" class="btn btn-outline btn-sm">View my feedback</a></div></div></details><section class="booking-progress booking-progress-compact" aria-label="Booking progress for TMQ-1008" data-progress-booking="TMQ-1008" data-progress-status="verified"><ol class="booking-journey"><li class="done"><span class="booking-step" aria-label="Booking: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Booking</span></span></li><li class="done"><span class="booking-step" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Arrange</span></span></li><li class="done"><span class="booking-step" aria-label="Class: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Class</span></span></li><li class="done"><span class="booking-step" aria-label="Payment: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Payment</span></span></li><li class="done"><span class="booking-step" aria-label="Verified: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Payment verified · booking closed</p></section></article>
+<article class="portal-card"><details class="student-record"><summary><span>Quran recitation &amp; Tajweed<small>29 Sep 2026 · TMQ-0992</small></span><span class="portal-badge good">Completed</span></summary><div><dl class="portal-details"><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Time</dt><dd>8–9 PM MYT</dd></div><div><dt>Mode</dt><dd>Online</dd></div><div><dt>Payment</dt><dd>RM 40.00 · Verified</dd></div></dl><div class="portal-actions"><a href="student-invoices.html#receipts" class="btn btn-outline btn-sm">View receipts</a></div></div></details><section class="booking-progress booking-progress-compact" aria-label="Booking progress for TMQ-0992" data-progress-booking="TMQ-0992" data-progress-status="verified"><ol class="booking-journey"><li class="done"><span class="booking-step" aria-label="Booking: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Booking</span></span></li><li class="done"><span class="booking-step" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Arrange</span></span></li><li class="done"><span class="booking-step" aria-label="Class: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Class</span></span></li><li class="done"><span class="booking-step" aria-label="Payment: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Payment</span></span></li><li class="done"><span class="booking-step" aria-label="Verified: complete"><span class="booking-step-dot" aria-hidden="true">✓</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Payment verified · booking closed</p></section></article>
+</section></main>
 <footer class="footer">
     <div class="container footer-top">
 
@@ -98,26 +98,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -144,4 +129,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/booking-progress.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

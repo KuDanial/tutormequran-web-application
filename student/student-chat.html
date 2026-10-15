@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -63,10 +63,7 @@
 <p>Agree on location and class mode before the class · sample booking TMQ-1025.</p>
 </div>
 </header>
-<section class="portal-card"><h2>Booking conversation</h2><dl class="portal-details"><div><dt>Booking ID</dt><dd>TMQ-1025 · sample physical booking</dd></div><div><dt>Student</dt><dd>Ahmad Hakimi</dd></div><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Date & Time</dt><dd>21 October 2026 · 8:00 PM–9:00 PM MYT</dd></div><div><dt>Class Mode</dt><dd>Physical · Online change pending</dd></div><div><dt>Location</dt><dd>Shah Alam · exact venue to be agreed</dd></div><div><dt>Payment</dt><dd>Not due · pay after class completion</dd></div></dl></section><section class="portal-card"><h2>Message Ustaz Muhammad Farhan</h2><div class="booking-messages" aria-label="Conversation"><article class="chat-bubble"><strong>Ahmad · 10:00 AM</strong><p>Assalamualaikum. Could you confirm the physical class location before the class?</p></article><article class="chat-bubble chat-reply"><strong>Ustaz Farhan · 10:05 AM</strong><p>Waalaikumussalam. I teach in Shah Alam. Let us agree on a suitable venue and confirm the address here first.</p></article><article class="chat-bubble"><strong>Ahmad · 10:10 AM</strong><p>That is too far for me to travel. Could this lesson be online instead? I have requested a mode change.</p></article><article class="chat-bubble chat-reply"><strong>Ustaz Farhan · 10:12 AM</strong><p>I will review the request. Please wait for the booking mode to be confirmed before the class.</p></article></div><form class="portal-form"><button type="submit" hidden disabled aria-hidden="true"></button><div class="portal-fields"><div class="form-group"><label class="form-label" for="x-chatMessage">Your Message</label><textarea id="x-chatMessage" name="chatMessage" class="form-control" rows="3"></textarea></div></div><button type="button" class="btn btn-primary">Send</button></form><p class="field-help">Sample conversation only. Messages are not sent or stored.</p></section><details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
+<section class="portal-card"><h2>Booking conversation</h2><dl class="portal-details"><div><dt>Booking ID</dt><dd>TMQ-1025 · sample physical booking</dd></div><div><dt>Student</dt><dd>Ahmad Hakimi</dd></div><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Date & Time</dt><dd>21 October 2026 · 8:00 PM–9:00 PM MYT</dd></div><div><dt>Class Mode</dt><dd>Physical · Online change pending</dd></div><div><dt>Location</dt><dd>Shah Alam · exact venue to be agreed</dd></div><div><dt>Payment</dt><dd>Not due · pay after class completion</dd></div></dl></section><section class="portal-card"><h2>Message Ustaz Muhammad Farhan</h2><div class="booking-messages" aria-label="Conversation"><article class="chat-bubble"><strong>Ahmad · 10:00 AM</strong><p>Assalamualaikum. Could you confirm the physical class location before the class?</p></article><article class="chat-bubble chat-reply"><strong>Ustaz Farhan · 10:05 AM</strong><p>Waalaikumussalam. I teach in Shah Alam. Let us agree on a suitable venue and confirm the address here first.</p></article><article class="chat-bubble"><strong>Ahmad · 10:10 AM</strong><p>That is too far for me to travel. Could this lesson be online instead? I have requested a mode change.</p></article><article class="chat-bubble chat-reply"><strong>Ustaz Farhan · 10:12 AM</strong><p>I will review the request. Please wait for the booking mode to be confirmed before the class.</p></article></div><form class="portal-form"><button type="submit" hidden disabled aria-hidden="true"></button><div class="portal-fields"><div class="form-group"><label class="form-label" for="x-chatMessage">Your Message</label><textarea id="x-chatMessage" name="chatMessage" class="form-control" rows="3"></textarea></div></div><button type="button" class="btn btn-primary">Send</button></form><p class="field-help">Sample conversation only. Messages are not sent or stored.</p></section>
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -102,26 +99,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -148,4 +130,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

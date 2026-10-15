@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -61,7 +61,7 @@
 <section class="portal-card student-next-lesson"><span class="portal-badge good">Next lesson</span><h2>Quran recitation &amp; Tajweed</h2><p>Ustaz Muhammad Farhan</p><p><strong>20 October · 8–9 PM MYT</strong><br>Online · TMQ-1024</p><div class="portal-actions"><a href="student-booking-view.html" class="btn btn-primary">View booking</a><a href="../tutors.html" class="btn btn-outline">Find a tutor</a></div></section>
 <nav class="student-shortcuts" aria-label="Your account"><a href="student-bookings.html#pending"><strong>My Bookings</strong><span>Upcoming and past lessons</span></a><a href="student-invoices.html#pending"><strong>Invoice</strong><span>Pending fees and receipts</span></a><a href="student-notifications.html"><strong>Notifications</strong><span>Booking and payment updates</span></a></nav>
 <p class="student-help-link">Need a hand? <a href="student-help.html">Visit the Help Centre</a>.</p>
-<details class="demo-switch"><summary>Prototype · sample data</summary><p>This is an interface preview. Account actions, bookings, notifications and support requests are not connected to a server.</p></details>
+
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -97,26 +97,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -143,4 +128,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

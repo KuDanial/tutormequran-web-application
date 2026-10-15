@@ -24,51 +24,24 @@
 
       <!-- Action Buttons -->
 
-<details class="profile-menu"><summary aria-label="Open tutor profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Muhammad Farhan</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel" aria-label="Profile navigation"><strong>Muhammad Farhan</strong><a href="tutor-dashboard-verified.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v11h-6v-7H9v7H3Z"/></svg><span>Dashboard</span></a><a href="tutor-profile-view.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>My Profile</span></a><a href="tutor-availability.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><span>Availability</span></a><a href="tutor-bookings.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><span>Bookings</span></a><a href="tutor-payments.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M5 12h1m12 0h1"/></svg><span>Payments</span></a><a href="tutor-certificate-verified.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg><span>Certificate</span></a><a href="tutor-chat.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 15a3 3 0 0 1-3 3H8l-5 3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3Z M7 8h10M7 12h7"/></svg><span>Messages</span></a><a href="tutor-profile-edit.html#change-password"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><span>Change Password</span></a><a href="../login.html"><svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4H4v16h5m5-12 4 4-4 4m-6-4h13"/></svg><span>Logout</span></a><small>Interface demo · no session is active.</small></nav></details>
+<details class="profile-menu"><summary aria-label="Open tutor profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Muhammad Farhan</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel tutor-menu-panel" aria-label="Tutor navigation">
+<strong>Tutor Account</strong>
+<section class="student-menu-group" aria-labelledby="menu-dashboard"><h2 id="menu-dashboard"><a href="tutor-dashboard-verified.html">Dashboard</a></h2>
+<a href="tutor-profile-view.html">My Profile</a><a href="tutor-notifications.html">Notifications</a>
+<details class="student-menu-sub"><summary>Payments</summary><div><a href="tutor-payment-qr.html">DuitNow QR</a><a href="tutor-payments.html#pending">Pending confirmation</a><a href="tutor-payments.html#received">Received</a></div></details></section>
+<section class="student-menu-group" aria-labelledby="menu-management"><h2 id="menu-management">Management</h2>
+<details class="student-menu-sub"><summary>My Bookings</summary><div><a href="tutor-bookings.html#pending">Pending bookings</a><a href="tutor-bookings.html#past">Past bookings</a></div></details>
+<a href="tutor-availability.html">My Availability</a><a href="tutor-certificate-verified.html">My Certificate</a><a href="tutor-feedbacks.html">Student Feedback</a></section>
+<section class="student-menu-group" aria-labelledby="menu-support"><h2 id="menu-support">Support</h2>
+<details class="student-menu-sub"><summary>Help Centre</summary><div><a href="tutor-support-request.html">Submit a request</a><a href="tutor-contact.html">Contact Us</a></div></details><a href="tutor-faq.html">FAQ</a></section>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a></nav></details>
     </div>
   </nav>
 
-<main id="main-content" class="container portal-main booking-simple">
-<header class="portal-heading">
-<div><span class="section-subtitle">Tutor studio</span>
-<h1>Confirm funds received</h1>
-<p>Your acknowledgement will be shown to the student and admin.</p>
-</div>
-</header><nav class="booking-progress" aria-label="Booking progress"><ol class="booking-journey"><li class="done"><a href="../student/student-booking-view.html" aria-label="Booked: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booked</span></a></li><li class="done"><a href="../student/student-booking-coordinate.html" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></a></li><li class="done"><a href="../student/student-booking-session.html" aria-label="Class: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Class</span></a></li><li class="current" aria-current="step"><a href="../student/student-payment-view.html" aria-label="Payment: current stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></a></li><li class=""><a href="../student/student-payment-verified.html" aria-label="Done: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Done</span></a></li></ol><p class="booking-current-label">Tutor confirms payment</p></nav><div class="booking-quick-summary"><span><strong>TMQ-1024</strong> · Demo booking</span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
-<section class="portal-card ">
-<h2>Confirm payment PAY-1024</h2>
-<dl class="portal-details">
-<div>
-<dt>Payment ID</dt>
-<dd>PAY-1024</dd>
-</div>
-<div>
-<dt>Booking ID</dt>
-<dd>TMQ-1024</dd>
-</div>
-<div>
-<dt>Payment Amount</dt>
-<dd>RM 40.00</dd>
-</div>
-<div>
-<dt>Payment Date</dt>
-<dd>20 October 2026</dd>
-</div>
-</dl>
-<label class="eligibility">
-<input type="checkbox" name="receiptChecked"> I have checked my bank account and received RM 40.00 for booking TMQ-1024.</label>
-<div class="portal-actions">
-<a href="tutor-payment-received.html" class="btn btn-primary btn-sm">Preview funds confirmed</a><a href="tutor-payment-view.html" class="btn btn-outline btn-sm">Back</a>
-</div>
-</section>
-<aside class="flow-notice info"><strong>Admin review remains required</strong>
-<p>Tutor acknowledgement and admin payment verification are recorded separately. This confirmation does not mark the payment Verified.</p>
-</aside>
-<details class="booking-disclosure"><summary>Preview the next state</summary><div class="booking-disclosure-body"><a href="tutor-payment-received.html" class="btn btn-outline btn-sm">View acknowledged payment</a>
-</div></details><details class="booking-disclosure booking-preview-picker"><summary>Explore other steps</summary><div class="booking-disclosure-body"><p class="field-help">Separate demo screens. Changes are not saved.</p><nav class="booking-preview-links" aria-label="All booking previews"><a href="../student/student-booking-view.html">1. Booking reserved</a><a href="../student/student-booking-coordinate.html">2. Arrange your class</a><a href="../student/student-booking-session.html">3. Class session</a><a href="../student/student-payment-upload.html">4. Upload receipt</a><a href="../student/student-payment-view.html">5. Tutor confirms payment</a><a href="../student/student-payment-review.html">6. Admin reviews payment</a><a href="../student/student-payment-verified.html">7. Verified and closed</a></nav><div class="portal-actions"></div></div></details><details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
+<main id="main-content" class="container portal-main student-hub tutor-hub">
+<header class="portal-heading"><div><span class="section-subtitle">Tutor studio</span><h1>Confirm funds received</h1><p>Check your bank account before confirming this student's payment.</p></div></header>
+<section class="booking-progress" aria-label="Booking process" data-progress-booking="TMQ-1024" data-progress-status="receipt" data-progress-source="page"><ol class="booking-journey"><li class="done"><span class="booking-step" aria-label="Booking: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booking</span></span></li><li class="done"><span class="booking-step" aria-label="Arrange: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Arrange</span></span></li><li class="done"><span class="booking-step" aria-label="Class: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Class</span></span></li><li class="current" aria-current="step"><span class="booking-step" aria-label="Payment: current stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></span></li><li class=""><span class="booking-step" aria-label="Verified: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Payment - check the transfer before confirming receipt</p></section>
+<section class="portal-card"><h2>PAY-1024 · RM 40.00</h2><p>Ahmad Hakimi · Booking TMQ-1024</p><form data-payment-confirm><label class="eligibility"><input type="checkbox" name="receiptChecked" required> I have checked my bank account and received RM 40.00 for booking TMQ-1024.</label><div class="portal-actions"><button type="submit" class="btn btn-primary">Confirm funds received</button><a class="btn btn-outline btn-sm" href="tutor-payment-view.html">Back to receipt</a></div><p data-workflow-error role="status"></p></form></section><p class="field-help">Your acknowledgement is separate from admin verification. Only admin can mark the payment Verified.</p>
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -104,26 +77,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="tutor-help.html">Help Centre</a></li><li><a href="tutor-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -150,4 +108,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/booking-progress.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

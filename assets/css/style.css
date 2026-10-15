@@ -1493,6 +1493,9 @@ textarea.form-control {
   font-size: 1.5rem;
   font-weight: 800;
   color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 }
 
 .footer-brand-text span {
@@ -1876,6 +1879,11 @@ textarea.form-control {
 .student-tabs a { flex: 1; text-align: center; padding: .8rem 1rem; min-height: 44px; border-radius: var(--radius-sm); font-weight: 600; }
 .student-tabs a[aria-current="page"] { color: var(--primary-dark); background: white; box-shadow: var(--shadow-sm); }
 .student-hub [hidden] { display: none !important; }
+.tutor-hub .portal-card > h2 { margin-top: .75rem; }
+.tutor-decline { margin-top: 1.25rem; border-top: 1px solid var(--border); }
+.tutor-decline > summary { cursor: pointer; min-height: 44px; padding: 1rem 0; color: var(--text-muted); }
+.tutor-hub [role="status"]:not(:empty) { margin-top: 1rem; color: var(--text-main); }
+[data-receipt-image] { max-width: 100%; max-height: 460px; object-fit: contain; margin: 1rem 0; }
 .student-panel-title { font-size: 1.1rem; margin-bottom: 1rem; }
 .student-list-item { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; padding: 1.25rem 0; }
 .student-list-item + .student-list-item { border-top: 1px solid var(--border); }
@@ -2061,17 +2069,35 @@ textarea.form-control {
 .booking-simple .portal-heading h1 { font-size: clamp(1.65rem, 4vw, 2.2rem); }
 .booking-simple .portal-heading p { font-size: 1rem; }
 .booking-progress { margin-bottom: 1.25rem; padding: 1.5rem .5rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+.portal-card > .booking-progress-compact { margin: 1.25rem 0 0; padding: 1.25rem 0 0; border: 0; border-top: 1px solid var(--border); border-radius: 0; box-shadow: none; }
+.booking-progress-compact .booking-current-label { font-size: .875rem; }
+.booking-journey .stopped .booking-step-dot { color: #991b1b; background: #fef2f2; border-color: #b91c1c; font-weight: 700; }
+.booking-progress[data-progress-status="rejected"] .booking-current-label,
+.booking-progress[data-progress-status="cancelled"] .booking-current-label { color: #991b1b; }
+/* Destructive actions use text and a symbol as well as colour. */
+.portal-page .action-danger,
+.portal-page .profile-menu-panel .action-danger,
+.portal-page .tutor-decline > summary.action-danger { color: #b91c1c; }
+.portal-page .btn.action-danger { background: #fff; border: 1px solid #b91c1c; min-height: 44px; }
+.portal-page .btn-danger.action-danger { color: #fff; background: #b91c1c; }
+.portal-page .action-danger:hover { color: #991b1b; background: #fef2f2; }
+.portal-page .btn-danger.action-danger:hover { color: #fff; background: #991b1b; }
+.portal-page .action-danger:focus-visible { outline: 3px solid #b91c1c; outline-offset: 3px; }
+.action-warning-icon { display: inline-block; margin-right: .25rem; font-weight: 700; }
+.action-warning { padding: .85rem 1rem; border-left: 3px solid #b45309; border-radius: .35rem; color: #78350f; background: #fffbeb; line-height: 1.6; }
+.portal-card > .student-record { border: 0; margin: 0; }
 .booking-journey { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); list-style: none; margin: 0; padding: 0; }
+.application-progress .booking-journey { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .booking-journey li { position: relative; min-width: 0; text-align: center; }
 .booking-journey li:not(:last-child)::after { content: ""; position: absolute; top: 20px; left: calc(50% + 25px); width: calc(100% - 50px); height: 2px; background: var(--border); }
 .booking-journey li.done::after { background: var(--primary); }
-.booking-journey a { display: flex; flex-direction: column; align-items: center; gap: .65rem; color: var(--text-muted); padding: .1rem .1rem .4rem; border-radius: var(--radius-sm); }
+.booking-journey a, .booking-journey .booking-step { display: flex; flex-direction: column; align-items: center; gap: .65rem; color: var(--text-muted); padding: .1rem .1rem .4rem; border-radius: var(--radius-sm); }
 .booking-step-dot { position: relative; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg-card); font-size: 1rem; }
 .booking-step-label { font-size: .9rem; font-weight: 600; }
 .booking-journey .done .booking-step-dot { border-color: var(--primary); color: var(--primary-dark); background: var(--primary-light); }
-.booking-journey .current a, .booking-journey .done a { color: var(--primary-dark); }
+.booking-journey .current a, .booking-journey .done a, .booking-journey .current .booking-step, .booking-journey .done .booking-step { color: var(--primary-dark); }
 .booking-journey .current .booking-step-dot { border-color: var(--primary-light); font-weight: 700; }
-.booking-journey .current .booking-step-dot::after { content: ""; position: absolute; inset: -2px; border: 3px solid transparent; border-top-color: var(--primary); border-right-color: var(--primary); border-radius: 50%; animation: booking-step-turn 2.8s linear infinite; }
+.booking-journey .current .booking-step-dot::after { content: ""; position: absolute; inset: -2px; border: 3px solid transparent; border-top-color: var(--primary); border-right-color: var(--primary); border-radius: 50%; animation: booking-step-turn 2.4s linear infinite; }
 .booking-current-label { margin: .9rem 0 0; text-align: center; color: var(--primary-dark); font-weight: 600; font-size: .95rem; }
 .booking-quick-summary { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.5rem; color: var(--text-muted); font-size: .9rem; margin: 0 0 1.5rem; }
 .booking-quick-summary strong { color: var(--text-main); }

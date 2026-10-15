@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -59,18 +59,15 @@
 <main id="main-content" class="container portal-main booking-simple">
 <header class="portal-heading"><div><span class="section-subtitle">Your lesson</span><h1>Arrange your class</h1><p>Use the booking conversation to agree on how and where your lesson will happen.</p></div></header>
 
-<nav class="booking-progress" aria-label="Booking progress"><ol class="booking-journey"><li class="done"><a href="student-booking-view.html" aria-label="Booked: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booked</span></a></li><li class="current" aria-current="step"><a href="student-booking-coordinate.html" aria-label="Arrange: current stage"><span class="booking-step-dot" aria-hidden="true">2</span><span class="booking-step-label">Arrange</span></a></li><li class=""><a href="student-booking-session.html" aria-label="Class: upcoming stage"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></a></li><li class=""><a href="student-payment-upload.html" aria-label="Payment: upcoming stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></a></li><li class=""><a href="student-payment-verified.html" aria-label="Done: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Done</span></a></li></ol><p class="booking-current-label">Arrange your class</p></nav><div class="booking-quick-summary"><span><strong>TMQ-1024</strong> · Demo booking</span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
+<section class="booking-progress" aria-label="Booking process" data-progress-booking="TMQ-1024" data-progress-status="accepted" data-progress-source="page"><ol class="booking-journey"><li class="done"><span class="booking-step" aria-label="Booking: complete"><span class="booking-step-dot" aria-hidden="true">&#10003;</span><span class="booking-step-label">Booking</span></span></li><li class="current" aria-current="step"><span class="booking-step" aria-label="Arrange: current stage"><span class="booking-step-dot" aria-hidden="true">2</span><span class="booking-step-label">Arrange</span></span></li><li class=""><span class="booking-step" aria-label="Class: upcoming stage"><span class="booking-step-dot" aria-hidden="true">3</span><span class="booking-step-label">Class</span></span></li><li class=""><span class="booking-step" aria-label="Payment: upcoming stage"><span class="booking-step-dot" aria-hidden="true">4</span><span class="booking-step-label">Payment</span></span></li><li class=""><span class="booking-step" aria-label="Verified: upcoming stage"><span class="booking-step-dot" aria-hidden="true">5</span><span class="booking-step-label">Verified</span></span></li></ol><p class="booking-current-label" aria-live="polite">Arrange your class</p></section><div class="booking-quick-summary"><span><strong>TMQ-1024</strong></span><span>20 Oct · 8–9 PM</span><span>RM 40.00</span></div>
 <div class="portal-columns booking-task-layout"><section class="portal-card"><h2>Booking conversation</h2><p class="portal-muted">Ahmad Hakimi & Ustaz Muhammad Farhan · TMQ-1024</p>
 <div class="booking-messages" data-booking-messages aria-live="polite" aria-relevant="additions">
 <div class="portal-message"><strong>Ahmad · Student</strong><p>Assalamualaikum. Can we focus on Tajweed? Please confirm where we will meet for the class.</p><small>19 Oct · 10:00 AM MYT</small></div>
 <div class="portal-message booking-message-tutor"><strong>Ustaz Farhan · Tutor</strong><p>Waalaikumussalam. Yes, we will practise recitation and pronunciation. Let us confirm the online meeting details or physical venue here before the lesson.</p><small>19 Oct · 10:05 AM MYT</small></div>
-</div><form class="portal-chat-compose" data-booking-chat><div class="form-group"><label for="booking-message" class="form-label">Message about this booking</label><textarea id="booking-message" class="form-control" rows="3" required maxlength="2000" placeholder="Ask about the meeting link, location or learning plan..."></textarea></div><button class="btn btn-primary" type="submit">Preview message</button></form><p class="field-help">Preview messages appear only on this page and are not sent to the tutor.</p></section><section class="portal-card"><h2>Confirm before the lesson</h2><details class="booking-record"><summary>View booking details</summary><dl class="portal-details"><div><dt>Booking</dt><dd>TMQ-1024</dd></div><div><dt>Student</dt><dd>Ahmad Hakimi</dd></div><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Lesson</dt><dd>20 October 2026 · 8:00–9:00 PM MYT</dd></div><div><dt>Focus</dt><dd>Quran recitation & Tajweed</dd></div><div><dt>Lesson fee</dt><dd>RM 40.00 · 1 hour</dd></div></dl></details><div class="booking-mode-options">
+</div><form class="portal-chat-compose" data-booking-chat><div class="form-group"><label for="booking-message" class="form-label">Message about this booking</label><textarea id="booking-message" class="form-control" rows="3" required maxlength="2000" placeholder="Ask about the meeting link, location or learning plan..."></textarea></div><button class="btn btn-primary" type="submit">Send message</button></form><p class="field-help">Preview messages appear only on this page and are not sent to the tutor.</p></section><section class="portal-card"><h2>Confirm before the lesson</h2><details class="booking-record"><summary>View booking details</summary><dl class="portal-details"><div><dt>Booking</dt><dd>TMQ-1024</dd></div><div><dt>Student</dt><dd>Ahmad Hakimi</dd></div><div><dt>Tutor</dt><dd>Ustaz Muhammad Farhan</dd></div><div><dt>Lesson</dt><dd>20 October 2026 · 8:00–9:00 PM MYT</dd></div><div><dt>Focus</dt><dd>Quran recitation & Tajweed</dd></div><div><dt>Lesson fee</dt><dd>RM 40.00 · 1 hour</dd></div></dl></details><div class="booking-mode-options">
 <details><summary>Online class arrangement</summary><dl class="portal-details"><div><dt>Platform</dt><dd>Google Meet · sample choice</dd></div><div><dt>Meeting link</dt><dd>Waiting for the tutor to share a link in this conversation.</dd></div></dl><p>Confirm the link works and agree on an alternative contact method before class.</p></details>
-<details><summary>Physical class arrangement</summary><dl class="portal-details"><div><dt>Area</dt><dd>Shah Alam, Selangor · sample choice</dd></div><div><dt>Exact venue</dt><dd>Waiting for both participants to agree on the address and meeting point.</dd></div></dl><p>Confirm the venue, arrival time and directions in this conversation. A change of mode needs agreement from both participants.</p></details></div><aside class="flow-notice info"><strong>Agreement needed</strong><p>Both participants should confirm the time, class mode and meeting details. No payment is due at this stage.</p></aside><div class="portal-actions"><a href="student-booking-session.html" class="btn btn-primary btn-sm">Preview agreed class</a><a href="student-booking-view.html" class="btn btn-outline btn-sm">Back to reservation</a></div></section></div>
-<details class="booking-disclosure booking-preview-picker"><summary>Explore other steps</summary><div class="booking-disclosure-body"><p class="field-help">Separate demo screens. Changes are not saved.</p><nav class="booking-preview-links" aria-label="All booking previews"><a href="student-booking-view.html">1. Booking reserved</a><a href="student-booking-coordinate.html">2. Arrange your class</a><a href="student-booking-session.html">3. Class session</a><a href="student-payment-upload.html">4. Upload receipt</a><a href="student-payment-view.html">5. Tutor confirms payment</a><a href="student-payment-review.html">6. Admin reviews payment</a><a href="student-payment-verified.html">7. Verified and closed</a></nav><div class="portal-actions"></div></div></details><details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
+<details><summary>Physical class arrangement</summary><dl class="portal-details"><div><dt>Area</dt><dd>Shah Alam, Selangor · sample choice</dd></div><div><dt>Exact venue</dt><dd>Waiting for both participants to agree on the address and meeting point.</dd></div></dl><p>Confirm the venue, arrival time and directions in this conversation. A change of mode needs agreement from both participants.</p></details></div><aside class="flow-notice info"><strong>Agreement needed</strong><p>Both participants should confirm the time, class mode and meeting details. No payment is due at this stage.</p></aside><div class="portal-actions"><a href="student-booking-session.html" class="btn btn-primary btn-sm">View class details</a><a href="student-booking-view.html" class="btn btn-outline btn-sm">Back to reservation</a></div></section></div>
+
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -106,26 +103,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -153,4 +135,4 @@
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
   </footer><script src="../assets/js/booking-preview.js"></script>
-<script src="../assets/js/student-workspace.js"></script></body></html>
+<script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/booking-progress.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

@@ -25,7 +25,7 @@
       <!-- Action Buttons -->
 
 <details class="profile-menu"><summary aria-label="Open student profile menu"><span class="profile-menu-avatar" aria-hidden="true"><img src="../assets/img/default-avatar-profile.png" alt="" width="38" height="38"></span><span class="profile-menu-name">Ahmad Hakimi</span><span aria-hidden="true">▾</span></summary><nav class="profile-menu-panel student-menu-panel" aria-label="Student navigation">
-<strong>Ahmad Hakimi</strong>
+<strong>Student Account</strong>
 <section class="student-menu-group" aria-labelledby="menu-dashboard">
 <h2 id="menu-dashboard"><a href="student-dashboard.html">Dashboard</a></h2>
 <a href="student-profile-view.html">My Profile</a>
@@ -51,7 +51,7 @@
 </div></details>
 <a href="student-faq.html">FAQ</a>
 </section>
-<a class="student-menu-logout" href="../login.html">Log Out</a>
+<a class="student-menu-logout action-danger" href="../login.html" data-confirm="Log out of your account? Any unsaved changes may be lost."><span class="action-warning-icon" aria-hidden="true">↪</span> Log Out</a>
 </nav></details>
     </div>
   </nav>
@@ -62,6 +62,7 @@
 <h1>Edit your profile</h1>
 <p>Keep your contact details up to date.</p>
 </div>
+<a href="student-profile-view.html" class="btn btn-outline btn-sm action-danger">Cancel</a>
 </header>
 <div class="profile-page-layout">
 <aside class="portal-card profile-side-card" aria-label="Profile picture">
@@ -72,10 +73,7 @@
 
 <section class="portal-card"><h2>Personal details</h2><form id="personal-details-form" class="portal-form"><button type="submit" hidden disabled aria-hidden="true"></button><div class="portal-fields"><div class="form-group"><label class="form-label" for="x-studentFName">First Name</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><input id="x-studentFName" name="studFName" class="form-control" type="text" value="Ahmad"></div></div><div class="form-group"><label class="form-label" for="x-studentLName">Last Name</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><input id="x-studentLName" name="studLName" class="form-control" type="text" value="Hakimi"></div></div><div class="form-group"><label class="form-label" for="x-gender">Gender</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><select id="x-gender" name="gender" class="form-control"><option selected>Male</option><option>Female</option><option>Prefer not to say</option></select></div></div><div class="form-group"><label class="form-label" for="x-dateOfBirth">Date of Birth</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><input id="x-dateOfBirth" name="dateOfBirth" class="form-control" type="date" value="2000-01-01"></div></div><div class="form-group"><label class="form-label" for="x-studentPhone">Phone Number</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 3 4 1 1 5-3 2a15 15 0 0 0 6 6l2-3 5 1 1 4c-1 5-8 2-13-3S0 4 5 3Z"/></svg><input id="x-studentPhone" name="studPhone" class="form-control" type="tel" value="012-345 6789"></div></div><div class="form-group"><label class="form-label" for="x-studentEmail">Email</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg><input id="x-studentEmail" name="studEmail" class="form-control" type="email" value="ahmad@example.com"></div></div><div class="form-group"><label class="form-label" for="x-state">State</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><select id="x-state" name="state" class="form-control"><option selected>Selangor</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option><option>Negeri Sembilan</option><option>Pahang</option><option>Penang</option><option>Perak</option><option>Perlis</option><option>Sabah</option><option>Sarawak</option><option>Terengganu</option><option>Labuan</option></select></div></div><div class="form-group"><label class="form-label" for="x-studentAddress">Address / Area</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><textarea id="x-studentAddress" name="studAddress" class="form-control" rows="3">Shah Alam, Selangor</textarea></div></div></div><button type="button" class="btn btn-primary">Save Changes</button></form></section><section class="portal-card" id="change-password"><h2>Change password</h2><form class="portal-form"><button type="submit" hidden disabled aria-hidden="true"></button><div class="portal-fields"><div class="form-group"><label class="form-label" for="x-currentPassword">Current Password</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><input id="x-currentPassword" name="currentPassword" class="form-control" type="password" value="" autocomplete="current-password"></div></div><div class="form-group"><label class="form-label" for="x-newPassword">New Password</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><input id="x-newPassword" name="newPassword" class="form-control" type="password" value="" autocomplete="new-password"></div></div><div class="form-group"><label class="form-label" for="x-confirmNewPassword">Confirm New Password</label><div class="profile-field-icon"><svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></svg><input id="x-confirmNewPassword" name="confirmNewPassword" class="form-control" type="password" value="" autocomplete="new-password"></div></div></div><button type="button" class="btn btn-primary">Update Password</button></form><p class="field-help">Interface preview. Passwords are not saved.</p></section></div>
 </div>
-<details class="demo-switch"><summary>Prototype · sample data</summary>
-<p>These are separate preview screens. Forms and decisions do not save data. Access restrictions require the future backend.</p>
-<div class="portal-actions"><a href="../student/student-dashboard.html" class="btn btn-text btn-sm">Student</a><a href="../tutor/tutor-dashboard.html" class="btn btn-text btn-sm">Tutor: pending</a><a href="../tutor/tutor-dashboard-verified.html" class="btn btn-text btn-sm">Tutor: verified</a><a href="../admin/admin-dashboard.html" class="btn btn-text btn-sm">Admin</a>
-</div></details>
+
 </main>
 <footer class="footer">
     <div class="container footer-top">
@@ -111,26 +109,11 @@
 </li>
           <li><a href="../help.html">Help</a>
 </li>
-          <li><a href="../login.html">Member Log In</a>
-</li>
         </ul>
       </div>
 
       <!-- Column 3: Rules & Legal -->
-      <div><h4 class="footer-col-title">Explore the Demo</h4>
-<ul class="footer-links">
-<li><a href="../student/student-dashboard.html">Student Dashboard</a>
-</li>
-<li><a href="../tutor/tutor-dashboard.html">Tutor Dashboard</a>
-</li>
-<li><a href="../admin/admin-dashboard.html">Admin Dashboard</a>
-</li>
-<li><a href="../report/report-dashboard.html">Report</a>
-</li>
-<li><a href="../chatbot.html">FAQ Chat</a>
-</li>
-</ul>
-</div>
+      <div><h4 class="footer-col-title">Support</h4><ul class="footer-links"><li><a href="student-help.html">Help Centre</a></li><li><a href="student-faq.html">FAQ</a></li></ul></div>
 
       <!-- Column 4: Contact details -->
       <div>
@@ -158,4 +141,4 @@
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
   </footer><script src="../assets/js/profile-photo.js"></script>
-<script src="../assets/js/student-workspace.js"></script></body></html>
+<script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

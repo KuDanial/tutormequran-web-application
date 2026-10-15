@@ -8,7 +8,7 @@
     event.preventDefault();
     const text = input.value.trim();
     if (!text) {
-      input.setCustomValidity('Write a message before previewing it.');
+      input.setCustomValidity('Write a message first.');
       input.reportValidity();
       return;
     }
@@ -19,7 +19,7 @@
     const body = document.createElement('p');
     body.textContent = text;
     const status = document.createElement('small');
-    status.textContent = 'Local preview · not sent';
+    status.textContent = 'Saved on this page · not sent';
     message.append(author, body, status);
     messages.append(message);
     input.value = '';

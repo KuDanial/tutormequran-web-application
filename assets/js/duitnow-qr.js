@@ -25,7 +25,7 @@
   }
 
   try { showQr(sessionStorage.getItem(key)); } catch {
-    if (status) status.textContent = 'Browser storage is unavailable. The QR cannot be shared with the payment preview.';
+    if (status) status.textContent = 'Browser storage is unavailable. Your QR could not be loaded.';
   }
 
   if (!form) return;
@@ -45,7 +45,7 @@
         try {
           sessionStorage.setItem(key, reader.result);
           showQr(reader.result);
-          status.textContent = 'QR saved for this demo tab. Open the student payment preview to see it.';
+          status.textContent = 'DuitNow QR saved on this device.';
         } catch {
           status.textContent = 'The QR could not be saved in this browser. Try a smaller image or allow browser storage.';
         }
