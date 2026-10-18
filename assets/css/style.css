@@ -1752,6 +1752,14 @@ textarea.form-control {
   color: white;
 }
 
+.lesson-slot-picker { border: 0; padding: 0; margin: 0 0 1.5rem; min-width: 0; }
+.lesson-slot-option { cursor: pointer; }
+.lesson-slot-option input { width: 1.15rem; height: 1.15rem; accent-color: var(--primary); }
+.lesson-slot-option:has(input:checked) { border-color: var(--primary); background: var(--primary-light); box-shadow: 0 0 0 3px rgba(13, 148, 136, .15); }
+.lesson-slot-option:has(input:checked) .slot-status-badge { background: var(--primary); color: white; }
+.lesson-slot-option:focus-within { outline: 3px solid var(--primary); outline-offset: 3px; }
+.lesson-slot-option.booked:hover { transform: none; box-shadow: none; background: #f3f4f6; border-color: #e5e7eb; }
+
 /* Booking Summary Card */
 .booking-summary-box {
   max-height: 0;

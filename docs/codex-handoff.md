@@ -24,6 +24,8 @@ TutorMeQuran connects Malaysian students with verified Quran tutors. The proposa
 
 ## Local prototype behaviour
 
+On 18 October 2026, the new-booking form's manual appointment date and time controls were replaced with tutor-defined slot cards matching the public tutor detail page. The public available-slot link passes a slot ID; `assets/js/lesson-selection.js` preselects only a matching enabled radio card. Booked cards are disabled, an available selection is required, and class option remains selectable. The existing Reserve destination still displays the sample booking; this change does not create a new persisted booking. In PHP, submit the slot ID and supported class option, derive the date/time and fee from the tutor's availability record, and atomically recheck availability when reserving. Never accept a client-supplied date/time as tutor availability.
+
 `assets/js/tutor-workflow.js` stores the sample booking `TMQ-1024` in `sessionStorage` for the current browser tab. It handles tutor acceptance/rejection, participant completion, receipt upload and tutor payment acknowledgement. `assets/js/booking-progress.js` renders saved booking status on overview/list pages; pages marked `data-progress-source="page"` keep their own explanatory stage. `assets/js/student-workspace.js` handles grouped menus, tabs and support forms. `assets/js/action-confirmation.js` confirms dangerous actions before existing handlers run. `assets/js/duitnow-qr.js` handles local QR/receipt display.
 
 This state is not shared between users, tabs or devices and is not a security boundary. Run the site through a local HTTP server instead of relying on `file://` storage behaviour:

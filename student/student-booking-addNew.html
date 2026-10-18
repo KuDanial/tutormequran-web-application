@@ -103,23 +103,30 @@
 </div>
 <section class="portal-card ">
 <h2>Choose your lesson</h2>
-<form class="portal-form">
-<button type="submit" hidden disabled aria-hidden="true">
-</button>
+<form class="portal-form" data-lesson-selection>
+<fieldset class="lesson-slot-picker" aria-describedby="lesson-slot-help">
+<legend class="form-label">Tutor's available lessons</legend>
+<p id="lesson-slot-help" class="field-help">Choose a lesson offered by your tutor. Dates and times are fixed, in Malaysia time (MYT).</p>
+<div class="slot-options">
+<label class="slot-btn lesson-slot-option">
+<input type="radio" name="slotId" value="TU-001-20261021-2000" required>
+<span class="slot-day">Wednesday, 21 October</span>
+<span class="slot-time">8:00 PM–9:00 PM</span>
+<span class="slot-status-badge vacant" data-slot-label>Available</span>
+</label>
+<label class="slot-btn lesson-slot-option booked">
+<input type="radio" name="slotId" value="TU-001-20261021-2100" disabled>
+<span class="slot-day">Wednesday, 21 October</span>
+<span class="slot-time">9:00 PM–10:00 PM</span>
+<span class="slot-status-badge">Booked</span>
+</label>
+</div>
+<p class="field-help" data-slot-message role="status"></p>
+</fieldset>
 <div class="portal-fields">
 <div class="form-group">
-<label for="f-appointmentDate" class="form-label">Appointment Date</label>
-<input id="f-appointmentDate" name="appointmentDate" class="form-control" type="date" value="2026-10-20">
-</div>
-<div class="form-group">
-<label for="f-timeSlot" class="form-label">Time Slot</label>
-<select id="f-timeSlot" name="timeSlot" class="form-control">
-<option selected>8:00 PM – 9:00 PM</option>
-</select>
-</div>
-<div class="form-group">
-<label for="f-classType" class="form-label">Class Type</label>
-<select id="f-classType" name="classType" class="form-control">
+<label for="f-classType" class="form-label">Class option</label>
+<select id="f-classType" name="classType" class="form-control" required>
 <option selected>Online</option>
 <option>Physical</option>
 </select>
@@ -131,7 +138,7 @@
 </div>
 </div>
 <div class="portal-actions">
-<a href="student-booking-view.html" class="btn btn-primary btn-sm">Reserve booking</a><a href="student-bookings.html" class="btn btn-outline btn-sm">Back</a>
+<button type="submit" class="btn btn-primary btn-sm">Reserve booking</button><a href="student-bookings.html" class="btn btn-outline btn-sm">Back</a>
 </div>
 </form>
 </section>
@@ -204,4 +211,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/lesson-selection.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>
