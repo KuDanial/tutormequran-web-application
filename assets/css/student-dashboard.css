@@ -1,0 +1,78 @@
+/* Dashboard-only styles; shared student pages retain their existing layout. */
+.student-dashboard { background: #f5f8f7; }
+.student-dashboard .student-hub { max-width: 1180px; }
+.dashboard-welcome { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border-radius: 24px; background: linear-gradient(115deg, #123f37, #176254); color: #e0f0e9; position: relative; overflow: hidden; margin-bottom: 2.5rem; }
+.dashboard-eyebrow { display: block; font-size: .68rem; font-weight: 800; letter-spacing: .12em; color: #52736a; }
+.dashboard-welcome .dashboard-eyebrow { color: #c5dfb7; }
+.dashboard-welcome h1 { color: white; font-size: clamp(1.8rem, 3.8vw, 2.65rem); letter-spacing: -.035em; margin: .65rem 0 .75rem; }
+.dashboard-welcome p { max-width: 490px; font-size: .95rem; }
+.student-dashboard .dashboard-browse { background: #f5e7bd; color: #23473c; margin-top: 1.5rem; border: 1px solid #f5e7bd; box-shadow: none; }
+.student-dashboard .dashboard-browse:hover { background: #fff3d1; }
+.welcome-art { flex: 0 0 210px; min-height: 200px; border: 1px solid #ffffff26; border-radius: 50% 50% 12px 12px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1.5rem; background: #ffffff08; }
+.welcome-art i { color: #efdc9f; font-size: 4rem; }
+.welcome-art span { font-family: var(--font-heading); font-size: .95rem; color: #d5e6dd; }
+.dashboard-section-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.25rem; }
+.dashboard-section-heading h2 { font-size: 1.35rem; color: #203e35; letter-spacing: -.02em; }
+.dashboard-section-heading .dashboard-eyebrow { margin-bottom: .4rem; }
+.dashboard-section-heading a, .dashboard-help a { font-size: .8rem; color: #176354; font-weight: 700; }
+.dashboard-section-heading a i, .dashboard-help a i { margin-left: .4rem; }
+.dashboard-sample { color: #63736c; font-size: .72rem; }
+.community-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+.community-stat { display: flex; align-items: flex-start; gap: 1.25rem; background: white; border: 1px solid #dfe8e3; padding: 1.5rem; border-radius: 18px; }
+.dashboard-icon { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 46px; height: 46px; border-radius: 14px; background: #edf6f1; color: #21735d; font-size: 1.15rem; }
+.student-stat-icon { color: #8a6324; background: #fcf4e3; }
+.community-stat h3 { font: 600 .85rem var(--font-body); color: #53675d; }
+.community-stat strong { display: block; font: 600 2.6rem var(--font-heading); color: #203e35; margin: .4rem 0; font-variant-numeric: tabular-nums; }
+.community-stat p { font-size: .78rem; color: #63736c; }
+.dashboard-content-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+.dashboard-lesson { background: white; padding: 1.75rem; border: 1px solid #dfe8e3; border-radius: 20px; }
+.lesson-overview { display: flex; align-items: center; gap: 1.25rem; margin-top: 1.75rem; }
+.dashboard-date { flex: 0 0 68px; display: flex; flex-direction: column; align-items: center; background: #edf5f0; border-radius: 12px; padding: .65rem; color: #36624f; }
+.dashboard-date span { font-size: .65rem; font-weight: 700; letter-spacing: .08em; }
+.dashboard-date strong { font: 600 2rem var(--font-heading); }
+.lesson-overview h3 { font-size: 1.25rem; margin: .45rem 0; }
+.lesson-overview p { color: #63736c; font-size: .8rem; }
+.lesson-overview p i { margin-right: .25rem; }
+.dashboard-tutor { display: flex; align-items: center; gap: .75rem; padding: 1.25rem 0; margin-top: .4rem; border-bottom: 1px solid #e8eeea; }
+.tutor-initials { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: #766139; background: #f6efdf; font-size: .75rem; font-weight: 700; }
+.dashboard-tutor div span { display: block; font-size: .7rem; color: #63736c; }
+.dashboard-tutor strong { font-size: .85rem; }
+.dashboard-lesson-status { margin: 1.25rem 0; }
+.dashboard-lesson-status p { font-size: .78rem; color: #63736c; margin-top: .6rem; }
+.dashboard-preparation { border-radius: 20px; padding: 1.75rem; background: #eaf1e8; border: 1px solid #dce6d8; }
+.dashboard-preparation > .dashboard-icon { background: #fff9e7; color: #766139; margin-bottom: 1.5rem; }
+.dashboard-preparation h2 { font-size: 1.65rem; color: #284c39; margin: .65rem 0 .75rem; line-height: 1.25; }
+.dashboard-preparation p { font-size: .85rem; color: #526751; }
+.dashboard-preparation ul { list-style: none; margin-top: 1.5rem; }
+.dashboard-preparation li { display: flex; align-items: baseline; gap: .65rem; font-size: .8rem; color: #425a44; margin-top: .9rem; }
+.dashboard-preparation li i { font-size: .65rem; }
+.dashboard-shortcuts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.dashboard-shortcuts a { position: relative; padding: 1.4rem; border: 1px solid #dfe8e3; border-radius: 16px; background: white; }
+.dashboard-shortcuts a:hover { border-color: #6a9f87; background: #fbfdfb; transform: translateY(-2px); }
+.dashboard-shortcuts strong { display: block; font-size: .95rem; margin: 1rem 0 .35rem; }
+.dashboard-shortcuts a > span:last-of-type { display: block; font-size: .75rem; color: #63736c; }
+.shortcut-arrow { position: absolute; right: 1.4rem; top: 2.3rem; font-size: .8rem; color: #46775f; }
+.dashboard-help { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem 0 .5rem; margin-top: 1rem; font-size: .8rem; color: #63736c; }
+.dashboard-help > div { display: flex; gap: .65rem; align-items: center; }
+.dashboard-help strong { color: #3d5448; }
+.student-dashboard main a:focus-visible { outline: 3px solid #a76b16; outline-offset: 4px; }
+@media (max-width: 900px) {
+  .welcome-art { flex-basis: 150px; min-height: 170px; }
+  .dashboard-content-grid { grid-template-columns: minmax(0, 1fr); }
+  .dashboard-preparation h2 br { display: none; }
+  .dashboard-help { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 600px) {
+  .welcome-art { display: none; }
+  .dashboard-welcome { margin-bottom: 1.75rem; }
+  .community-stats, .dashboard-shortcuts { grid-template-columns: minmax(0, 1fr); gap: .85rem; }
+  .community-stat { padding: 1.25rem; }
+  .community-stat strong { font-size: 2.2rem; }
+  .dashboard-lesson, .dashboard-preparation { padding: 1.25rem; }
+  .lesson-overview { gap: .85rem; align-items: flex-start; }
+  .lesson-overview h3 { font-size: 1.1rem; }
+  .dashboard-lesson > .btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-shortcuts a:hover { transform: none; }
+}

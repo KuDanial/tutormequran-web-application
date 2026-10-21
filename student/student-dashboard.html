@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>A little progress, every lesson. - TutorMeQuran</title><meta name="description" content="Assalamualaikum, Ahmad. Your next Quran lesson is waiting."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="../assets/css/style.css"></head><body class="portal-page student-workspace"><a href="#main-content" class="portal-skip">Skip to content</a>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Dashboard - TutorMeQuran</title><meta name="description" content="Your Quran lessons, account shortcuts and TutorMeQuran community statistics."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="../assets/css/student-dashboard.css"></head><body class="portal-page student-workspace student-dashboard"><a href="#main-content" class="portal-skip">Skip to content</a>
 <nav class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="../index.html" class="logo-link" id="nav-logo">
@@ -57,10 +57,36 @@
   </nav>
 
 <main id="main-content" class="container portal-main student-hub">
-<header class="portal-heading"><div><span class="section-subtitle">Your dashboard</span><h1>Assalamualaikum, Ahmad.</h1><p>Your lessons and account, in one place.</p></div></header>
-<section class="portal-card student-next-lesson"><span class="portal-badge good">Next lesson</span><h2>Quran recitation &amp; Tajweed</h2><p>Ustaz Muhammad Farhan</p><p><strong>20 October · 8–9 PM MYT</strong><br>Online · TMQ-1024</p><div class="portal-actions"><a href="student-booking-view.html" class="btn btn-primary">View booking</a><a href="../tutors.html" class="btn btn-outline">Find a tutor</a></div></section>
-<nav class="student-shortcuts" aria-label="Your account"><a href="student-bookings.html#pending"><strong>My Bookings</strong><span>Upcoming and past lessons</span></a><a href="student-invoices.html#pending"><strong>Invoice</strong><span>Pending fees and receipts</span></a><a href="student-notifications.html"><strong>Notifications</strong><span>Booking and payment updates</span></a></nav>
-<p class="student-help-link">Need a hand? <a href="student-help.html">Visit the Help Centre</a>.</p>
+<header class="dashboard-welcome">
+  <div><span class="dashboard-eyebrow">YOUR LEARNING SPACE</span><h1>Assalamualaikum, Ahmad.</h1><p>A little progress, every lesson. Continue your Quran journey with us.</p><a href="../tutors.html" class="btn dashboard-browse">Find a tutor <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
+  <div class="welcome-art" aria-hidden="true"><i class="fas fa-book-open"></i><span>Learn. Practise. Grow.</span></div>
+</header>
+
+<section class="dashboard-community" aria-labelledby="community-title">
+  <div class="dashboard-section-heading"><div><span class="dashboard-eyebrow">THE TUTORMEQURAN COMMUNITY</span><h2 id="community-title">Learning together.</h2></div><span class="dashboard-sample">Sample statistics &middot; Interface prototype</span></div>
+  <div class="community-stats">
+    <article class="community-stat"><span class="dashboard-icon"><i class="fas fa-chalkboard-user" aria-hidden="true"></i></span><div><h3>Total tutors</h3><strong>12</strong><p>Registered tutors across the platform</p></div></article>
+    <article class="community-stat"><span class="dashboard-icon student-stat-icon"><i class="fas fa-user-graduate" aria-hidden="true"></i></span><div><h3>Total students</h3><strong>120</strong><p>Learners in our Quran community</p></div></article>
+  </div>
+</section>
+
+<div class="dashboard-content-grid">
+  <section class="dashboard-lesson" aria-labelledby="lesson-title">
+    <div class="dashboard-section-heading"><h2 id="lesson-title">Your lesson</h2><a href="student-bookings.html#pending">All bookings <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
+    <div class="lesson-overview"><div class="dashboard-date"><span>OCT</span><strong>20</strong><span>2026</span></div><div><span class="dashboard-eyebrow">ONLINE LESSON &middot; TMQ-1024</span><h3>Quran recitation &amp; Tajweed</h3><p><i class="far fa-clock" aria-hidden="true"></i> 8&ndash;9 PM MYT &middot; 1 hour</p></div></div>
+    <div class="dashboard-tutor"><span class="tutor-initials" aria-hidden="true">MF</span><div><span>Your tutor</span><strong>Ustaz Muhammad Farhan</strong></div></div>
+    <div class="dashboard-lesson-status"><span class="portal-badge" data-booking-status>Awaiting tutor decision</span><p>View your booking for the latest status and lesson arrangements.</p></div>
+    <a href="student-booking-view.html" class="btn btn-primary">View booking <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </section>
+  <aside class="dashboard-preparation" aria-labelledby="preparation-title"><span class="dashboard-icon"><i class="fas fa-book-quran" aria-hidden="true"></i></span><span class="dashboard-eyebrow">MAKE TIME FOR YOURSELF</span><h2 id="preparation-title">A little preparation<br>goes a long way.</h2><p>Make the most of your time with your tutor.</p><ul><li><i class="fas fa-check" aria-hidden="true"></i> Keep your Quran and notes nearby</li><li><i class="fas fa-check" aria-hidden="true"></i> Find a quiet, comfortable space</li><li><i class="fas fa-check" aria-hidden="true"></i> Note any questions for your tutor</li></ul></aside>
+</div>
+
+<section class="dashboard-account" aria-labelledby="account-title"><div class="dashboard-section-heading"><h2 id="account-title">Your account, at a glance</h2></div><nav class="dashboard-shortcuts" aria-label="Your account">
+  <a href="student-bookings.html#pending"><span class="dashboard-icon"><i class="far fa-calendar-check" aria-hidden="true"></i></span><strong>My bookings</strong><span>Manage upcoming and past lessons</span><i class="fas fa-arrow-right shortcut-arrow" aria-hidden="true"></i></a>
+  <a href="student-invoices.html#pending"><span class="dashboard-icon"><i class="fas fa-file-invoice" aria-hidden="true"></i></span><strong>Invoices &amp; receipts</strong><span>Review pending fees and payments</span><i class="fas fa-arrow-right shortcut-arrow" aria-hidden="true"></i></a>
+  <a href="student-notifications.html"><span class="dashboard-icon"><i class="far fa-bell" aria-hidden="true"></i></span><strong>Notifications</strong><span>Stay up to date with your bookings</span><i class="fas fa-arrow-right shortcut-arrow" aria-hidden="true"></i></a>
+</nav></section>
+<div class="dashboard-help"><div><i class="far fa-circle-question" aria-hidden="true"></i><span><strong>We're here to help.</strong> Get support with your lessons or account.</span></div><a href="student-help.html">Visit the Help Centre <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div>
 
 </main>
 <footer class="footer">
