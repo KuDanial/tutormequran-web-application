@@ -12,7 +12,13 @@
   <!-- FontAwesome & App Stylesheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
+  <style>
+    /* Homepage hero reassurance line */
+    .homepage-hero-points { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-top: 1.15rem; color: #52736a; font-size: .76rem; font-weight: 600; }
+    .homepage-hero-points span { display: inline-flex; align-items: center; gap: .35rem; }
+    .homepage-hero-points i { color: var(--primary); font-size: .65rem; }
+  </style>
+<link rel="stylesheet" href="assets/css/site-contact.css"><script src="assets/js/site-contact.js" defer></script></head>
 <body class="portal-page">
   <a class="portal-skip" href="#main-content">Skip to content</a>
 
@@ -69,9 +75,6 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="hero-badge">
-          <i class="fas fa-certificate"></i> Ijazah reviewed before tutors can publish
-        </div>
         <h1 class="hero-title" id="main-hero-title">
           Find Your Certified <span class="highlight">Quran Tutor</span> in Malaysia
         </h1>
@@ -85,6 +88,12 @@
           <a href="register.html#tutor-application" class="btn btn-secondary btn-lg" id="hero-become-tutor-btn">
             Apply to Teach
           </a>
+        </div>
+        <div class="homepage-hero-points" aria-label="TutorMeQuran benefits">
+          <span><i class="fas fa-check-circle" aria-hidden="true"></i> One-to-One Lessons</span>
+          <span><i class="fas fa-check-circle" aria-hidden="true"></i> Male and Female Tutors</span>
+          <span><i class="fas fa-check-circle" aria-hidden="true"></i> Flexible Timings</span>
+          <span><i class="fas fa-check-circle" aria-hidden="true"></i> All Learning Levels</span>
         </div>
       </div>
 

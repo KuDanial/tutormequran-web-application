@@ -1,0 +1,23 @@
+/* Keep the contact bar and navigation together, including when the bar wraps. */
+.site-header { position: sticky; top: 0; z-index: 1000; }
+.site-header .navbar { position: relative; top: auto; }
+.site-contact-bar { background: #123f37; color: #e5f1eb; font-size: .8rem; }
+.site-contact-inner { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: .5rem 1.25rem; }
+.site-contact-links { display: flex; align-items: center; flex-wrap: wrap; gap: 0 1.25rem; min-width: 0; }
+.site-contact-links a { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; }
+.site-contact-links a:hover { color: #f0d58a; }
+.site-contact-links i { color: #f0d58a; }
+.site-contact-socials { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; font-size: 1rem; }
+.site-contact-links a:focus-visible { outline: 3px solid #f0d58a; outline-offset: 2px; }
+.joinchat--right { position: fixed; right: max(1.25rem, env(safe-area-inset-right)); bottom: max(1.25rem, env(safe-area-inset-bottom)); z-index: 1010; }
+.joinchat--btn { display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; border: 3px solid white; border-radius: 50%; background: #25d366; color: white; box-shadow: 0 4px 18px #073b1b40; text-decoration: none; }
+.joinchat--btn i { color: white; font-size: 44px; line-height: 1; }
+.joinchat--btn:hover { background: #25d366; color: white; box-shadow: 0 6px 22px #073b1b60; }
+.joinchat--btn:focus-visible { outline: 4px solid #b45309; outline-offset: 4px; }
+@media (max-width: 600px) {
+  .site-contact-inner { gap: .25rem .75rem; }
+  .site-contact-links { display: block; font-size: .7rem; }
+  .site-contact-links a { display: flex; min-height: 36px; overflow-wrap: anywhere; }
+  .site-contact-socials { gap: .7rem; font-size: .9rem; }
+  .joinchat--right { right: max(.75rem, env(safe-area-inset-right)); bottom: max(.75rem, env(safe-area-inset-bottom)); }
+}
