@@ -44,13 +44,13 @@
 <h1>Availability Detail</h1>
 <p>Manage your TutorMeQuran activity.</p>
 </div>
-<div class="portal-actions"><a class="btn btn-primary btn-sm" href="tutor-availability-edit.html">Edit</a><a class="btn btn-outline btn-sm" href="tutor-availability.html">Back</a>
+<div class="portal-actions"><a class="btn btn-primary btn-sm" data-edit-slot href="tutor-availability-edit.html">Edit</a><a class="btn btn-outline btn-sm" href="tutor-availability.html">Back</a>
 </div>
-</header>
+</header><p data-availability-message role="status"></p>
 
   <section class="portal-card ">
 <h2>Lesson Slot</h2>
-<dl class="portal-details">
+<dl class="portal-details" data-availability-detail>
 <div>
 <dt>Date</dt>
 <dd>21 October 2026</dd>
@@ -62,6 +62,10 @@
 <div>
 <dt>End Time</dt>
 <dd>9:00 PM</dd>
+</div>
+<div>
+<dt>Duration</dt>
+<dd>1 hour</dd>
 </div>
 <div>
 <dt>Mode</dt>
@@ -141,4 +145,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script><script src="../assets/js/lesson-slots.js"></script><script src="../assets/js/availability.js"></script></body></html>

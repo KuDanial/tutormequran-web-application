@@ -5,6 +5,7 @@
   const stages = {
     requested: [0, 'Waiting for tutor acceptance'],
     accepted: [1, 'Booking accepted · arrange your class'],
+    arranged: [2, 'Arrangement completed · ready for class'],
     session: [2, 'Waiting for both participants to confirm class completion'],
     completed: [3, 'Class completed · payment due'],
     receipt: [3, 'Receipt uploaded · waiting for tutor confirmation'],
@@ -23,6 +24,7 @@
     if (receipt) return 'receipt';
     if (state.studentCompleted && state.tutorCompleted) return 'completed';
     if (state.studentCompleted || state.tutorCompleted) return 'session';
+    if (state.arrangementCompleted) return 'arranged';
     return 'accepted';
   }
   function refresh() {

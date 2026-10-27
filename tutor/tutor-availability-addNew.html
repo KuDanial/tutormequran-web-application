@@ -48,42 +48,17 @@
 
   <section class="portal-card ">
 <h2>Availability Details</h2>
-<form class="portal-form" aria-label="Availability Details">
-<button type="submit" hidden disabled aria-hidden="true">
-</button>
+<form class="portal-form availability-editor" data-availability-form data-edit="false" aria-label="Availability details">
+<p class="field-help">Choose a date, start time and lesson duration. All times are Malaysia time (MYT).</p>
 <div class="portal-fields">
-<div class="form-group">
-<label class="form-label" for="date">Date</label>
-<input id="date" name="availabilityDate" class="form-control" type="date" value="" aria-describedby="availability-help availability-warning"><p id="availability-help" class="field-help">Availability date cannot be earlier than today.</p><p id="availability-warning" class="field-warning"><span>Warning preview:</span> Please select today or a future date.</p>
-</div>
-<div class="form-group">
-<label class="form-label" for="start-time">Start Time</label>
-<input id="start-time" name="startTime" class="form-control" type="time" value="">
-</div>
-<div class="form-group">
-<label class="form-label" for="end-time">End Time</label>
-<input id="end-time" name="endTime" class="form-control" type="time" value="">
-</div>
-<div class="form-group">
-<label class="form-label" for="mode">Mode</label>
-<select id="mode" name="classType" class="form-control">
-<option selected>Online</option>
-<option>Physical</option>
-<option>Both</option>
-</select>
-</div>
-<div class="form-group">
-<label class="form-label" for="status">Status</label>
-<select id="status" name="availabilityStatus" class="form-control">
-<option selected>Available</option>
-<option>Unavailable</option>
-</select>
-</div>
-</div>
-<div class="portal-actions">
-<button type="button" class="btn btn-primary">Save</button><a class="btn btn-outline btn-sm" href="tutor-availability.html">Back</a>
-</div>
-</form>
+<div class="form-group"><label class="form-label" for="date">1. Choose a date</label><input id="date" name="availabilityDate" type="date" class="form-control" required></div>
+<div class="form-group"><label class="form-label" for="start-time">2. Start time</label><select id="start-time" name="startTime" class="form-control" required></select><input name="endTime" type="hidden"><p class="field-help">Every lesson starts on the hour. The end time updates with your duration.</p></div>
+<div class="form-group"><label class="form-label" for="duration">3. Lesson duration</label><select id="duration" name="durationMinutes" class="form-control" required aria-describedby="duration-help"></select><p id="duration-help" class="field-help">Choose 1 to 24 hours. Overnight lessons end the next day.</p></div>
+<div class="form-group"><label class="form-label" for="mode">4. Class mode</label><select id="mode" name="classType" class="form-control"><option>Online</option><option value="Physical">In person</option><option value="Both">Online or in person</option></select></div>
+<div class="form-group"><label class="form-label" for="status">Availability</label><select id="status" name="availabilityStatus" class="form-control"><option>Available</option><option>Unavailable</option></select></div>
+</div><aside class="slot-summary"><span class="portal-badge good">Lesson preview</span><p data-slot-summary aria-live="polite"></p></aside>
+<p data-availability-message role="status"></p><p class="field-help">Prototype: changes are saved in this browser only.</p>
+<div class="portal-actions"><button type="submit" class="btn btn-primary">Save lesson slot</button><a class="btn btn-outline" href="tutor-availability.html">Back to availability</a></div></form>
 </section>
 
 </main>
@@ -152,4 +127,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/action-confirmation.js"></script><script src="../assets/js/lesson-slots.js"></script><script src="../assets/js/availability.js"></script></body></html>

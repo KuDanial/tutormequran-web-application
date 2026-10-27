@@ -1,5 +1,5 @@
 (() => {
-  const whatsappUrl = 'https://api.whatsapp.com/send/?phone=923001331147&text=' + encodeURIComponent('hi TutorMeQuran. i need more info about this booking quran tutor platform');
+  const whatsappUrl = 'https://api.whatsapp.com/send/?phone=60162624834&text=' + encodeURIComponent('hi TutorMeQuran. i need more info about this booking quran tutor platform');
   const navbar = document.querySelector('.navbar');
   if (navbar && !document.querySelector('.site-header')) {
     const header = document.createElement('header');

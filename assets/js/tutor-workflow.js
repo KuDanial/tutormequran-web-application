@@ -22,6 +22,13 @@
   const hasReceipt = !!(receipt && /^data:(image\/(png|jpeg)|application\/pdf);base64,/.test(receipt.data || ''));
   const confirmed = hasReceipt && state.paymentReceived === true;
   function render() {
+    all('[data-arrangement-complete]').forEach((form) => {
+      const button = form.querySelector('[data-arrangement-button]');
+      button.disabled = state.decision !== 'accepted' || !!state.arrangementCompleted;
+      button.textContent = state.arrangementCompleted ? '✓ Arrangement Completed' : '✓ Mark arrangement as Completed';
+      form.querySelector('[data-arrangement-status]').textContent = state.arrangementCompleted ? 'Meeting details agreed. You can continue to the class.' : state.decision !== 'accepted' ? 'Accept the booking before completing the arrangement.' : 'Confirm only after both participants agree on the meeting details.';
+      form.querySelector('[data-arrangement-next]').hidden = !state.arrangementCompleted;
+    });
     text('[data-booking-status]', state.decision === 'accepted' ? 'Accepted' : state.decision === 'rejected' ? 'Rejected' : 'Awaiting tutor decision');
     show('[data-booking-decision]', !state.decision);
     show('[data-booking-accepted]', state.decision === 'accepted');
@@ -71,6 +78,10 @@
   bind('[data-booking-accept]', (form) => {
     if (state.decision) return;
     if (save({ decision: 'accepted', reason: '' }, form)) render();
+  });
+  bind('[data-arrangement-complete]', (form) => {
+    if (state.decision !== 'accepted' || state.arrangementCompleted) return;
+    if (save({ arrangementCompleted: true }, form)) render();
   });
   bind('[data-booking-reject]', (form) => {
     const reason = form.elements.reason;

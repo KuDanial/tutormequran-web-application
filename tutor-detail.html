@@ -91,13 +91,13 @@
 </div>
 </dl>
 </section>
-<section class="portal-card ">
-<h2>Available lessons</h2>
-<p>Malaysia time (MYT). Sample availability; booked slots are unavailable.</p>
+<section class="portal-card" data-lesson-weeks>
+<div class="lesson-card-heading"><h2>Available lessons</h2><div class="lesson-week-nav" aria-label="Lesson week"><button type="button" class="btn btn-outline btn-sm" data-week-prev aria-label="Previous week">&#8592; Previous</button><span data-week-label aria-live="polite"></span><button type="button" class="btn btn-outline btn-sm" data-week-next>Next week &#8594;</button></div></div>
+<p>Malaysia time (MYT). Sample availability and locally saved slots; booked slots are unavailable.</p>
 <div class="slot-options"><a class="slot-btn" href="student/student-booking-addNew.html?slot=TU-001-20261021-2000"><span class="slot-day">Wednesday, 21 October</span><span class="slot-time">8:00 PM–9:00 PM</span><span class="slot-status-badge vacant">Available</span></a>
 <button type="button" disabled class="slot-btn booked"><span class="slot-day">Wednesday, 21 October</span><span class="slot-time">9:00 PM–10:00 PM</span><span class="slot-status-badge">Booked</span>
 </button>
-</div>
+</div><p data-slot-message role="status"></p>
 </section>
 <section class="portal-card ">
 <h2>What students say</h2><blockquote class="review-quote">
@@ -113,11 +113,11 @@
 <dl class="portal-details">
 <div>
 <dt>Lesson Duration</dt>
-<dd>60 minutes</dd>
+<dd>Varies by available lesson</dd>
 </div>
 <div>
 <dt>Lesson Fee</dt>
-<dd>RM 40.00</dd>
+<dd>RM 40.00 × lesson hours</dd>
 </div>
 <div>
 <dt>Payment Method</dt>
@@ -199,4 +199,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer></body></html>
+  </footer><script src="assets/js/lesson-slots.js"></script><script src="assets/js/lesson-selection.js"></script></body></html>

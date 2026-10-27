@@ -79,11 +79,11 @@
 </div>
 <div>
 <dt>Duration</dt>
-<dd>1 hour</dd>
+<dd data-selected-duration aria-live="polite">Choose a lesson</dd>
 </div>
 <div>
 <dt>Total Lesson Fee</dt>
-<dd>RM 40.00</dd>
+<dd data-selected-fee aria-live="polite">Calculated from your selected duration</dd>
 </div>
 <div>
 <dt>Class Options</dt>
@@ -101,9 +101,9 @@
 </ul>
 </section>
 </div>
-<section class="portal-card ">
-<h2>Choose your lesson</h2>
-<form class="portal-form" data-lesson-selection>
+<section class="portal-card" data-lesson-weeks>
+<div class="lesson-card-heading"><h2>Choose your lesson</h2><div class="lesson-week-nav" aria-label="Lesson week"><button type="button" class="btn btn-outline btn-sm" data-week-prev aria-label="Previous week">&#8592; Previous</button><span data-week-label aria-live="polite"></span><button type="button" class="btn btn-outline btn-sm" data-week-next>Next week &#8594;</button></div></div>
+<form class="portal-form" data-lesson-selection data-hourly-rate="40">
 <fieldset class="lesson-slot-picker" aria-describedby="lesson-slot-help">
 <legend class="form-label">Tutor's available lessons</legend>
 <p id="lesson-slot-help" class="field-help">Choose a lesson offered by your tutor. Dates and times are fixed, in Malaysia time (MYT).</p>
@@ -211,4 +211,4 @@
     <div class="container footer-bottom">
       <p>&copy; 2026 TutorMeQuran. CSP600 Final Year Project · Malaysia. Interface prototype.</p>
     </div>
-  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/lesson-selection.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>
+  </footer><script src="../assets/js/student-workspace.js"></script><script src="../assets/js/tutor-workflow.js"></script><script src="../assets/js/lesson-slots.js"></script><script src="../assets/js/lesson-selection.js"></script><script src="../assets/js/action-confirmation.js"></script></body></html>

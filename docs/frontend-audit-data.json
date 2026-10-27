@@ -1,0 +1,774 @@
+{
+  "html_files": 99,
+  "css_files": 3,
+  "css_rules": 898,
+  "scanned_files": [
+    "admin/admin-dashboard.html",
+    "admin/admin-profile.html",
+    "admin/admin-settings.html",
+    "admin/manage-bookings-cancel.html",
+    "admin/manage-bookings-closed.html",
+    "admin/manage-bookings-edit.html",
+    "admin/manage-bookings-view.html",
+    "admin/manage-bookings.html",
+    "admin/manage-certificates-view.html",
+    "admin/manage-certificates.html",
+    "admin/manage-faq-addNew.html",
+    "admin/manage-faq-edit.html",
+    "admin/manage-faq-view.html",
+    "admin/manage-faq.html",
+    "admin/manage-payments-confirmed.html",
+    "admin/manage-payments-view.html",
+    "admin/manage-payments.html",
+    "admin/manage-students-edit.html",
+    "admin/manage-students-view.html",
+    "admin/manage-students.html",
+    "admin/manage-tutors-edit.html",
+    "admin/manage-tutors-view.html",
+    "admin/manage-tutors.html",
+    "chatbot.html",
+    "help.html",
+    "index.html",
+    "login.html",
+    "register.html",
+    "report/report-dashboard.html",
+    "student/student-booking-addNew.html",
+    "student/student-booking-cancel.html",
+    "student/student-booking-completed.html",
+    "student/student-booking-coordinate.html",
+    "student/student-booking-edit.html",
+    "student/student-booking-session.html",
+    "student/student-booking-view.html",
+    "student/student-bookings.html",
+    "student/student-chat.html",
+    "student/student-contact.html",
+    "student/student-dashboard.html",
+    "student/student-faq.html",
+    "student/student-feedback-addNew.html",
+    "student/student-feedbacks.html",
+    "student/student-help.html",
+    "student/student-invoices.html",
+    "student/student-notifications.html",
+    "student/student-payment-rejected.html",
+    "student/student-payment-review.html",
+    "student/student-payment-upload.html",
+    "student/student-payment-verified.html",
+    "student/student-payment-view.html",
+    "student/student-profile-edit.html",
+    "student/student-profile-view.html",
+    "student/student-support-request.html",
+    "tutor/tutor-account-edit.html",
+    "tutor/tutor-account-verified.html",
+    "tutor/tutor-application-approved.html",
+    "tutor/tutor-application-rejected.html",
+    "tutor/tutor-availability-addNew.html",
+    "tutor/tutor-availability-edit.html",
+    "tutor/tutor-availability-view.html",
+    "tutor/tutor-availability.html",
+    "tutor/tutor-booking-cancel.html",
+    "tutor/tutor-booking-completed.html",
+    "tutor/tutor-booking-coordinate.html",
+    "tutor/tutor-booking-edit.html",
+    "tutor/tutor-booking-rejected.html",
+    "tutor/tutor-booking-session.html",
+    "tutor/tutor-booking-view.html",
+    "tutor/tutor-bookings.html",
+    "tutor/tutor-certificate-replace.html",
+    "tutor/tutor-certificate-upload.html",
+    "tutor/tutor-certificate-verified.html",
+    "tutor/tutor-certificate-view.html",
+    "tutor/tutor-chat.html",
+    "tutor/tutor-contact.html",
+    "tutor/tutor-dashboard-verified.html",
+    "tutor/tutor-dashboard.html",
+    "tutor/tutor-faq.html",
+    "tutor/tutor-feedbacks.html",
+    "tutor/tutor-help.html",
+    "tutor/tutor-notifications.html",
+    "tutor/tutor-payment-confirm.html",
+    "tutor/tutor-payment-issue.html",
+    "tutor/tutor-payment-qr.html",
+    "tutor/tutor-payment-received.html",
+    "tutor/tutor-payment-view.html",
+    "tutor/tutor-payments.html",
+    "tutor/tutor-profile-draft.html",
+    "tutor/tutor-profile-edit.html",
+    "tutor/tutor-profile-private.html",
+    "tutor/tutor-profile-ready.html",
+    "tutor/tutor-profile-setup.html",
+    "tutor/tutor-profile-view.html",
+    "tutor/tutor-profile-visibility.html",
+    "tutor/tutor-support-request.html",
+    "tutor-detail.html",
+    "tutors.html",
+    "why-us.html",
+    "assets/css/site-contact.css",
+    "assets/css/student-dashboard.css",
+    "assets/css/style.css"
+  ],
+  "inline_styles": [
+    {
+      "file": "index.html",
+      "line": 171,
+      "style": "margin-top: 4rem;"
+    },
+    {
+      "file": "index.html",
+      "line": 234,
+      "style": "margin-bottom: 6rem; margin-top: 2rem;"
+    },
+    {
+      "file": "login.html",
+      "line": 48,
+      "style": "margin-bottom: 1rem;"
+    },
+    {
+      "file": "login.html",
+      "line": 58,
+      "style": "margin-bottom: 2rem;"
+    },
+    {
+      "file": "login.html",
+      "line": 63,
+      "style": "color: var(--primary); font-weight: 600;"
+    },
+    {
+      "file": "login.html",
+      "line": 73,
+      "style": "text-align: center; margin-top: 2rem;"
+    },
+    {
+      "file": "login.html",
+      "line": 78,
+      "style": "margin-top: 1.5rem; border-top: 1px solid var(--border); padding-top: 1.5rem;"
+    },
+    {
+      "file": "login.html",
+      "line": 79,
+      "style": "text-align: center; margin-bottom: .75rem;"
+    },
+    {
+      "file": "login.html",
+      "line": 80,
+      "style": "justify-content: center;"
+    },
+    {
+      "file": "login.html",
+      "line": 89,
+      "style": "margin-top: 1rem;"
+    },
+    {
+      "file": "report/report-dashboard.html",
+      "line": 31,
+      "style": "width:100.0%"
+    },
+    {
+      "file": "report/report-dashboard.html",
+      "line": 37,
+      "style": "width:75.0%"
+    },
+    {
+      "file": "report/report-dashboard.html",
+      "line": 43,
+      "style": "width:50.0%"
+    },
+    {
+      "file": "report/report-dashboard.html",
+      "line": 49,
+      "style": "width:25.0%"
+    }
+  ],
+  "findings": [
+    {
+      "file": "index.html",
+      "line": 271,
+      "code": "placeholder-link",
+      "detail": "<a href=\"#\" class=\"social-link flex-center\" aria-label=\"Facebook\">"
+    },
+    {
+      "file": "index.html",
+      "line": 272,
+      "code": "placeholder-link",
+      "detail": "<a href=\"#\" class=\"social-link flex-center\" aria-label=\"Youtube\">"
+    },
+    {
+      "file": "index.html",
+      "line": 273,
+      "code": "placeholder-link",
+      "detail": "<a href=\"#\" class=\"social-link flex-center\" aria-label=\"Instagram\">"
+    }
+  ],
+  "duplicate_selector_groups": [],
+  "unused_selector_candidates": [
+    {
+      "file": "assets/css/style.css",
+      "line": 126,
+      "selector": ".grid-2"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 131,
+      "selector": ".grid-4"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 305,
+      "selector": ".mobile-nav-links"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 312,
+      "selector": ".mobile-nav-link"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 318,
+      "selector": ".mobile-nav-link:hover, .mobile-nav-link.active"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 429,
+      "selector": ".hero-badge"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 443,
+      "selector": ".hero-badge i"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 499,
+      "selector": ".hero-img-wrapper"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 509,
+      "selector": ".hero-main-img"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 517,
+      "selector": ".floating-badge"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 531,
+      "selector": ".floating-badge.fb-1"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 537,
+      "selector": ".floating-badge.fb-2"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 543,
+      "selector": ".floating-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 555,
+      "selector": ".floating-badge.fb-2 .floating-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 560,
+      "selector": ".floating-info h4"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 566,
+      "selector": ".floating-info p"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 667,
+      "selector": ".search-submit-btn"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 680,
+      "selector": ".search-submit-btn:hover"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 694,
+      "selector": ".section-bg-primary-light"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 837,
+      "selector": ".features-grid"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 843,
+      "selector": ".features-grid"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 847,
+      "selector": ".features-grid"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 850,
+      "selector": ".feature-card"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 859,
+      "selector": ".feature-card:hover"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 874,
+      "selector": ".feature-card.gold-themed .feature-icon-wrapper"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 879,
+      "selector": ".feature-card-title"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 885,
+      "selector": ".feature-card-desc"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 909,
+      "selector": ".tutor-card-img-wrapper"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 916,
+      "selector": ".tutor-card-img"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 922,
+      "selector": ".tutor-badge-certified"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 938,
+      "selector": ".tutor-badge-certified i"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 942,
+      "selector": ".tutor-card-pricing"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 955,
+      "selector": ".tutor-card-pricing span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 959,
+      "selector": ".tutor-card-body"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 981,
+      "selector": ".tutor-card-meta"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 992,
+      "selector": ".tutor-meta-item"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 998,
+      "selector": ".tutor-meta-item i"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1002,
+      "selector": ".tutor-card-bio"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1014,
+      "selector": ".tutor-card-footer"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1173,
+      "selector": ".segmented-control"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1208,
+      "selector": ".form-row"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1214,
+      "selector": ".form-row"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1314,
+      "selector": ".dynamic-tutor-section"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1324,
+      "selector": ".dynamic-tutor-section.show"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1334,
+      "selector": ".tutor-section-title"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1345,
+      "selector": ".file-upload-container"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1349,
+      "selector": ".file-upload-dropzone"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1364,
+      "selector": ".file-upload-dropzone:hover, .file-upload-dropzone.dragover"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1369,
+      "selector": ".file-upload-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1374,
+      "selector": ".file-upload-text"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1380,
+      "selector": ".file-upload-text span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1385,
+      "selector": ".file-upload-subtext"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1390,
+      "selector": ".hidden-file-input"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1401,
+      "selector": ".upload-preview"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1412,
+      "selector": ".upload-preview.active"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1416,
+      "selector": ".preview-info"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1422,
+      "selector": ".preview-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1427,
+      "selector": ".preview-name"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1436,
+      "selector": ".preview-size"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1441,
+      "selector": ".preview-remove-btn"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1449,
+      "selector": ".preview-remove-btn:hover"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1621,
+      "selector": ".toast.toast-success"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1622,
+      "selector": ".toast.toast-danger"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1623,
+      "selector": ".toast.toast-warning"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1635,
+      "selector": ".toast-success .toast-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1636,
+      "selector": ".toast-danger .toast-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1637,
+      "selector": ".toast-warning .toast-icon"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1662,
+      "selector": ".slots-container"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1784,
+      "selector": ".portal-rolebar"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1785,
+      "selector": ".portal-rolebar > .container"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1786,
+      "selector": ".portal-role"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1787,
+      "selector": ".portal-rolebar nav"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1788,
+      "selector": ".portal-rolebar nav a"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1789,
+      "selector": ".portal-rolebar nav a:hover, .portal-rolebar nav a[aria-current]"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1790,
+      "selector": ".portal-demo-note"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1828,
+      "selector": ".field-warning"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1829,
+      "selector": ".field-warning span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1879,
+      "selector": ".student-next-lesson h2"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1880,
+      "selector": ".student-next-lesson p"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1881,
+      "selector": ".student-shortcuts"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1882,
+      "selector": ".student-shortcuts a, .student-choice"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1883,
+      "selector": ".student-shortcuts a:hover, .student-choice:hover"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1884,
+      "selector": ".student-shortcuts strong, .student-shortcuts span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1885,
+      "selector": ".student-shortcuts span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1917,
+      "selector": ".student-shortcuts, .student-help-choices"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1922,
+      "selector": ".status-guide"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1923,
+      "selector": ".status-guide > div"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1924,
+      "selector": ".status-guide p"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1984,
+      "selector": ".portal-dot"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1985,
+      "selector": ".portal-dot.verified"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1986,
+      "selector": ".portal-dot.pending"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 1987,
+      "selector": ".portal-dot.rejected"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2036,
+      "selector": ".portal-rolebar nav a"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2126,
+      "selector": ".booking-preview-links"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2127,
+      "selector": ".booking-preview-links a"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2128,
+      "selector": ".booking-preview-links a:hover"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2137,
+      "selector": ".booking-preview-links"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2140,
+      "selector": ".booking-preview-note"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2171,
+      "selector": ".locked-tools"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2172,
+      "selector": ".locked-tools .form-control"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2187,
+      "selector": ".activity-list"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2188,
+      "selector": ".activity-list li"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2189,
+      "selector": ".activity-list li::before"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2190,
+      "selector": ".activity-list strong, .activity-list span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2191,
+      "selector": ".activity-list span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2194,
+      "selector": ".lesson-date"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2195,
+      "selector": ".lesson-date strong"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2196,
+      "selector": ".lesson-date span"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2197,
+      "selector": ".student-workspace .portal-rolebar"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2199,
+      "selector": ".tutor-workspace .portal-rolebar"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2200,
+      "selector": ".tutor-workspace .portal-rolebar .portal-role"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2201,
+      "selector": ".tutor-workspace .portal-rolebar nav a[aria-current]"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2231,
+      "selector": ".admin-user"
+    },
+    {
+      "file": "assets/css/style.css",
+      "line": 2232,
+      "selector": ".admin-user span"
+    }
+  ]
+}
