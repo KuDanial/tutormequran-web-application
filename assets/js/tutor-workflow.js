@@ -5,6 +5,14 @@
   const all = (selector) => Array.from(document.querySelectorAll(selector));
   const show = (selector, visible) => all(selector).forEach((el) => { el.hidden = !visible; });
   const text = (selector, value) => all(selector).forEach((el) => { el.textContent = value; });
+  const paymentDateDisplay = document.querySelector('[data-payment-date-display]');
+  const paymentDateValue = document.querySelector('[data-payment-date-value]');
+  if (paymentDateDisplay && paymentDateValue) {
+    const today = new Date();
+    const detectedDate = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, '0'), String(today.getDate()).padStart(2, '0')].join('-');
+    paymentDateDisplay.value = detectedDate;
+    paymentDateValue.value = detectedDate;
+  }
   function save(patch, form) {
     const next = { ...state, ...patch };
     try {

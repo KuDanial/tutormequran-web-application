@@ -2,6 +2,12 @@
   const form = document.querySelector('[data-booking-chat]');
   if (!form) return;
   const input = form.querySelector('textarea');
+  const fileInput = form.querySelector('[name="attachments"]');
+  const attachmentInputs = Array.from(form.querySelectorAll('[data-attachment-input]'));
+  const attachmentMenuToggle = form.querySelector('[data-attachment-menu-toggle]');
+  const attachmentMenu = form.querySelector('[data-attachment-menu]');
+  const fileTrigger = form.querySelector('[data-file-trigger]');
+  const filePreview = form.querySelector('[data-file-preview]');
   const messages = document.querySelector('[data-booking-messages]');
   const toggle = form.querySelector('[data-location-toggle]');
   const panel = form.querySelector('#chat-location');
@@ -10,6 +16,34 @@
   const current = form.querySelector('[data-location-current]');
   let pending;
   let request = 0;
+  const selectedAttachments = [];
+  function selectedFiles() { return selectedAttachments.length ? selectedAttachments : (fileInput ? Array.from(fileInput.files || []) : []); }
+  function renderFiles() {
+    if (!filePreview) return;
+    filePreview.replaceChildren();
+    selectedFiles().forEach((file) => {
+      const item = document.createElement('span'); item.className = 'chat-file-chip';
+      const icon = document.createElement('i'); icon.className = 'fas fa-file'; icon.setAttribute('aria-hidden', 'true');
+      const name = document.createElement('span'); name.textContent = file.name;
+      item.append(icon, name); filePreview.append(item);
+    });
+  }
+  if (fileTrigger && fileInput) { fileTrigger.addEventListener('click', () => fileInput.click()); fileInput.addEventListener('change', renderFiles); }
+  attachmentInputs.forEach((attachmentInput) => attachmentInput.addEventListener('change', () => {
+    selectedAttachments.push(...Array.from(attachmentInput.files || []));
+    attachmentInput.value = '';
+    renderFiles();
+    if (attachmentMenu) attachmentMenu.hidden = true;
+    if (attachmentMenuToggle) attachmentMenuToggle.setAttribute('aria-expanded', 'false');
+  }));
+  form.querySelectorAll('[data-attachment-trigger]').forEach((trigger) => trigger.addEventListener('click', () => {
+    const target = form.querySelector('[data-attachment-input="' + trigger.dataset.attachmentTrigger + '"]');
+    if (target) target.click();
+  }));
+  if (attachmentMenuToggle && attachmentMenu) attachmentMenuToggle.addEventListener('click', () => {
+    attachmentMenu.hidden = !attachmentMenu.hidden;
+    attachmentMenuToggle.setAttribute('aria-expanded', String(!attachmentMenu.hidden));
+  });
   function append(body) {
     const message = document.createElement('article');
     message.className = 'portal-message chat-outgoing';
@@ -23,10 +57,11 @@
   }
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const text = input.value.trim();
-    if (!text) { input.setCustomValidity('Write a message first.'); input.reportValidity(); return; }
-    const body = document.createElement('p'); body.textContent = text;
-    append(body); input.value = ''; input.focus({ preventScroll: true });
+    const text = input.value.trim(); const files = selectedFiles();
+    if (!text && !files.length) { input.setCustomValidity('Write a message or attach a file first.'); input.reportValidity(); return; }
+    if (text) { const body = document.createElement('p'); body.textContent = text; append(body); }
+    files.forEach((file) => { const card = document.createElement('a'); card.className = 'chat-file-card'; card.href = URL.createObjectURL(file); card.target = '_blank'; card.rel = 'noopener noreferrer'; const icon = document.createElement('i'); icon.className = 'fas fa-file-arrow-up'; icon.setAttribute('aria-hidden', 'true'); const name = document.createElement('span'); name.textContent = file.name; card.append(icon, name); append(card); });
+    input.value = ''; selectedAttachments.length = 0; if (fileInput) fileInput.value = ''; attachmentInputs.forEach((attachmentInput) => { attachmentInput.value = ''; }); renderFiles(); input.focus({ preventScroll: true });
   });
   input.addEventListener('input', () => input.setCustomValidity(''));
   function reset() { request++; pending = null; preview.hidden = true; status.textContent = ''; current.disabled = false; }

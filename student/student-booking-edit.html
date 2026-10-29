@@ -72,26 +72,24 @@
 <div class="portal-fields">
 <div class="form-group">
 <label for="f-appointmentDate" class="form-label">Appointment Date</label>
-<input id="f-appointmentDate" name="appointmentDate" class="form-control" type="date" value="2026-10-20">
+<div class="locked-field"><i class="fas fa-lock" aria-hidden="true"></i><input id="f-appointmentDate" class="form-control" type="date" value="2026-10-20" disabled aria-describedby="appointment-date-help"><input type="hidden" name="appointmentDate" value="2026-10-20"></div>
+<p id="appointment-date-help" class="field-help">This date is fixed by your tutor’s availability and cannot be changed.</p>
 </div>
 <div class="form-group">
 <label for="f-startTime" class="form-label">Start Time</label>
-<input id="f-startTime" name="startTime" class="form-control" type="time" value="20:00">
+<div class="locked-field"><i class="fas fa-lock" aria-hidden="true"></i><input id="f-startTime" name="startTime" class="form-control" type="time" value="20:00" readonly aria-describedby="slot-help"></div>
 </div>
 <div class="form-group">
 <label for="f-endTime" class="form-label">End Time</label>
-<input id="f-endTime" name="endTime" class="form-control" type="time" value="21:00">
+<div class="locked-field"><i class="fas fa-lock" aria-hidden="true"></i><input id="f-endTime" name="endTime" class="form-control" type="time" value="21:00" readonly aria-describedby="slot-help"></div>
 </div>
 <div class="form-group">
-<label for="f-classType" class="form-label">Class Type</label>
-<select id="f-classType" name="classType" class="form-control">
-<option selected>Online</option>
-<option>Physical</option>
-</select>
+<fieldset class="lesson-type-picker" aria-describedby="class-type-help"><legend class="form-label">Lesson Type</legend><div class="lesson-type-options"><label class="lesson-type-option selected"><input type="radio" name="classType" value="Online" checked><span><i class="fas fa-video" aria-hidden="true"></i><strong>Online</strong><small>Meet remotely</small></span></label><label class="lesson-type-option"><input type="radio" name="classType" value="Physical"><span><i class="fas fa-location-dot" aria-hidden="true"></i><strong>Physical</strong><small>Meet in person</small></span></label></div><p id="class-type-help" class="field-help">Only the lesson type can be changed. Confirm the new arrangement with your tutor.</p></fieldset>
 </div>
+<div class="form-group form-group-wide"><span class="form-label">Selected lesson slot</span><div class="slot-btn lesson-slot-option selected slot-read-only"><input type="radio" checked disabled aria-label="Selected lesson slot: 20 October 2026, 8 to 9 PM MYT"><span class="slot-day">20 Oct</span><span class="slot-time">8:00 PM – 9:00 PM</span><span class="slot-status-badge">Selected</span></div><p id="slot-help" class="field-help">This time slot was selected from your tutor’s availability and is read-only.</p></div>
 <div class="form-group">
 <label for="f-bookingNotes" class="form-label">Lesson Notes</label>
-<textarea id="f-bookingNotes" name="bookingNotes" class="form-control" rows="4">Focus on Tajweed and pronunciation.</textarea>
+<textarea id="f-bookingNotes" name="bookingNotes" class="form-control" rows="4" readonly>Focus on Tajweed and pronunciation.</textarea>
 </div>
 </div>
 <div class="portal-actions">

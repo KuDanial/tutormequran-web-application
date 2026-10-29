@@ -24,23 +24,19 @@
           <img src="assets/img/TutorMeQuran_LOGO.png" alt="TutorMeQuran Logo" class="auth-logo">
         </a>
         <h1 class="auth-title">Welcome Back</h1>
-        <p class="auth-subtitle">Student, tutor and administrator access</p>
+        <p class="auth-subtitle">Sign in with your username and password</p>
       </div>
-
-      <!-- Segmented Role Selector (FR2 & User Roles Toggle) -->
-      <div class="form-group"><label class="form-label" for="login-role-choice">Account role</label><select id="login-role-choice" name="accountRoleType" class="form-control"><option>Student</option><option>Tutor</option><option>Admin</option></select></div>
 
       <!-- Form -->
       <form id="login-form"><button type="submit" disabled hidden aria-hidden="true"></button>
-        <!-- Hidden input storing selected role -->
+        <div class="form-group"><label class="form-label" for="login-role-choice">Account role</label><select id="login-role-choice" name="accountRoleType" class="form-control"><option value="student" selected>Student</option><option value="tutor">Tutor</option><option value="admin">Admin</option></select></div>
         <input type="hidden" id="login-role" value="student">
-
         <!-- Username Input -->
         <div class="form-group">
-          <label for="username" class="form-label">Username or Email Address</label>
+          <label for="username" class="form-label">Username</label>
           <div class="form-input-wrapper">
             <i class="fas fa-user input-icon" aria-hidden="true"></i>
-            <input type="text" id="username" name="accountUsername" class="form-control" placeholder="Username or email" required>
+            <input type="text" id="username" name="accountUsername" class="form-control" placeholder="Enter your username" required>
           </div>
         </div>
 
@@ -94,6 +90,11 @@
   </main>
 
   <!-- App Script -->
+  <script>
+    const roleChoice = document.getElementById('login-role-choice');
+    const roleValue = document.getElementById('login-role');
+    roleChoice.addEventListener('change', () => { roleValue.value = roleChoice.value; });
+  </script>
 
 </body>
 </html>
