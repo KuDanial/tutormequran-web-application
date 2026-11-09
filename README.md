@@ -23,7 +23,7 @@
 
 ## About the project
 
-TutorMeQuran is a CSP600 academic project at Universiti Teknologi MARA (UiTM). It brings tutor discovery, certificate review, lesson booking and payment tracking into one interface for students, tutors and administrators.
+TutorMeQuran is a CSP600 academic project at Universiti Teknologi MARA (UiTM). It brings tutor discovery, certificate review, lesson booking and payment tracking into one interface for students, tutors and administrators
 
 This repository currently contains the **static HTML, CSS and JavaScript prototype**. Selected interactions work locally in the browser; PHP and database integration are planned. Displayed accounts, bookings and reports use sample data.
 
