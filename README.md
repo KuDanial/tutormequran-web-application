@@ -111,5 +111,5 @@ Extra pages preserve the earlier tutor setup and publishing flow for reference. 
 
 ## Author
 
-**Tengku Ahmad Danial Tengku Noor Ashraf** · [@KuDanial](https://github.com/KuDanial)  
-Universiti Teknologi MARA · CSP600 academic project
+[@KuDanial](https://github.com/KuDanial)  
+CSP600 academic project
